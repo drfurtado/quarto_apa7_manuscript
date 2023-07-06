@@ -1,0 +1,152 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\caption{Here is the table caption.}
+\label{apatb-mytable}
+
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{0pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable*}[l]{|p{0.75in}|p{0.75in}}
+
+
+
+\ascline{0.75pt}{000000}{1-2}
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{Numbers}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{Letters}}} \\
+
+\ascline{0.75pt}{000000}{1-2}\endfirsthead
+
+\ascline{0.75pt}{000000}{1-2}
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{Numbers}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{Letters}}} \\
+
+\ascline{0.75pt}{000000}{1-2}\endhead
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{1}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{A}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{2}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{B}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{3}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{C}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{4}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{D}}} \\
+
+\ascline{0.75pt}{000000}{1-2}
+
+
+
+\end{longtable*}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+
+\tablenote{Here is the note below the table.}
+
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\caption{Figure caption of a markdown table}
+\label{apatb-mymarkdowntable}
+
+\begin{longtable}[]{@{}llrc@{}}
+\toprule\noalign{}
+Default & Left & Right & Center \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+12 & 12 & 12 & 12 \\
+123 & 123 & 123 & 123 \\
+1 & 1 & 1 & 1 \\
+\end{longtable}
+
+\tablenote{This is a note below the markdown table.}
+
+\textbackslash end\{table\} ```
+
+What if you want the tables and figures to be at the end of the
+document? In the .pdf format, you can set the \texttt{floatsintext}
+option to false. For .html and .docx documents, there is not yet an
+automatic way to put tables and figures at the end. You can, of course,
+just put them all at the end, in order. The reference labels will work
+no matter where they are in the text.
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+Describe results in non-statistical terms.
+
+\hypertarget{limitations-and-future-directions}{%
+\subsection{Limitations and Future
+Directions}\label{limitations-and-future-directions}}
+
+Every study has limitations. Based on this study, some additional steps
+might include\ldots{}
+
+\hypertarget{conclusion}{%
+\subsection{Conclusion}\label{conclusion}}
+
+Let's sum this up.
+
+\newpage{}
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-CameronTrivedi2013}{}}%
+Cameron, A. C., \& Trivedi, P. K. (2013). \emph{Regression analysis of
+count data} (2nd ed.). Cambridge University Press.
+\url{https://doi.org/10.1017/CBO9781139013567}
+
+\leavevmode\vadjust pre{\hypertarget{ref-cohen2003applied}{}}%
+Cohen, J., Cohen, P., West, S. G., \& Aiken, L. S. (2003). \emph{Applied
+multiple regression/correlation analysis for the behavioral sciences}
+(3rd ed.). Lawrence Erlbaum Associates.
+
+\end{CSLReferences}
+
+\newpage{}
+
+\hypertarget{appendix}{%
+\section{Appendix}\label{appendix}}
+
+If there are multiple appendices, label them with level 1 headings as
+Appendix A, Appendix B, and so forth.
+
+
+\end{document}

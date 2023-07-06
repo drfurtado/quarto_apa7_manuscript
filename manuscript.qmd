@@ -1,7 +1,7 @@
 ---
-title: "Title of Manuscript (Title Case)"
+title: "The Relationship Between Fundamental Movement Skills and Body Mass Index in Elementary-Age Children"
 subtitle: | 
-    Author 1, Author 2, and Author 3 \
+    Mariah Bolin and Ovande Furtado Jr \
     \
     Affiliation(s)
 format:
@@ -47,19 +47,19 @@ author:
 
 ### Repeat title of Manuscript above introduction (same style as abstract heading)
 
-The introduction does not get a heading labeled _introduction_, since it is clearly identifiably by its position in the manuscript.
+The introduction does not get a heading labeled *introduction*, since it is clearly identifiably by its position in the manuscript.
 
 # First Level (Title Case)
 
-Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
+Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
 
 ## Second Level (Title Case)
 
 Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
 
-__Third level (Sentence case)__. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+**Third level (Sentence case)**. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
 
-*__Fourth level (Sentence case)__*. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+***Fourth level (Sentence case)***. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
 
 *Fifth level (Sentence case)*. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
 
@@ -69,15 +69,15 @@ Example 1: Parenthetical citation from BibTex bibliography [@Simonsohn2015-yx].
 
 Example 2: Narrative citation of multiple authors, as in @Trotschel2013-zd.
 
-Example 3: Citing Schultze and colleagues [-@Schultze2015-in] in-text using the authors' names or correct abbreviation. 
+Example 3: Citing Schultze and colleagues [-@Schultze2015-in] in-text using the authors' names or correct abbreviation.
 
-Note that the bibliography is automatically appended to the end of the document! You will have to manually move it above any appendix. To add a citation to the references list which has not been cited in the text (though highly unusual!), use the _nocite_ option in the rmd file's YAML header (see the citation of Harvey and Fischer, for example).
+Note that the bibliography is automatically appended to the end of the document! You will have to manually move it above any appendix. To add a citation to the references list which has not been cited in the text (though highly unusual!), use the *nocite* option in the rmd file's YAML header (see the citation of Harvey and Fischer, for example).
 
 Attention: Digital Object Identifiers (DOI), following APA 7, should be appended to article citations (which is already correctly done by the CSL file). Remember to export DOIs into the BibTex bibliography you use for rendering the manuscript!
 
 ## Citing Multiple Sources
 
-Example 1: Multiple citations in one set of parentheses [@Trotschel2013-zd; @Simonsohn2015-yx; @Schultze2015-in]. 
+Example 1: Multiple citations in one set of parentheses [@Trotschel2013-zd; @Simonsohn2015-yx; @Schultze2015-in].
 
 Attention: Citations will be rendered in the correct order (as specified by the selected citation style) even if the sources are not inserted in correct order into the square brackets.
 
@@ -87,7 +87,7 @@ Example 3: Correct use of multiple citations in one set of parentheses with a pr
 
 # Running Head
 
-The running head above each page in the manuscript has to be inserted in the _apa\_style\_reference\_document.docx_ for each manuscript individually.
+The running head above each page in the manuscript has to be inserted in the *apa_style_reference_document.docx* for each manuscript individually.
 
 # Footnotes
 
@@ -97,17 +97,15 @@ This sentence has a footnote attached to it. [^1]
 
 # Block Quotations
 
-> This is going to be a blockquote It has several lines and it is
-> easy to do in RMarkDown, if you happen to know the right syntax.
-> We need more words to achieve a line wrap.
+> This is going to be a blockquote It has several lines and it is easy to do in RMarkDown, if you happen to know the right syntax. We need more words to achieve a line wrap.
 
-# Directions for implementing APA’s title case:
+# Directions for implementing APA's title case:
 
-1. Capitalize the first word of the title/heading and of any subtitle/subheading;
-2. Capitalize all “major” words (nouns, verbs, adjectives, adverbs, and pronouns) in the title/heading, including the second part of hyphenated major words (e.g., Self-Report not Self-report); and
-3. Capitalize all words of four letters or more.
+1.  Capitalize the first word of the title/heading and of any subtitle/subheading;
+2.  Capitalize all "major" words (nouns, verbs, adjectives, adverbs, and pronouns) in the title/heading, including the second part of hyphenated major words (e.g., Self-Report not Self-report); and
+3.  Capitalize all words of four letters or more.
 
-This boils down to using lowercase only for “minor” words of three letters or fewer, namely, for conjunctions (words like and, or, nor, and but), articles (the words a, an, and the), and prepositions (words like as, at, by, for, in, of, on, per, and to), as long as they aren’t the first word in a title or subtitle. You can see examples of title case in our post on reference titles.
+This boils down to using lowercase only for "minor" words of three letters or fewer, namely, for conjunctions (words like and, or, nor, and but), articles (the words a, an, and the), and prepositions (words like as, at, by, for, in, of, on, per, and to), as long as they aren't the first word in a title or subtitle. You can see examples of title case in our post on reference titles.
 
 # Formatting Statistics
 

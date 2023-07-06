@@ -1,0 +1,72 @@
+```{r}
+# Load the required library
+library(irr)
+
+# Define the ratings data
+ratings <- matrix(
+  c(1, 2,
+    2, 1,
+    3, 2,
+    4, 4,
+    2, 2),
+  nrow = 5, 
+  byrow = TRUE
+)
+
+# Calculate kappa
+kappa_result <- kappa2(ratings, weight = "squared")
+
+# Check the names of the components in the kappa result
+print(names(kappa_result))
+
+# Define the table data
+table_data <- data.frame(
+  Kappa = kappa_result$value,
+  Z = kappa_result$statistic,
+  p_value = kappa_result$p.value
+)
+
+# Display the table
+knitr::kable(table_data, digits = 3)
+
+
+
+
+```
+
+```{r}
+# Load the necessary library
+library(irr)
+
+# Compute the weighted kappa
+kappa_result <- kappa2(df[, 1:2], weight = "squared")
+
+# Define the number of ratings
+n <- nrow(df)
+
+# Define the observed agreement and the expected agreement
+p_o <- sum(diag(table(df[, 1:2]))) / n
+p_e <- sum(table(df[, 1]) * table(df[, 2])) / n^2
+
+# Define the Kappa statistic
+kappa <- (p_o - p_e) / (1 - p_e)
+
+# Calculate the variance of Kappa
+v <- (1 - kappa)^2 / (n * (1 - p_e)^2) * (p_o * (1 - p_o) - 2 * (1 - kappa) * ((p_o - p_e)^2 - p_o * p_e) + (1 - kappa)^2 * ((p_o - p_e)^2 - p_e^2))
+
+# Calculate the 95% confidence interval for Kappa
+ci <- kappa + c(-1, 1) * sqrt(v) * qnorm(0.975)
+
+# Create a data frame for the markdown table
+result_df <- data.frame(
+  Kappa = kappa,
+  Lower.CI = ci[1],
+  Upper.CI = ci[2]
+)
+
+# Create a markdown table
+knitr::kable(result_df, caption = "Weighted Kappa and Confidence Interval")
+
+
+
+```

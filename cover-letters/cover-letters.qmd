@@ -1,0 +1,35 @@
+---
+author:
+  - name: Ovande Furtado Jr.
+    affiliation:
+      - name: California State University, Northridge
+        department: Department of Kinesiology
+        address: 18111 Nordhoff St 
+        city: Northridge, CA
+        postal-code: 91330-8287
+address:
+  - J.D. Ball, Ph.D., ABPP
+  - Eastern Virginia Medical School
+  - ball@emeritus.evms.edu
+subject: Manuscript Submission
+opening: "Dear Dr. J.D. Ball,"
+closing: "Respectfully,"
+cc:
+encl:
+  - Anonymized Manuscript
+  - Title page
+ps: |
+format: letter-pdf
+---
+
+Greetings and well wishes to you! I am writing on behalf of myself and my co-authors to submit our manuscript titled "Association Between Fundamental Motor Skill Domains and Physical Fitness Components in Children Aged 5 to 11 Years" for publication consideration in the "Journal of Perceptual and Motor Skills." I hope this letter finds you in good health and high spirits.
+
+The manuscript examines the relationship between fundamental motor skills and the physical fitness components in children within the age of 5 to 11 years. It uncovers new insights into child development and lays groundwork for further research in this critical area. The manuscript is 18 pages long, concise yet comprehensive, and has been formatted according to the guidelines provided by your esteemed journal.
+
+We confirm that this manuscript is being submitted solely to "Perceptual and Motor Skills" and will not be concurrently submitted elsewhere until a final decision regarding its publication has been made by your journal.
+
+All authors have reviewed the manuscript, contributed significantly to the research and writing process, and are in agreement with both the content of the article and the order of authorship. We collectively believe that our research adds significantly to the existing body of knowledge, and hope that it will be considered favorably by your review committee.
+
+Should you require any further information, please do not hesitate to contact me. We look forward to the opportunity to contribute to the "Journal of Perceptual and Motor Skills".
+
+Thank you for considering our submission.

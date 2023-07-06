@@ -1,0 +1,25 @@
+```{r}
+# Create a data frame with ratings from two raters
+install.packages("irr")
+
+data <- data.frame(
+  rater1 = c(1, 2, 3, 3, 2),
+  rater2 = c(1, 2, 2, 3, 2)
+)
+
+# Compute the weighted kappa
+kappa <- kappa2(data, weight = "squared")
+
+# Create a Markdown table with the results
+table_text <- paste("| Statistic | Value |",
+                    "| --- | --- |",
+                    "| Weighted Kappa |", kappa$value, "|",
+                    "| Standard Error |", kappa$se, "|",
+                    "| 95% Confidence Interval |", kappa$conf.int[1], "-", kappa$conf.int[2], "|",
+                    sep = "\n")
+
+# Print the table
+cat(table_text)
+
+
+```

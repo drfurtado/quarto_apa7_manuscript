@@ -1,0 +1,290 @@
+---
+title: " 
+Collecting Concurrent Validity, Expert-Rater Agreement, and Inter/Intra-Rater Reliability for the ANONYMIZED"
+# Lines above title in .docx format
+blank-lines-above-title: 2
+# If blank, the running header is the title in upper case.
+shorttitle: Template for the APAquarto Format
+# Set names and affiliations.
+# It is nice to specify everyone's orcid, if possible.
+# There can be only one corresponding author.
+author:
+  - name: Ana Fulana
+    corresponding: true
+    orcid: 0000-0000-0000-0000
+    email: sm@example.org
+    url: https://example.org/
+    # Roles are optional
+    # Select from the CRediT: Contributor Roles Taxonomy https://credit.niso.org/
+    # Conceptualization, Data curation, Formal Analysis, Funding acquisition, Investigation, 
+    # Methodology, Project administration, Resources, Software, Supervision, Validation, 
+    # Visualization, Writing – original draft, Writing – review & editing
+    role:
+      - Conceptualization
+      - Writing - original draft
+    affiliations:
+      - id: id1
+        name: Ana and Blanca's University
+        department: Department of Psychology
+        address: 1234 Capital St.
+        city: Albany
+        region: NY
+        postal-code: 12084-1234
+  - name: Blanca Zutana
+    role:
+      - Project administration
+    affiliations: 
+      - ref: id1
+  - name: Carina Mengana
+    orcid: 0000-0000-0000-0001
+    role:
+      - Formal Analysis
+    affiliations:
+      - name: Carina's Primary Affiliation
+      - name: Carina's Secondary Affiliation
+    # Because Dolorita is unaffiliated, specify her city instead
+  - name: Dolorita Perengana
+    orcid: 0000-0000-0000-0003
+    role:
+      - Writing - review & editing
+      - Methodology
+      - Formal Analysis
+    affiliations:
+      - name: ~
+        city: Buffalo
+        region: NY
+author-note:
+  blank-lines-above-author-note: 1
+  status-changes: 
+    # Example: [Author name] is now at [affiliation].
+    affiliation-change: Ana Fulana is now at X University.
+    # Example: [Author name] is deceased.
+    deceased: Carina Mengana is deceased.
+  # Disclosures condensed to one paragraph, but you can start a field with two line breaks to break them up: \n\nNew Paragraph
+  disclosures:
+    # Example: This study was registered at ClinicalTrials.gov (Identifier NTC998877).
+    study-registration: ~
+    # Acknowledge and cite data/materials to be shared.
+    data-sharing: ~
+    # Example: This article is based on data published in Pulaski (2017).
+    # Example: This article is based on the dissertation completed by Graham (2018).    
+    related-report: This article is based on data published in Pulaski (2017). 
+    # Example: Sally Jones earns royalties from the sale of Test X.
+    conflict-of-interest: ~
+    # Example: This study was supported by Grant A123 from the National Science Foundation.
+    financial-support: ~
+    # Example: The authors are grateful for the technical assistance of Dr. X during the initial design and setup of our lab equipment.
+    gratitude: ~
+    # Example. Because the authors are equal contributors, order of authorship was determined by a fair coin toss.
+    authorship-agreements: ~
+abstract: "Fundamental movement skills (FMS) are considered the building blocks for developing specialized sports skills. In addition, fundamental movement skill competency has been linked to decreased levels of obesity and increased levels of physical activity/sports participation. Thus, assessing FMS development is crucial. This study aimed to collect evidence for concurrent validity, expert-rater agreement, and inter/intra-rater reliability for the ANONYMIZED. Participants were 34 children ages 5-10 years and 5 raters. Partial Pearson correlations comparing the scores of both tests indicate a moderate to strong correlation for locomotion (rxy.z =.52, p < .01), object manipulation (rxy.z =.59, p < .001), and total scores (rxy.z =.63, p < .001). The expert-rater agreement was assessed by comparing the live scores of five raters with those of an expert. Inter-rater reliability was assessed by comparing the scores across the five raters. Intra- rater reliability was assessed by comparing each rater’s live and video scores. Weighted kappa scores ranged from .51 to .83, .50 to .89, and .60 to .87 for expert-rater agreement and inter and intra-rater reliability, respectively. These results provide further validity and reliability evidence for the FG-COMPASSANONYMIZED. Further studies involving children with different ethnic backgrounds and larger sample size are recommended. ADD LIMITATIONS HERE."
+keywords: [Assessment, Fundamental Movement Skills, Children, Movement Competence]
+# I like using Zotero with BetterBibTeX to output a continuously updated "Better CSL JSON" file. But BibTeX works, too.
+bibliography: bibliography.bib
+format:
+  apaquarto-docx: default
+  apaquarto-html: default
+  apaquarto-pdf:
+    # can be jou (journal), man (manuscript), stu (student), or doc (document)
+    # for now, tables and figures do not render properly in jou mode. 
+    documentmode: man
+    # can be 10pt, 11pt, or 12pt
+    fontsize: 12pt
+    # Integrate tables and figures in text
+    floatsintext: false
+    # a4 paper if true, letter size if false
+    a4paper: false
+    # suppresses loading of the lmodern font package
+    nolmodern: false
+    # Suppresses loading of the fontenc package
+    nofontenc: false
+    # Suppress the title above the introduction
+    donotrepeattitle: false
+    # In jou mode, use times or pslatex instead of txfonts
+    notxfonts: false
+    # In jou mode, use Computer Modern font instead of times
+    notimes: false
+    # In jou mode, cancels automatic stretching of tables to column width 
+    notab: false
+    # Uses Helvetica font in stu and man mode
+    helv: false
+    # In man and stu mode, neutralizes the \helvetica command.
+    nosf: false
+    # In man and stu mode, uses typewriter font
+    tt: false
+    # Puts draft watermark on first page
+    draftfirst: false
+    # Puts draft watermakr on all pages
+    draftall: false
+    # Masks references that are marked as the author's own
+    mask: false
+    journal: ~
+    volume: ~
+    course: ~
+    professor: ~
+    duedate: ~
+---
+
+{{< include _extensions/wjschne/apaquarto/_apa_title.qmd >}}
+
+```{r}
+#| label: setup
+library(conflicted)
+library(tidyverse)
+library(flextable)
+library(ftExtra)
+library(officer)
+library(knitr)
+conflicts_prefer(dplyr::filter, .quiet = TRUE)
+conflicts_prefer(flextable::separate_header, .quiet = TRUE)
+```
+
+It is crucial for young children to master fundamental movement skills, which can have both positive and negative impacts on their development and lifestyle. Competence in motor skills plays a significant role in their ability to participate in physical activities (Castelli & Valley, 2007). Engaging in physical activities is positively correlated with fundamental movement skills (FMS), particularly when the activities involve moderate to vigorous exertion (Bellows, Davies, Anderson, & Kennedy, 2013; Carroll & Loumidis, 2001; Fisher et al., 2005; Lemos, Avigo, & Barela, 2012; McKenzie et al., 2002) and negatively associated with obesity (Bayer, Bolte, Morlock, Ruckinger, & von Kries, 2009; Graf et al., 2004; Lopes, Stodden, Bianchi, Maia, & Rodrigues, 2012). Studies have shown that children who lack motor skill proficiency are less physically active (Fisher et al., 2005; McKenzie et al., 2002) and are more likely to be overweight or obese (Cliff et al., 2012).
+
+Thus, assessing the development of fundamental movement skills (FMS) is crucial for preschool and elementary school children. However, it has been noticed that gross motor skills are often ignored in childhood education. Ulrich (2000) points out that assessment tools can help detect delays and ensure children receive the necessary support and guidance. If not addressed early, delays in motor skill development may hinder future gross motor skill development (Ulrich, 2000), and likely impact the acquisition of specialized skills (Gabbard, 2012). According to Provost, Crowe, and McClain (2000), a developmental delay is defined as a 25% or greater difference between the child's actual age and their developmental age. If a motor delay is detected early, practitioners, parents, and educators can implement strategies to help the child to catch up.
+
+There are several instruments designed to assess and evaluate the development of fundamental movement skills. In general, these instruments are not designed to be administered in a live setting by a single practitioner. Often, test administrators are required to film skill performances and later code/rate the videos. Therefore, a more practical assessment tool would allow professionals to perform live assessments without the need to videotape performances. Recently, Furtado (2012) proposed a decision-tree method for assessing the skill level of a live FMS performance. A decision-tree is a decision hierarchical model that uses a tree-like method of decisions and potential consequences, leading to a final decision. This approach has traditionally being used in computer science and more recently in machine-learning, but can also be used in the behavioral sciences for making decisions based on empirical data [@vonwinterfeldtDecisionAnalysisBehavioral1986].
+
+In the case of FMS, the empirical data are derived from validated or hypothesized developmental sequences from various motor skills [@halversonDevelopmentalSequencesHopping1985; @strohmeyerDevelopmentalSequencesCatching1991; @painterDevelopmentalSequencesHopping1994; @robertonDevelopmentLocomotorCoordination1988]. Following these studies, performance criteria are proposed for the motor skill under investigation. These performance criteria can be used for the development of informal checklists and instruments that are used assess fundamental movement skill proficiency.
+
+A decision-tree created for the skill of overhand using the method proposed by Furtado (2012) is depicted in Figure 1. The flowchart is comprised of a) decision nodes (questions) b) chance nodes (Yes or No), and c) end nodes (levels). Although several performance criteria can be proposed for a skill, only three are selected to form the decision-tree of a skill based on the method suggested by Furtado (2012). These performance criteria are then turned into questions which are the decision nodes of the decision-tree. In Figure 1, the top decision node contains a discriminatory question. It's purpose is to differentiate between levels 1 and 4 (end nodes). If the chance node is YES, the decision takes the path on the left and the observer is presented with a confirmatory question, which is meant to verify if a performer is at level 4 (chance node is YES) regarding proficiency of the skill of overhand throw. If the decision-tree fails to confirm a level 4 (chance node is NO), then the performer is assessed as level 3. The same applies to the right side of the decision-tree, except that the purpose is to confirm whether the performer is at level 1. The decision-tree approach simplifies the process of assessing fundamental movement skill live performances as only two performance criteria are used when deciding the proficiency levels of performers.
+
+![](images/dt-throw.png){width="569"}
+
+The development of an assessment tool involves several steps to confirm validity and reliability evidence of its scores. The ANONYMIZED is a criterion-related and process-oriented assessment tool developed for school settings and is the instrument under investigation in this study. Multiple studies have been conducted to collect psychometric evidence for the FG-COMPASS, namely, content-related validity [@furtadojr2009], reliability of classification decisions [@furtadojr2012], and non-live expert-rater agreement and inter-/intra-rater reliability [@furtadojr2018]. However, additional psychometric studies are needed for it to be utilized confidently in clinical and educational settings that require live assessments. In addition, the test's concurrent validity needs to be investigated.
+
+Therefore, this study aimed to attain concurrent validity for the ANONYMIZED by comparing its findings with those of the TGMD-2 [@ulrich2000], a commonly used gross motor skill assessment tool. The second purpose of this study was to collect expert-rater agreement from live assessments and additional inter-/intrarater reliability evidence for the test.
+
+<!--# no correlation, use bland-altman plot here. -->
+
+Three hypotheses were proposed for this study. First, we anticipated that there would be a positive "strong" (.50 or higher) correlation between the total scores of both tests.
+
+Second, there will be a positive strong correlation between the locomotor and manipulative scores between both tests. Finally, there will be a "good" (weighted kappa =.61 or higher) inter-rater and intra-rater agreement on the locomotor, manipulative, and total scores for the new instrument.
+
+Having a practical, valid, and reliable assessment tool to assess gross motor development is critical for identification of typical development and any potential motor delays in school-age children. Until now, there have been no attempts to compare the results of the ANONYMIZED to a criterion instrument such as the TGMD-2.
+
+In addition, although evidence of inter and intra-rater reliability for the ANONYMIZED exists \[source omitted\] [(Furtado & Gallagher, 2018)]{.underline}, agreement data were collected from video analysis. The current study assessed inter and intra-rater agreement in a live setting.
+
+<!--# talk about the purpose of the study and main hypotheses -->
+
+<!--# move this under method -->
+
+The Test of Gross Motor Development (TGMD-2) is considered to be the gold standard for assessing FMS competency in children between the ages of 3 and 10 years (Ulrich, 2000) and was used as the criterion for the analysis of concurrent validity in this study. The TGMD-2 has two gross motor subcategories (locomotor and object control) and assesses 12 skills.
+
+The (ANONYMIZED) was developed to assess gross motor skill development in children between the ages of 5 and 10 years \[source omitted\] (Furtado, 2009). The ANONYMIZED is similar to the TGMD-2 in that it assesses locomotor and object manipulation fundamental gross motor skills. The ANONYMIZED is designed to be administered in a live setting by a single practitioner without the need for video recordings.
+
+# Method
+
+General remarks on method. This paragraph is optional.
+
+Not all papers require each of these sections. Edit them as needed. Consult the [Journal Article Reporting Standards](https://apastyle.apa.org/jars) for what is needed for your type of article.
+
+## Participants
+
+Who are they? How were they recruited? Report criteria for participant inclusion and exclusion. Perhaps some basic demographic stats are in order. A table is a great way to avoid repetition in statistical reporting.
+
+## Measures
+
+This section can also be titled **Materials** or **Apparatus**. Whatever tools, equipment, or measurement devices used in the study should be described.
+
+### Measure A
+
+Describe Measure A.
+
+### Measure B
+
+Describe Measure B.
+
+## Procedure
+
+What did participants do?
+
+How are the data going to be analyzed?
+
+# Results
+
+## Descriptive Statistics
+
+Here we describe the basic characteristics of our primary variables.
+
+Let's make a figure. A reference label for a figure in APA format must have the prefix `apafg-`. This is different from the usual Quarto prefix `fig-`.
+
+```{r}
+#| label: apafg-myplot
+#| apa-cap: This is the figure caption.
+#| apa-note: This is a note below the figure.
+
+plot(1:10)
+```
+
+To refer to any figure or table, put the chunk label in curly braces. For example, see {apafg-myplot}. In {apafg-importedgraphic}, we import an image.
+
+```{r}
+#| label: apafg-importedgraphic
+#| apa-cap: This is an imported graphic.
+#| apa-note: My note.
+knitr::include_graphics("orcid.png")
+```
+
+We can make a table the same way as a figure except that the label prefix is `apatb-`. Again, this is different from the usual quarto prefix `tbl-`, which will put the table table caption in the wrong place and with non-APA formatting.
+
+```{r apatb-mytable}
+#| apa-cap: Here is the table caption.
+#| apa-note: Here is the note below the table.
+#| ft.align: left
+
+
+tibble(Numbers = seq(1,4), Letters = LETTERS[seq(Numbers)]) %>% 
+  flextable() %>% 
+  theme_apa() %>% 
+  line_spacing(part = "all") %>% 
+  padding(padding.top = 5, padding.bottom = 5)
+
+```
+
+To refer to this table in text, put the table's reference label in curly braces like so: As seen in {apatb-mytable}, there is not much information.
+
+What if you want the tables and figures to be at the end of the document? In the .pdf format, you can set the `floatsintext` option to false. For .html and .docx documents, there is not yet an automatic way to put tables and figures at the end. You can, of course, just put them all at the end, in order. The reference labels will work no matter where they are in the text.
+
+<!-- Add Additional Sections as Needed -->
+
+# Discussion
+
+Describe results in non-statistical terms. <!-- Add sections as needed. -->
+
+## Limitations and Future Directions
+
+Every study has limitations. Based on this study, some additional steps might include...
+
+## Conclusion
+
+Let's sum this up.
+
+Table 1
+
+# References
+
+<!-- References will auto-populate in the refs div below -->
+
+::: {#refs}
+:::
+
+<!-- Delete any unnecessary sections or pagebreaks. -->
+
+{{< pagebreak >}}
+
+# Appendix
+
+If there are multiple appendices, label them with level 1 headings as Appendix A, Appendix B, and so forth.
+
+<!-- I like my tables and figures intermingled with the text, -->
+
+<!-- but all tables can go here. -->
+
+<!-- Uncomment the pagebreaks as needed-->
+
+<!-- {{< pagebreak >}} -->
+
+<!-- Figures can go here. -->
+
+<!-- {{< pagebreak >}} -->
