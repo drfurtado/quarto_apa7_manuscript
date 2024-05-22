@@ -1,0 +1,1187 @@
+\documentclass[
+  jou,
+  longtable,
+  nolmodern,
+  notxfonts,
+  notimes,
+  colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{apa7}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+
+\usepackage[bidi=default]{babel}
+\babelprovide[main,import]{english}
+
+
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+
+\RequirePackage{longtable}
+% \setlength\LTleft{0pt}
+\RequirePackage{threeparttablex}
+
+% % % 
+% % 
+
+
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+	{0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+	{-.5em}%
+	{\normalfont\normalsize\bfseries\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{0.5em}%
+	{0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+	{-\z@\relax}%
+	{\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+
+
+
+\usepackage{longtable, booktabs, multirow, multicol, colortbl, hhline, caption, array, float}
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\floatpagefraction}{0.7}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{listings,theorems, breakable, skins}
+\usepackage{fontawesome5}
+
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{ACACAC}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582EC}
+\definecolor{quarto-callout-important-color-frame}{HTML}{D9534F}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{F0AD4E}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02B875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{FD7E14}
+
+
+% 
+
+\newlength\Oldarrayrulewidth
+\newlength\Oldtabcolsep
+
+
+\usepackage{hyperref}
+
+
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+
+\usepackage{newtx}
+
+\defaultfontfeatures{Scale=MatchLowercase}
+\defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+
+
+
+
+
+\title{\vskip 1.5cm
+\bfseries Explicit Weight Bias Concerns in the Fitness Industry: A Quantitative Analysis}
+\shorttitle{Template for the apaquarto Extension}
+
+
+\usepackage{etoolbox}
+
+
+\journal{\bfseries \Large Journal of Kinesiology and Wellness}
+\volume{\vskip 1mm \normalsize A Publication of the Western Society for
+Kinesiology and Wellness \newline Volume 13, Number 1, Pages 1--9,
+2024\newline ISSN\# 2323-4505}
+
+
+
+
+
+\authorsnames{Kellie Walters,Alison Ede}
+
+
+
+
+\affiliation{
+{Department of Kinesiology, California State University, Long Beach}}
+
+
+
+
+
+
+\leftheader{Walters and Ede}
+
+
+
+\abstract{Limited and conflicting research is available regarding weight
+biases in the fitness industry, yet implications of such biases are
+pervasive. Individuals in larger bodies often experience stigma and
+prejudices due to their weight, and anti-fat attitudes have been
+normalized in the fitness industry and associated educational pipelines.
+Current literature on weight biases in the fitness industry lacks
+context and fails to examine these biases from an intersectional lens.
+Therefore, this study explored how social identities (e.g., age, gender,
+race, etc.) influence weight biases in fitness professionals. Fitness
+professionals completed an electronic survey that included demographic
+questions and measures of weight bias (Anti-Fat Attitudes Test; AFAT)
+and body dissatisfaction (Contour Drawing Rating Scale). Women in the
+healthy (2.02 ± .51) and overweight (1.97 ± .49) BMI categories had
+significantly greater total AFAT scores (p = .003 and p = .023,
+respectively) compared to women in the obese BMI category (1.63 ± .48).
+For participants who had completed some college, those who were
+classified in the healthy BMI category had significantly greater total
+AFAT scores (2.05 ± .50) compared to those in the overweight BMI
+category (1.72 ± .46). For participants who completed a master's degree,
+those in the healthy BMI category (2.08 ± .56) and overweight BMI
+category (2.05 ± .43) had significantly greater total AFAT scores
+compared to those in the obese BMI category (1.48 ± .46). There was a
+direct effect of gender, body dissatisfaction, race and BMI on AFAT
+subscales. There was also a significant direct effect of body
+dissatisfaction on AFAT subscales. Across all variables, AFAT scores
+were highest for the physical subscale (2.69 ± .91) and lowest for the
+social subscale (1.43 ± .45). Fitness professionals exhibit explicit
+weight biases, and future research should examine the implications of
+such biases.}
+% 
+\keywords{Anti-fat bias, fitness professionals, social
+identities, explicit bias, weight stigma}
+
+\authornote{\par{\addORCIDlink{Kellie
+Walters}{0000-0002-0892-8028}}\par{\addORCIDlink{Alison
+Ede}{0000-0001-8144-0013}}
+\par{ }
+\par{       }
+\par{Correspondence concerning this article should be addressed
+to Kellie Walters, Department of Kinesiology, California State
+University, Long Beach, 1250 Bellflower Blvd, HHS2-221, Long
+Beach, CA 90840, Email: kellie.walters@csulb.edu}
+}
+
+
+\usepackage{pbalance} 
+\usepackage{float}
+\makeatletter
+\let\oldtpt\ThreePartTable
+\let\endoldtpt\endThreePartTable
+\def\ThreePartTable{\@ifnextchar[\ThreePartTable@i \ThreePartTable@ii}
+\def\ThreePartTable@i[#1]{\begin{figure}[!htbp]
+\onecolumn
+\begin{minipage}{0.5\textwidth}
+\oldtpt[#1]
+}
+\def\ThreePartTable@ii{\begin{figure}[!htbp]
+\onecolumn
+\begin{minipage}{0.5\textwidth}
+\oldtpt
+}
+\def\endThreePartTable{
+\endoldtpt
+\end{minipage}
+\twocolumn
+\end{figure}}
+\makeatother
+
+
+\makeatletter
+\let\endoldlt\endlongtable		
+\def\endlongtable{
+\hline
+\endoldlt}
+\makeatother
+
+\newenvironment{twocolumntable}% environment name
+{% begin code
+\begin{table*}[!htbp]%
+\onecolumn%
+}%
+{%
+\twocolumn%
+\end{table*}%
+}% end code
+
+\urlstyle{same}
+
+
+
+
+
+\begin{document}
+
+\maketitle
+
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\setlength\LTleft{0pt}
+
+
+Weight bias (i.e., anti-fat bias) is unreasonable judgments about
+someone based on weight Washington (2011) (Washington, 2011). It is
+pervasive in the health industry, including those who work as physicians
+(Schwartz et al., 2003), physical educators (Fontana et al., 2017),
+fitness professionals (Dimmock et al., 2009; Fontana et al., 2018;
+Robertson \& Vohora, 2008), and exercise science students (Chambliss et
+al., 2004; Fontana et al., 2013; Langdon et al., 2016; Rukavina et al.,
+2010; Wijayatunga et al., 2019). In the fitness industry, potential
+implications of these biases include negative perceptions of larger
+bodied individuals' abilities, motivation, and potential job
+qualifications (Sartore \& Cunningham, 2007). Weight stigma is defined
+as discriminatory acts towards individuals in larger bodies due to their
+size (Washington, 2011). Consequences of experiencing weight stigma
+include a) poor physical health, such as an increased likelihood of
+maintained obesity or weight gain (Sutin \& Terracciano, 2013), and b)
+increased psychological distress, including greater rates of body
+dissatisfaction and symptoms of eating disorders (Vartanian \& Novak,
+2011). Paradoxically, individuals who experience weight stigma are more
+likely to avoid exercise as a result of internalized anti-fat attitudes
+(Vartanian \& Novak, 2011) and experience an increased allostatic load
+(cumulative response to ongoing stress) ((Guidi et al., 2021), which has
+a greater impact on their health than being in a larger body does
+(Gordon, 2020; Milburn et al., 2019).
+
+A systematic review on weight bias among exercise and nutrition
+professionals included 31 studies; however, only three focused
+specifically on fitness professionals (e.g., personal trainers or group
+fitness instructors) compared to ``exercise professional trainees''
+(e.g., exercise science students). Robertson and Vohora (2008) were the
+first to report strong anti-fat implicit and explicit biases in fitness
+professionals (n = 57, ``gym instructors'' and ``aerobics
+instructors''), with the bias being greater in those who had never been
+overweight and believed obesity was controllable. In a study surveying
+fitness center employees (management and administrative staff n = 15,
+personal trainers n = 16, fitness instructors n =19, and exercise/sport
+physiologists n = 20), Dimmock et al.~(2009) reported a moderately
+strong implicit bias, but no explicit bias, towards individuals in
+larger body sizes. More recently, Fontana et al.~(2018) found that
+personal trainers (n = 52) report strong implicit biases against
+individuals who are obese.
+
+Recently, Zaroubi et al.~(2021) published a review article on the
+predictors of weight bias in fitness professionals and exercise science
+students (Zaroubi et al., 2021). Most of the studies in this review
+sampled undergraduate students in the exercise science field, with only
+four of the 18 sample fitness professionals. Of those four studies, only
+three included weight bias as a dependent variable (Dimmock et al.,
+2009; Fontana et al., 2018; Robertson \& Vohora, 2008). A thematic
+analysis was conducted, and six themes emerged. First, exercise science
+students and fitness professionals strongly believe that weight is
+controllable and associate individuals with larger bodies with negative
+attributes such as laziness. Second, the relationship between gender and
+weight bias is still unknown as data is conflicting. Third, being
+enrolled in an exercise science or similar educational program is likely
+a predictor of weight bias. Fourth, personal and psychosocial factors
+(e.g., the tendency to internalize an athletic body as the ideal body
+shape) likely influence weight bias. Fifth, knowledge of the
+uncontrollable aspects of obesity (e.g., genetics) is likely to lower
+weight bias. Lastly, there is conflicting evidence regarding the
+influence of one's personal history with someone in a larger body.
+Chambliss et al.~(2004) report that a lack of family history of having a
+larger body leads to higher explicit weight bias in fitness
+professionals and regular exercisers Field (Chambliss et al.(Chambliss
+et al., 2004). In contrast, DeBarr and Pettit reported no statistical
+differences in weight bias held by health educators classified as
+overweight compared to normal weight. Little research has examined
+explicit weight biases of fitness professionals, and no research has
+focused on whether their social identities and/or role in the industry
+(e.g., group fitness instructor versus personal trainer) influence their
+weight bias. This research is particularly important due to the
+influential nature of this field. Clients often look to fitness
+professionals for advice and education on changing their health
+behaviors. If fitness professionals hold strong weight biases, they may
+contribute to a harmful cycle whereby their clients become less likely
+to participate and/or adhere to their health behavior changes. Fitness
+professionals need to have more knowledge of weight biases. Thus, the
+study aimed to examine the influence of age, gender, body
+dissatisfaction, race, role in industry, BMI, income, and education on
+weight bias in fitness professionals.
+
+\section{Methods}\label{methods}
+
+\subsection{Participants}\label{participants}
+
+The original data set included participants (n = 366) who identified as
+fitness professionals in various settings. Participants reported their
+role in the industry with the option to choose from certified personal
+trainer (n = 30), group fitness instructor (n = 107), facility club
+manager/director/owner (n = 2), physical/occupational therapist (n = 2),
+health/wellness coach (n = 2), strength and conditioning coach (n = 4),
+other with the option to enter their role (n = 15), and multiple (those
+who hold more than one role in the industry; n = 189). Due to low sample
+sizes within some of the roles (facility club manager,
+physical/occupational therapy, health/wellness coach, strength and
+conditioning coach, and others), only data from individuals who marked
+that they were personal trainers, group fitness instructors, or those
+who held multiple roles were included in the analysis (n = 326). The
+participants included a diverse sample, with 40.5\% identifying as
+non-white (11\% Black, 6.1\% Asian, 8.6\% Hispanic, 3.1\% other, and
+9.5\% multi-race) and 59.5\% identifying as White. Participants
+identified as female (n = 262) and male (n = 55), and their age was
+relatively equally distributed across all age groups ranging from 18-55+
+(21.2\% 18-24 years old, 26.1\% 25-34 years old, 22.4\% 35-44 years old,
+17.2\% 45-54 years old, and 12.9\% 55 years old and older). Participants
+were well educated (66\% having a minimum bachelor's degree), and 43.7\%
+reported an annual household income of \$100,000 or more.
+
+Recruitment occurred via word of mouth, email, and social media.
+Participants were asked to complete an electronic survey about weight
+biases in the fitness industry. IRB approval and written participant
+consent were received before data collection. After four months of data
+collection, the authors recognized that the majority of respondents up
+until that point were white (84\%) and subsequently amended the IRB
+application to include an incentive (\$20 gift card) for individuals of
+color to participate in the study. After adjusting the recruitment
+language to include information about the incentive, an additional 109
+fitness professionals who identified as persons of color completed the
+survey.
+
+\subsection{Instruments}\label{instruments}
+
+In addition to demographic data (participants' age, weight, height, BMI,
+gender, race, education, income, and role in the industry), the
+following instruments were used in this study.
+
+\subsubsection{Anti-fat Attitudes Test
+(AFAT)}\label{anti-fat-attitudes-test-afat}
+
+The modified 34-item AFAT scale (Lewis et al., 1997) measured explicit
+bias attitudes towards individuals in larger bodies (i.e., weight bias
+or anti-fat bias). This psychometrically sound scale (Dimmock et al.,
+2009; Lewis et al., 1997; Wijayatunga et al., 2019) consisted of a
+modified 5-point Likert scale with 1 being strongly disagree and 5 being
+strongly agree. To avoid social response bias, participants were
+reminded multiple times that their responses were anonymous. Positively
+worded statements were reverse coded, so higher scores represented
+greater anti-fat bias. The questionnaire includes three subscales: (1)
+social/character disparagement (e.g., ``I prefer not to associate with
+fat people''), (2) physical/romantic unattractiveness (e.g., ``Fat
+people are physically unattractive''), and (3) weight control/blame
+(e.g., ``There is no excuse for being fat''), as well as a total
+composite score (Lewis et al., 1997). Individual questions were averaged
+for each subscale and the total AFAT composite score. Cronbach's alpha
+was .71, .78, and .71 for the social, attraction, and blame subscales,
+respectively, indicating adequate internal consistency.
+
+\subsubsection{Contour Drawing Rating
+Scale}\label{contour-drawing-rating-scale}
+
+The psychometrically sound Contour Drawing Rating Scale assessed
+participants' body dissatisfaction (Gardner \& Brown, 2010). As
+introduced by Thompson and Gray (1995), the Contour Drawing Rating Scale
+utilizes the drawings of masculine and feminine human figures in the
+front view. Nine drawings illustrate each gender, with illustrations
+representing progressively larger body shapes on a scale of 1 to 9.
+First, the participants chose which body type they most identified with
+(e.g., ``Which bodies do you mostly identify with?''), with group A
+being body shapes traditionally assigned to women and group B being body
+shapes traditionally assigned to men (Figure 1). As noted earlier, this
+data assessed participants' gender identity. The participants answered
+two more questions including: (1) ``On a scale from 1-9, rate what your
+CURRENT body size based on the images above'', and (2) ``On a scale from
+1-9, rate what you would IDEALLY want to look like based on the images
+above.'' Participants' body dissatisfaction was calculated by
+subtracting the number associated with their ideal image from the number
+associated with their current image.
+
+Positive scores indicated a desired ideal body smaller than their
+current perceived body size, and negative scores indicated an ideal body
+larger than their current perceived body size. Scores ranged from -2 to
+4 and were categorized into four groups: (1) moderate dissatisfaction,
+desire to be larger (scores of -2 and -1), (2) no dissatisfaction
+(scores of 0, meaning their current body size was their ideal body
+size), (3) moderate dissatisfaction, desire to be smaller (scores of 1
+and 2), and (4) high dissatisfaction, desire to be smaller (scores of 3
+and 4). While body dissatisfaction as a construct represents a desire to
+be a different shape, creating groups distinguishing positive and
+negative scores allows for a more nuanced understanding of body
+dissatisfaction. A desire to be smaller should represent a greater
+internalization of weight bias than a desire to be larger, as a desire
+to have a smaller body size is consistent with the societal ideal that
+thinner is more valued.
+
+\subsection{Statistical Analysis}\label{statistical-analysis}
+
+Two-way ANOVAs were conducted to examine the effects of every possible
+2-way interaction of the eight IVs (age, gender, body dissatisfaction,
+race, BMI, role, education, and income) on AFAT total (Tables 1-6). When
+no interaction effects were found, one-way ANOVAs and MANOVAs were
+conducted to assess the direct effect of the IVs on AFAT total and AFAT
+subscales, respectively. Partial eta squared (partial η²) was used to
+measure the effect size of variables, with 0.1, 0.06, and 0.14
+indicating a small, medium, and large effect size, respectively (Fritz
+et al., 2012). Outliers were assessed by inspection of a boxplot,
+normality was assessed using Shapiro-Wilk's normality test for each cell
+of the design, and Levene's test assessed homogeneity of variances. All
+data is presented as mean ± standard deviation. SPSS Version 27 was used
+to analyze the data, and significance was noted by a p-value \textless{}
+0.05.
+
+\section{Results}\label{results}
+
+There was a statistically significant interaction between gender and BMI
+on total AFAT scores,
+\(F(2,272) = 3.139, p = .045, \text{partial } \eta^2 = .023\).
+Therefore, an analysis of simple main effects for gender and BMI was
+performed with statistical significance receiving a Bonferroni
+adjustment. Women in the healthy \((2.02 \pm .51)\) and overweight
+\((1.97 \pm .49)\) BMI categories had significantly greater total AFAT
+scores \((p = .003 \text{ and } p = .023, \text{respectively})\)
+compared to women in the obese BMI category \((1.63 \pm .48)\). There
+was also a statically significant interaction between education and BMI
+on total AFAT scores,
+\(F(9,266) = 2.201, p = .022, \text{partial } \eta^2 = .069\). An
+analysis of simple main effects for education and BMI was performed with
+statistical significance receiving a Bonferroni adjustment. For
+participants who had completed some college, those who were classified
+in the healthy BMI category had significantly greater total AFAT scores
+\((2.05 \pm .50)\) compared to those in the overweight BMI category
+\((1.72 \pm .46), p = .045\). For participants who completed a master's
+degree, those in the healthy BMI category \((2.08 \pm .56)\) and
+overweight BMI category \((2.05 \pm .43)\) had significantly greater
+total AFAT scores \((p = .003 \text{ and } .016, \text{respectively})\)
+compared to those in the obese BMI category \((1.48 \pm .46)\). No other
+interaction effects were found. Therefore, one-way ANOVAs and MANOVAs
+were conducted to assess the direct effect of the IVs on AFAT total and
+AFAT subscales, respectively. The mean total AFAT scores for each IV are
+listed in Table 7.
+
+\subsection{Age}\label{age}
+
+A one-way ANOVA was conducted to determine if total anti-fat bias
+differed by age group. Homogeneity of variances was violated, as
+assessed by Levene's Test of Homogeneity of Variance \((p = .001)\).
+Therefore, Welch's F and Games-Howell were used to assess significance.
+There were no statistically significant differences in total AFAT scores
+between the different age groups, Welch's F
+\((4, 128.682) = 0.632, p = .640\). A one-way MANOVA was run to
+determine if anti-fat bias subscale scores differed by age group. Across
+all age groups, AFAT scores were highest for the physical subscale
+\((2.69 \pm 0.92)\) and lowest for the social subscale
+\((1.43 \pm 0.45)\), with the blame subscale scores between
+\((2.17 \pm 0.74)\). No statistically significant differences existed
+between age groups for all three AFAT subscales,
+\(F(12,852) = 1.415, p =.153; \text{Pillai’s Trace} = .059; \text{partial } \eta^2 = .020\).
+
+\begin{ThreePartTable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1300}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1300}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1300}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1300}}@{}}
+\caption{Summary of Two-way ANOVAs by Age}\label{tbl-tb1}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Measure
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\emph{F}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\emph{df}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\emph{p}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\eta_{p}^{2}\)
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Measure
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\emph{F}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\emph{df}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\emph{p}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\eta_{p}^{2}\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Gender X race & 0.26 & 4 & 0.905 & 0.00 \\
+Gender X age & 1.27 & 4 & 0.280 & 0.02 \\
+Gender X education & 0.08 & 4 & 0.988 & 0.00 \\
+Gender X income & 0.60 & 7 & 0.757 & 0.02 \\
+Gender X BMI & 3.14 & 2 & 0.045* & 0.02 \\
+Gender X body dissatisfaction & 0.18 & 3 & 0.908 & 0.00 \\
+Gender X industry role & 0.53 & 2 & 0.592 & 0.00 \\
+\end{longtable}
+
+{\noindent \emph{Note.} Note below table}
+
+\end{ThreePartTable}
+
+\subsection{Gender}\label{gender}
+
+A one-way ANOVA was conducted to determine if total anti-fat bias
+differed by gender. There was a statistically significant difference in
+total AFAT scores between genders, \(F(1, 280) = 8.320, p = .004\).
+Participants who identified as men reported significantly greater total
+AFAT scores \((2.19 \pm 0.41)\) than those who identified as women
+\((1.96 \pm 0.51)\). A one-way MANOVA was run to determine if anti-fat
+bias subscales differed by gender. For both genders, AFAT scores were
+highest for the physical subscale \((2.71 \pm 0.92)\) and lowest for the
+social subscale \((1.43 \pm 0.46)\), with the blame subscale scores
+between \((2.17 \pm 0.74)\). The differences between genders on the AFAT
+physical subscale
+\(F(1,280) = 6.940, p < .05; \text{partial } \eta^2 = .024\) and AFAT
+blame subscale
+\(F(1,280) = 6.909, p < .05; \text{partial } \eta^2 = .024\) were
+statistically significant. Participants who identified as men reported
+significantly greater AFAT physical scores \((3.02 \pm .91; p<.05)\) and
+AFAT blame scores \((2.42 \pm .62; p<.05)\) than participants who
+identified as women
+\((2.64 \pm .91 \text{ and } 2.12 \pm .75, \text{respectively})\).
+
+\begin{ThreePartTable}
+
+\begin{longtable}[]{@{}llrc@{}}
+\caption{My Table}\label{tbl-mytable2}\tabularnewline
+\toprule\noalign{}
+Default & Left & Right & Center \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+Default & Left & Right & Center \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+12 & 12 & 12 & 12 \\
+123 & 123 & 123 & 123 \\
+1 & 1 & 1 & 1 \\
+\end{longtable}
+
+{\noindent \emph{Note.} This is a note below the markdown table.}
+
+\end{ThreePartTable}
+
+\subsection{Body Dissatisfaction}\label{body-dissatisfaction}
+
+A one-way ANOVA was conducted to determine if total anti-fat bias
+differed by body dissatisfaction. There were statistically significant
+differences in total AFAT scores between different levels of body
+dissatisfaction, \(F(3, 276) = 4.147, p < .05\). Those participants in
+the moderate dissatisfaction, desire to be smaller group
+\((1.94 \pm .50)\) had significantly lower total AFAT scores compared to
+those in the no dissatisfaction group \((2.15 \pm .49), p = .017\).
+
+A one-way MANOVA was run to determine if anti-fat bias subscales
+differed by body dissatisfaction. AFAT scores were highest for the
+physical subscale \((2.71 \pm 0.92)\) and lowest for the social subscale
+\((1.42 \pm 0.44)\), with the blame subscale scores between
+\((2.17 \pm 0.74)\). The effect of body dissatisfaction on AFAT
+subscales was statistically significant,
+\(F(9,828) = 2.010, p < .05; \text{Pillai’s Trace} = .064; \text{partial } \eta^2 = .021\).
+Tukey post-hoc tests showed that participants in the moderate
+dissatisfaction, desire to be smaller group \((1.36 \pm .42)\) had
+significantly lower AFAT social scores than participants in the no
+dissatisfaction group \((1.57 \pm .49), p = .004\).
+
+\subsection{Race}\label{race}
+
+A one-way ANOVA was conducted to determine if total anti-fat bias
+differed by race. Homogeneity of variances was violated, as assessed by
+Levene's Test of Homogeneity of Variance \((p = .001)\). Therefore,
+Welch's F and Games-Howell were used to assess significance. Total AFAT
+scores were statistically significantly different by race, Welch's F
+\((5,47.989) = 7.564, p < .001\). White participants reported
+significantly lower total AFAT scores \((1.86 \pm .51)\) than Black
+\((2.14 \pm .40, p = .008)\), Asian \((2.25 \pm .34, p = .001)\), and
+Hispanic \((2.25 \pm .38, p <.001)\) participants. A one-way MANOVA was
+run to determine if anti-fat bias subscales differed by race. AFAT
+scores were highest for the physical subscale \((2.68 \pm 0.92)\) and
+lowest for the social subscale \((1.42 \pm 0.44)\), with the blame
+subscale scores between \((2.17 \pm 0.74)\). The effect of race on AFAT
+subscales was statistically significant,
+\(F(15,834) = 7.813, p < .001; \text{Pillai’s Trace} = .370; \text{partial } \eta^2 = .123\).
+Tukey post-hoc tests demonstrated that participants who identified as
+White reported significantly lower AFAT physical scores
+\((2.26 \pm .72)\) than participants who identified as Black
+\((3.46 \pm .69, p<.001)\), Asian \((3.12 \pm .71, p<.001)\), Hispanic
+\((3.30 \pm .87, p<.001)\), other \((3.46 \pm .81, p<.001)\), and
+multi-race \((3.04 \pm 1.02, p<.001)\).
+
+\subsection{BMI}\label{bmi}
+
+A one-way ANOVA was conducted to determine if total anti-fat bias
+differed by BMI. There were statistically significant differences in
+total AFAT scores between different levels of BMI,
+\(F(2, 282) = 3.278, p < .05\). Those participants in the healthy BMI
+category \((2.06 \pm .51)\) had significantly greater total AFAT scores
+compared to those in the obese BMI category
+\((1.79 \pm .53), p = .034\). A one-way MANOVA was run to determine if
+anti-fat bias subscales differed by BMI. AFAT scores were highest for
+the physical subscale \((2.71 \pm 0.91)\) and lowest for the social
+subscale \((1.44 \pm 0.45)\), with the blame subscale scores between
+\((2.19 \pm 0.74)\). There were significant differences in the AFAT
+subscale scores between BMI categories,
+\(F(6, 560) = 2.126, p = .049; \text{Pillai’s Trace} = .044; \text{partial } \eta^2 = .022\).
+Tukey post-hoc tests demonstrated that participants in the healthy BMI
+category reported significantly greater AFAT blame scores
+\((2.27 \pm .70)\) than participants in the obese BMI category
+\((1.76 \pm .77, p = .003)\).
+
+\subsection{Role in Industry}\label{role-in-industry}
+
+A one-way ANOVA was conducted to determine if total anti-fat bias
+differed by role in the industry. There were no statistically
+significant differences in total AFAT scores between roles,
+\(F(2, 287) = 0.487, p = .615\). A one-way MANOVA was run to determine
+if anti-fat bias subscales differed by role in the industry. AFAT scores
+were highest for the physical subscale \((2.69 \pm 0.92)\) and lowest
+for the social subscale \((1.43 \pm 0.50)\), with the blame subscale
+scores between \((2.17 \pm 0.74)\). There were no significant
+differences in any of the AFAT subscale scores between the different
+industry roles,
+\(F(6, 572) = 1.60, p = .142; \text{Pillai’s Trace} = .033; \text{partial } \eta^2 = .017\).
+
+\subsection{Education}\label{education}
+
+A one-way ANOVA was conducted to determine if total anti-fat bias
+differed by education level. There were no statistically significant
+differences in total AFAT scores between education levels,
+\(F(6, 282) = 1.528, p = .169\). A one-way MANOVA was run to determine
+if anti-fat bias subscales differed by education level. AFAT scores were
+highest for the physical subscale \((2.69 \pm 0.92)\) and lowest for the
+social subscale \((1.43 \pm 0.45)\), with the blame subscale scores
+between \((2.17 \pm 0.74)\). There were no statistically significant
+differences in the AFAT subscale scores between different levels of
+education,
+\(F(18,846) = 0.083, p = .158; \text{Pillai’s Trace} = .083; \text{partial } \eta^2 = .028\).
+
+\subsection{Income}\label{income}
+
+A one-way ANOVA was conducted to determine if total anti-fat bias
+differed by income level. Homogeneity of variances was violated, as
+assessed by Levene's Test of Homogeneity of Variance \((p = .028)\).
+Therefore, Welch's F and Games-Howell were used to assess significance.
+There were no statistically significant differences in total AFAT scores
+between the different income groups, Welch's F
+\((7, 108.923) = 1.472, p = .185\). A one-way MANOVA was run to
+determine if anti-fat bias subscales differed by income level. AFAT
+scores were highest for the physical subscale \((2.70 \pm 0.92)\) and
+lowest for the social subscale \((1.43 \pm 0.45)\), with the blame
+subscale scores between \((2.17 \pm 0.73)\). There were no statistically
+significant differences in the AFAT subscale scores between different
+levels of income,
+\(F(21,819) = 1.39, p = .141; \text{Pillai’s Trace} = .100; \text{partial } \eta^2 = .033\).
+
+\section{Discussion}\label{discussion}
+
+A key finding from this study is that a fitness professional's BMI
+interacts with their gender and education level in relation to total
+weight bias. Women in the healthy and overweight BMI category had
+significantly greater total weight bias compared to those in the obese
+BMI category. This supports previous findings that higher BMI is
+associated with lower anti-fat bias (Elran-Barak \& Bar-Anan, 2018;
+Marini et al., 2013). These findings suggest that being in a smaller
+body increases women's likelihood of exhibiting greater anti-fat biases.
+Results from this study demonstrate that those with more education
+reported greater weight biases in smaller (i.e., healthy BMI category)
+and larger bodies (i.e., overweight BMI category) than those with less
+education who only reported greater weight biases in smaller bodies.
+Previous research has found that as physical education students advance
+in their degrees, they will likely demonstrate greater weight bias
+(O'Brien et al., 2007; Wijayatunga et al., 2019). Therefore, a
+relationship between education level and severity of weight biases may
+exist whereby, despite being in a larger body, students with more
+education may be more likely to hold negative beliefs about individuals
+in larger bodies due to internalizing the weight biases inherent in
+health education (Zaroubi et al., 2021).
+
+Results from this study and others demonstrate that men reported
+significantly greater anti-fat biases when controlling for BMI than
+women (Chambliss et al., 2004; Langdon et al., 2016). From a societal
+perspective, it is more acceptable for men to be in larger bodies than
+women (Heise et al., 2019). However, when BMI was included in this
+study's analysis, women with smaller bodies were the ones who held
+greater anti-fat biases. The drive for thinness that is perpetuated in
+the fitness industry may contribute to women internalizing messaging
+about what it means to be in a larger body, which may contribute to
+having a greater anti-fat bias.
+
+Both females and males in the healthy BMI category reported
+significantly greater total weight bias compared to those in the obese
+BMI category. These findings result from cultural norms where larger
+bodies are often viewed as less desirable than smaller bodies. This is
+seen in the fitness industry's lack of images of people with larger
+bodies and the current culture of dismissing people as less able, less
+self-disciplined, and lacking willpower (Foster et al., 2003; Hebl \&
+Xu, 2001). Interestingly, fitness professionals in this study with
+moderate body dissatisfaction and a desire to be smaller reported
+significantly lower total and social weight bias than those without no
+dissatisfaction. Experiencing body dissatisfaction may increase empathy
+towards individuals in larger bodies, thereby reducing their weight
+bias. However, further examination is necessary to better understand
+this relationship. Similarly, the two levels of education associated
+with influencing the relationship between BMI and total AFAT scores
+(some college and having a Master's Degree) are separated by two
+additional levels of education (Associate Degree and Bachelor's Degree),
+which makes drawing any conclusion about the relationship between
+education, BMI, and anti-fat bias difficult. Thus, further research
+examining this relationship is warranted as well.
+
+Regardless of age, gender, body dissatisfaction, race, role in industry,
+income, or education, total AFAT scores and all AFAT subscale scores
+were below the anti-fat bias threshold 3. Dimmock et al.~(2009) reported
+similar results with mean explicit weight bias values of 1.65, 2.66, and
+2.92 for social, physical, and blame AFAT subscales. However,
+conflicting research demonstrates that fitness professionals possess
+strong implicit anti-fat biases (Dimmock et al., 2009; Fontana et al.,
+2018; Robertson \& Vohora, 2008). The differences in findings could
+result from measuring implicit versus explicit weight bias, where
+implicit bias measures biases that emerge subconsciously without
+awareness, and explicit bias measures conscious biases (Gawronski \&
+Bodenhausen, 2006). A limitation of this study was the use of explicit
+rather than implicit weight bias measures, which increases the
+likelihood of response bias. The participants who chose to complete this
+study have more favorable attitudes towards individuals in larger
+bodies, which is why they were interested in participating. Future
+research should examine how social identities and industry roles
+influence implicit weight biases in the fitness industry.
+
+Despite AFAT scores not being below the anti-fat bias threshold,
+participants still reported anti-fat beliefs, particularly for the
+physical and blame subscales. The blame AFAT score was consistently the
+greatest of all of the AFAT subscales for each of the IVs, and
+participants in the healthy BMI category had significantly greater AFAT
+blame scores compared to individuals in the obese category. While this
+is the first study to demonstrate such findings in fitness
+professionals, Chambliss et al.~(2004) and Dimmock et al.~(2009)
+reported similar, high blame subscale scores in exercise science
+students and fitness center employees, respectively. In most fitness
+certifications and curricula, there is a strong focus on preventing
+obesity, where there is often an oversimplification of obesity, which
+blames and stigmatizes individuals in larger bodies (Roehling et al.,
+2007; Tesh \& Tesh, 1988). Interventions designed to reduce weight bias
+by including information about the complex nature of obesity (e.g.,
+uncontrollable causes of obesity) have been shown to successfully reduce
+blame (Rukavina et al., 2010; Wijayatunga et al., 2019) and social
+weight bias (Rukavina et al., 2010) in undergraduate students. While
+future research examining the effect of similar interventions on weight
+biases in fitness professionals might be useful, Gibson (2021) argues
+that even fat activists who try to resolve individuals in larger bodies
+of responsibility associated with their size inadvertently support the
+notion of blame. By arguing that individuals in larger bodies who
+exercise and eat well are naturally larger and ``innocent'' of their
+body size (a term Gibson deems ``good fatty''), fat activists highlight
+the notion that those in larger bodies who are not active or eating well
+(``bad fatty) are''guilty'' and therefore to blame for their bodies.
+Thus, the cognitive response of blame in relation to one's body size is
+further exasperated.
+
+An additional novel finding in this study was the difference in anti-fat
+bias based on one's race. In opposition to Perez-Lopez et al.~(2001),
+who reported greater anti-fat attitudes in White individuals, White
+participants in this study reported significantly lower total anti-fat
+bias compared to Black, Asian, and Hispanic participants. Similarly,
+White participants reported significantly lower AFAT physical scores
+compared to every other race. This finding contradicts Puhl et
+al.~(2015), who found that in a U.S. sample, Black participants scored
+lower on fat phobia and fat bias measures compared to White
+participants. In the current study, breaking down weight bias
+specifically into the physical subscale provides an important context
+for the contradictory finding. The physical subscale represents how
+attractive or unattractive one finds fat people. This is particularly
+relevant for the sample population, where social norms within the
+fitness industry uniquely prime individuals to have stronger weight
+biases by framing weight loss goals to improve attractiveness.
+
+Societally, we are primed to view thin, white bodies as more attractive,
+which is rooted in a racist history (Strings, 2020). Research
+demonstrates that greater exposure to anti-fat culture leads to stronger
+anti-fat attitudes (Durso \& Latner, 2008; O'Brien et al., 2007), which
+leads to internalizing such messages (Mensinger et al., 2016; Pearl et
+al., 2019) However, more recent messaging around body positivity, which
+aims to counter the views that only thin bodies are attractive and
+worthy, has been criticized as a white feminist perspective (Johansson,
+2021). If bodies other than the white, thin ideal are considered to be
+unattractive, it is too much to challenge dominant stereotypes to accept
+all other deviant aspects of non-white fat bodies (e.g., race, hair,
+etc.); therefore, white women are the only group allowed the privilege
+of viewing their own larger bodies as attractive or adopt self-love
+(Johansson, 2021; Strings et al., 2019). This can then reinforce
+internalized views of unattractiveness for non-white fitness
+professionals, as they have not been able to receive the benefits of
+body positivity under white supremacy.
+
+In addition, other aspects of the fitness industry function under white
+privilege. White fitness professionals are more likely to have control
+and ownership over fitness spaces, which can make it challenging to
+create spaces that counter racist attitudes (Strings, 2020; Strings et
+al., 2019). People of color and those in larger bodies continue to be
+underrepresented in the fitness industry and have likely experienced
+many other biases themselves, which leads to a greater potential for
+internalizing other biases prevalent in the industry.
+
+Another area that needs continued exploration is the influence of one's
+role in the industry on weight biases. While this paper sought to
+understand this relationship, the small sample size within each role
+made it difficult to make comparisons, which limited the analysis to
+only comparing three roles. Additionally, most fitness professionals
+have many roles in the industry (e.g., personal trainer and group
+fitness instructor), which makes interpreting data difficult. It is also
+possible that the type of certification (rather than a role in the
+industry) influenced weight bias more.
+
+\subsection{Conclusion}\label{conclusion}
+
+This study reveals complex relationships in anti-fat biases among
+fitness professionals. The interaction between BMI, gender, and
+education level reveals intriguing patterns, challenging conventional
+assumptions about weight biases within the fitness industry. Both
+genders in the healthy BMI category express greater weight biases,
+indicating societal favoritism towards smaller bodies. Despite
+participants scoring below the defined anti-fat bias threshold, the
+persistence of anti-fat beliefs, especially in the blame subscale, calls
+attention to underlying biases not fully captured by explicit measures.
+The blame directed towards individuals in larger bodies may be
+perpetuated by oversimplified narratives surrounding obesity prevalent
+in fitness certifications and curricula. The study also breaks new
+ground by exploring racial disparities in anti-fat biases within the
+fitness industry. The unexpected finding that White participants report
+lower anti-fat biases challenges previous research, pointing to the
+unique influence of the fitness industry's culture on shaping
+perceptions. This underscores the importance of considering
+industry-specific contexts in understanding weight biases.
+
+In conclusion, this study unravels intricate dynamics of weight biases
+in fitness professionals, challenging assumptions and emphasizing
+industry-specific influences. It calls for ongoing research to
+comprehensively understand the multifaceted factors shaping biases in
+this unique professional domain. This study uses a diverse sample to
+advance the current literature on weight bias concerns in the fitness
+industry. This novel research is a necessary first step to future
+research (e.g., intervention studies) that explores how biases in the
+fitness industry influence the health behaviors of those seeking fitness
+guidance.
+
+\section{References}\label{references}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-chambliss2004a}
+Chambliss, H. O., Finley, C. E., \& Blair, S. N. (2004). Attitudes
+toward obese individuals among exercise science students. \emph{Medicine
+\& Science in Sports \& Exercise}, \emph{36}(3), 468--474.
+\url{https://doi.org/10.1249/01.mss.0000117115.94062.e4}
+
+\bibitem[\citeproctext]{ref-debarr2016a}
+DeBarr, K., \& Pettit, M. (2016). Weight matters: Health educators'
+knowledge of obesity and attitudes toward people who are obese.
+\emph{American Journal of Health Education}, \emph{47}(6), 365--372.
+\url{https://doi.org/10.1080/19325037.2016.1219282}
+
+\bibitem[\citeproctext]{ref-dimmock2009a}
+Dimmock, J. A., Hallett, B. E., \& Grove, R. J. (2009). Attitudes toward
+overweight individuals among fitness center employees: An examination of
+contextual effects. \emph{Research Quarterly for Exercise and Sport},
+\emph{80}(3), 641--647.
+\url{https://doi.org/10.1080/02701367.2009.10599603}
+
+\bibitem[\citeproctext]{ref-durso2008a}
+Durso, L. E., \& Latner, J. D. (2008). Understanding self‐directed
+stigma: Development of the weight bias internalization scale.
+\emph{Obesity}, \emph{16}(S2), 80--86.
+\url{https://doi.org/10.1038/oby.2008.448}
+
+\bibitem[\citeproctext]{ref-elran-barak2018a}
+Elran-Barak, R., \& Bar-Anan, Y. (2018). Implicit and explicit anti-fat
+bias: The role of weight-related attitudes and beliefs. \emph{Social
+Science \& Medicine}, \emph{204}, 117--124.
+\url{https://doi.org/10.1016/j.socscimed.2018.03.018}
+
+\bibitem[\citeproctext]{ref-fontana2018a}
+Fontana, F., Bopes, J., Bendixen, S., Speed, T., George, M., \& MACK, M.
+(2018). Discrimination against obese exercise clients: An experimental
+study of personal trainers. \emph{International Journal of Exercise
+Science}, \emph{11}(5), 116.
+
+\bibitem[\citeproctext]{ref-fontana2013a}
+Fontana, F., Furtado Jr, O., Marston, R., Mazzardo Jr, O., \& Gallagher,
+D. (2013). Anti-fat bias among physical education teachers and majors.
+\emph{Physical Educator}, \emph{70}(1), 15.
+
+\bibitem[\citeproctext]{ref-fontana2017a}
+Fontana, F., Furtado Jr, O., Mazzardo Jr, O., Hong, D., \& Campos, W.
+de. (2017). Anti-fat bias by professors teaching physical education
+majors. \emph{European Physical Education Review}, \emph{23}(1),
+127--138. \url{https://doi.org/10.1177/1356336X16643304}
+
+\bibitem[\citeproctext]{ref-foster2003a}
+Foster, G. D., Wadden, T. A., Makris, A. P., Davidson, D., Sanderson, R.
+S., Allison, D. B., \& Kessler, A. (2003). Primary care physicians'
+attitudes about obesity and its treatment. \emph{Obesity Research},
+\emph{11}(10), 1168--1177. \url{https://doi.org/10.1038/oby.2003.161}
+
+\bibitem[\citeproctext]{ref-fritz2012a}
+Fritz, C. O., Morris, P. E., \& Richler, J. J. (2012). Effect size
+estimates: Current use, calculations, and interpretation. \emph{Journal
+of Experimental Psychology: General}, \emph{141}(1), 2.
+\url{https://doi.org/10.1037/a0024338}
+
+\bibitem[\citeproctext]{ref-gardner2010a}
+Gardner, R. M., \& Brown, D. L. (2010). Body image assessment: A review
+of figural drawing scales. \emph{Personality and Individual
+Differences}, \emph{48}(2), 107--111.
+\url{https://doi.org/10.1016/j.paid.2009.08.017}
+
+\bibitem[\citeproctext]{ref-gawronski2006a}
+Gawronski, B., \& Bodenhausen, G. V. (2006). Associative and
+propositional processes in evaluation: An integrative review of implicit
+and explicit attitude change. \emph{Psychological Bulletin},
+\emph{132}(5), 692. \url{https://doi.org/10.1037/0033-2909.132.5.692}
+
+\bibitem[\citeproctext]{ref-gibson2022a}
+Gibson, G. (2022). Health (ism) at every size: The duties of the {``good
+fatty.''} \emph{Fat Studies}, \emph{11}(1), 22--35.
+\url{https://doi.org/10.1080/21604851.2021.1906526}
+
+\bibitem[\citeproctext]{ref-gordon2020a}
+Gordon, A. (2020). \emph{What we don't talk about when we talk about
+fat}. Beacon Press.
+
+\bibitem[\citeproctext]{ref-guidi2021a}
+Guidi, J., Lucente, M., Sonino, N., \& Fava, G. A. (2021). Allostatic
+load and its impact on health: A systematic review. \emph{Psychotherapy
+and Psychosomatics}, \emph{90}(1), 11--27.
+\url{https://doi.org/10.1159/000510696}
+
+\bibitem[\citeproctext]{ref-hebl2001a}
+Hebl, M. R., \& Xu, J. (2001). Weighing the care: Physicians' reactions
+to the size of a patient. \emph{International Journal of Obesity},
+\emph{25}(8), 1246--1252. \url{https://doi.org/10.1038/sj.ijo.0801681}
+
+\bibitem[\citeproctext]{ref-heise2019a}
+Heise, L., Greene, M. E., Opper, N., Stavropoulou, M., Harper, C.,
+Nascimento, M., Zewdie, D., Darmstadt, G. L., Greene, M. E., \& Hawkes,
+S. (2019). Gender inequality and restrictive gender norms: Framing the
+challenges to health. \emph{The Lancet}, \emph{393}(10189), 2440--2454.
+\url{https://doi.org/10.1016/S0140-6736(19)30652-X}
+
+\bibitem[\citeproctext]{ref-johansson2021a}
+Johansson, A. (2021). Fat, black and unapologetic: Body positive
+activism beyond white, neoliberal rights discourses. In
+\emph{Pluralistic struggles in gender, sexuality and coloniality:
+Challenging swedish exceptionalism} (pp. 113--146).
+
+\bibitem[\citeproctext]{ref-langdon2016a}
+Langdon, J., Rukavina, P., \& Greenleaf, C. (2016). Predictors of
+obesity bias among exercise science students. \emph{Advances in
+Physiology Education}, \emph{40}(2), 157--164.
+\url{https://doi.org/10.1152/advan.00185.2015}
+
+\bibitem[\citeproctext]{ref-lewis1997a}
+Lewis, R. J., Cash, T. F., \& Bubb‐Lewis, C. (1997). Prejudice toward
+fat people: The development and validation of the antifat attitudes
+test. \emph{Obesity Research}, \emph{5}(4), 297--307.
+\url{https://doi.org/10.1002/j.1550-8528.1997.tb00555.x}
+
+\bibitem[\citeproctext]{ref-marini2013a}
+Marini, M., Sriram, N., Schnabel, K., Maliszewski, N., Devos, T.,
+Ekehammar, B., Wiers, R., HuaJian, C., Somogyi, M., \& Shiomura, K.
+(2013). Overweight people have low levels of implicit weight bias, but
+overweight nations have high levels of implicit weight bias. \emph{PloS
+One}, \emph{8}(12), 83543.
+\url{https://doi.org/10.1371/journal.pone.0083543}
+
+\bibitem[\citeproctext]{ref-maskedreference}
+Masked Citation. (n.d.). \emph{Masked Title}.
+
+\bibitem[\citeproctext]{ref-mensinger2016a}
+Mensinger, J. L., Calogero, R. M., \& Tylka, T. L. (2016). Internalized
+weight stigma moderates eating behavior outcomes in women with high BMI
+participating in a healthy living program. \emph{Appetite}, \emph{102},
+32--43. \url{https://doi.org/10.1016/j.appet.2016.01.033}
+
+\bibitem[\citeproctext]{ref-milburn2019a}
+Milburn, N. G., Beatty, L., \& Lopez, S. A. (2019). Understanding,
+unpacking, and eliminating health disparities: A prescription for health
+equity promotion through behavioral and psychological research---an
+introduction. \emph{Cultural Diversity and Ethnic Minority Psychology},
+\emph{25}(1), 1. \url{https://doi.org/10.1037/cdp0000266}
+
+\bibitem[\citeproctext]{ref-obrien2007a}
+O'Brien, K. S., Hunter, J. A., \& Banks, M. (2007). Implicit anti-fat
+bias in physical educators: Physical attributes, ideology and
+socialization. \emph{International Journal of Obesity}, \emph{31}(2),
+308--314. \url{https://doi.org/10.1038/sj.ijo.0803398}
+
+\bibitem[\citeproctext]{ref-pearl2019a}
+Pearl, R., Himmelstein, M., Puhl, R., Wadden, T., Wojtanowski, A., \&
+Foster, G. (2019). Weight bias internalization in a commercial weight
+management sample: Prevalence and correlates. \emph{Obesity Science \&
+Practice}, \emph{5}(4), 342--353. \url{https://doi.org/10.1002/osp4.354}
+
+\bibitem[\citeproctext]{ref-perez2001a}
+Perez‐Lopez, M. S., Lewis, R. J., \& Cash, T. F. (2001). The
+relationship of antifat attitudes to other prejudicial and
+gender‐related attitudes. \emph{Journal of Applied Social Psychology},
+\emph{31}(4), 683--697.
+\url{https://doi.org/10.1111/j.1559-1816.2001.tb01408.x}
+
+\bibitem[\citeproctext]{ref-puhl2015a}
+Puhl, R. M., Latner, J., O'Brien, K., Luedicke, J., Daníelsdóttir, S.,
+\& Forhan, M. (2015). A multinational examination of weight bias:
+Predictors of anti-fat attitudes across four countries.
+\emph{International Journal of Obesity}, \emph{39}(7), 1166--1173.
+\url{https://doi.org/10.1038/ijo.2015.32}
+
+\bibitem[\citeproctext]{ref-robertson2008a}
+Robertson, N., \& Vohora, R. (2008). Fitness vs. Fatness: Implicit bias
+towards obesity among fitness professionals and regular exercisers.
+\emph{Psychology of Sport and Exercise}, \emph{9}(4), 547--557.
+\url{https://doi.org/10.1016/j.psychsport.2007.06.002}
+
+\bibitem[\citeproctext]{ref-roehling2007a}
+Roehling, M. V., Roehling, P. V., \& Pichler, S. (2007). The
+relationship between body weight and perceived weight-related employment
+discrimination: The role of sex and race. \emph{Journal of Vocational
+Behavior}, \emph{71}(2), 300--318.
+\url{https://doi.org/10.1016/j.jvb.2007.04.008}
+
+\bibitem[\citeproctext]{ref-rukavina2010a}
+Rukavina, P. B., Li, W., Shen, B., \& Sun, H. (2010). A service learning
+based project to change implicit and explicit bias toward obese
+individuals in kinesiology pre-professionals. \emph{Obesity Facts},
+\emph{3}(2), 117--126. \url{https://doi.org/10.1159/000302794}
+
+\bibitem[\citeproctext]{ref-sartore2007a}
+Sartore, M. L., \& Cunningham, G. B. (2007). Weight discrimination,
+hiring recommendations, person--job fit, and attributions:
+Fitness-industry implications. \emph{Journal of Sport Management},
+\emph{21}(2), 172--193. \url{https://doi.org/10.1123/jsm.21.2.172}
+
+\bibitem[\citeproctext]{ref-schwartz2003a}
+Schwartz, M. B., Chambliss, H. O., Brownell, K. D., Blair, S. N., \&
+Billington, C. (2003). Weight bias among health professionals
+specializing in obesity. \emph{Obesity Research}, \emph{11}(9),
+1033--1039. \url{https://doi.org/10.1038/oby.2003.142}
+
+\bibitem[\citeproctext]{ref-strings2020a}
+Strings, S. (2020). \emph{Fearing the black body: The racial origins of
+fat phobia}. Oxford University Press.
+\url{https://doi.org/10.1177/0094306120915912nn}
+
+\bibitem[\citeproctext]{ref-strings2019a}
+Strings, S., Headen, I., \& Spencer, B. (2019). Yoga as a technology of
+femininity: Disciplining white women, disappearing people of color in
+yoga journal. \emph{Fat Studies}, \emph{8}(3), 334--348.
+\url{https://doi.org/10.1080/21604851.2019.1583527}
+
+\bibitem[\citeproctext]{ref-sutin2013a}
+Sutin, A. R., \& Terracciano, A. (2013). Perceived weight discrimination
+and obesity. \emph{PloS One}, \emph{8}(7), 70048.
+\url{https://doi.org/10.1371/journal.pone.0070048}
+
+\bibitem[\citeproctext]{ref-tesh1988a}
+Tesh, S. N., \& Tesh, S. (1988). \emph{Hidden arguments: Political
+ideology and disease prevention policy}. Rutgers University Press.
+
+\bibitem[\citeproctext]{ref-vartanian2011a}
+Vartanian, L. R., \& Novak, S. A. (2011). Internalized societal
+attitudes moderate the impact of weight stigma on avoidance of exercise.
+\emph{Obesity}, \emph{19}(4), 757--762.
+\url{https://doi.org/10.1038/oby.2010.234}
+
+\bibitem[\citeproctext]{ref-washington2011a}
+Washington, R. L. (2011). Childhood obesity: Issues of weight bias.
+\emph{Preventing Chronic Disease}, \emph{8}(5).
+
+\bibitem[\citeproctext]{ref-wijayatunga2019a}
+Wijayatunga, N. N., Kim, Y., Butsch, W. S., \& Dhurandhar, E. J. (2019).
+The effects of a teaching intervention on weight bias among kinesiology
+undergraduate students. \emph{International Journal of Obesity},
+\emph{43}(11), 2273--2281.
+\url{https://doi.org/10.1038/s41366-019-0325-0}
+
+\bibitem[\citeproctext]{ref-zaroubi2021a}
+Zaroubi, L., Samaan, T., \& Alberga, A. S. (2021). Predictors of weight
+bias in exercise science students and fitness professionals: A scoping
+review. \emph{Journal of Obesity}.
+\url{https://doi.org/10.1155/2021/5597452}
+
+\end{CSLReferences}
+
+
+
+
+
+\end{document}

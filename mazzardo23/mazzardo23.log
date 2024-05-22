@@ -1,16 +1,17 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.7)  5 JUL 2023 15:09
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.15)  21 JUL 2023 14:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **mazzardo23.tex
 (./mazzardo23.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-06-05> (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/apa7/apa7.cls
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-06-30>
+(/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/apa7/apa7.cls
 Document Class: apa7 2022/07/25 v2.16 APA formatting (7th edition)
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count181
 \c@section=\count182
@@ -71,7 +72,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 Package: geometry 2020/01/02 v5.9 Page Geometry
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks17
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
@@ -88,7 +89,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutheight=\dimen146
 \Gm@layouthoffset=\dimen147
 \Gm@layoutvoffset=\dimen148
-\Gm@dimlist=\toks17
+\Gm@dimlist=\toks18
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
@@ -127,7 +128,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \LMex=\skip58
 \LMpt=\skip59
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks18
+\pgfutil@everybye=\toks19
 \pgfutil@tempdima=\dimen153
 \pgfutil@tempdimb=\dimen154
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -139,10 +140,10 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks19
-\pgfkeys@temptoks=\toks20
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks21
+\pgfkeys@tmptoks=\toks22
 ))
 \pgf@x=\dimen155
 \pgf@y=\dimen156
@@ -160,9 +161,9 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \c@pgf@countb=\count197
 \c@pgf@countc=\count198
 \c@pgf@countd=\count199
-\t@pgf@toka=\toks22
-\t@pgf@tokb=\toks23
-\t@pgf@tokc=\toks24
+\t@pgf@toka=\toks23
+\t@pgf@tokb=\toks24
+\t@pgf@tokc=\toks25
 \pgf@sys@id@count=\count266
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
@@ -203,9 +204,9 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 \pgfmath@dimen=\dimen165
 \pgfmath@count=\count270
 \pgfmath@box=\box52
-\pgfmath@toks=\toks25
-\pgfmath@stack@operand=\toks26
-\pgfmath@stack@operation=\toks27
+\pgfmath@toks=\toks26
+\pgfmath@stack@operand=\toks27
+\pgfmath@stack@operation=\toks28
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count271
 )) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
@@ -288,8 +289,8 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen192
 \pgffor@skip=\dimen193
-\pgffor@stack=\toks28
-\pgffor@toks=\toks29
+\pgffor@stack=\toks29
+\pgffor@toks=\toks30
 )) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
@@ -323,7 +324,7 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2023-05-16 v7.00y Hypertext links for LaTeX
+Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -347,7 +348,7 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2023-05-16 v2.51 Cross-referencing by name of section
+Package: nameref 2023-08-07 v2.53 Cross-referencing by name of section
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
@@ -361,13 +362,13 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 \Hy@linkcounter=\count285
 \Hy@pagecounter=\count286
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2023-05-16 v7.00y Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count287
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2023-05-16 v7.00y Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 4050.
 Package hyperref Info: Hyper figures OFF on input line 4167.
@@ -409,7 +410,7 @@ package with kernel methods
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2023-05-16 v7.00y Hyperref driver for XeTeX
+File: hxetex.def 2023-07-08 v7.01b Hyperref driver for XeTeX
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
@@ -529,7 +530,7 @@ Package: endfloat 2019/04/15 v2.7 LaTeX2e package puts figures and tables at end
 \efloat@postfff=\write5
 \@ef@fffopen=\count311
 )) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2023-06-05 L3 programming layer (loader) 
+Package: expl3 2023-06-30 L3 programming layer (loader) 
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2023-04-19 L3 backend support: XeTeX
 \g__graphics_track_int=\count312
@@ -566,7 +567,7 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@dima=\skip84
 \bigstrutjot=\dimen291
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \c@tracingmulticols=\count328
 \mult@box=\box66
 \multicol@leftmargin=\dimen292
@@ -583,12 +584,12 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \multicolbaselineskip=\skip86
 \partial@page=\box67
 \last@line=\box68
+\mc@boxedresult=\box69
 \maxbalancingoverflow=\dimen297
-\mult@rightbox=\box69
-\mult@grightbox=\box70
-\mult@firstbox=\box71
-\mult@gfirstbox=\box72
-\@tempa=\box73
+\mult@rightbox=\box70
+\mult@grightbox=\box71
+\mult@firstbox=\box72
+\mult@gfirstbox=\box73
 \@tempa=\box74
 \@tempa=\box75
 \@tempa=\box76
@@ -624,28 +625,29 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \@tempa=\box106
 \@tempa=\box107
 \@tempa=\box108
+\@tempa=\box109
 \c@minrows=\count334
 \c@columnbadness=\count335
 \c@finalcolumnbadness=\count336
 \last@try=\dimen298
 \multicolovershoot=\dimen299
 \multicolundershoot=\dimen300
-\mult@nat@firstbox=\box109
-\colbreak@box=\box110
+\mult@nat@firstbox=\box110
+\colbreak@box=\box111
 \mc@col@check@num=\count337
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen301
-\ar@mcellbox=\box111
+\ar@mcellbox=\box112
 \extrarowheight=\dimen302
-\NC@list=\toks30
+\NC@list=\toks31
 \extratabsurround=\skip87
 \backup@length=\skip88
-\ar@cellbox=\box112
+\ar@cellbox=\box113
 )
-\everycr=\toks31
+\everycr=\toks32
 \minrowclearance=\skip89
 \rownum=\count338
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty
@@ -661,32 +663,32 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTpost=\skip95
 \LTchunksize=\count339
 \LTcapwidth=\dimen303
-\LT@head=\box113
-\LT@firsthead=\box114
-\LT@foot=\box115
-\LT@lastfoot=\box116
-\LT@gbox=\box117
+\LT@head=\box114
+\LT@firsthead=\box115
+\LT@foot=\box116
+\LT@lastfoot=\box117
+\LT@gbox=\box118
 \LT@cols=\count340
 \LT@rows=\count341
 \c@LT@tables=\count342
 \c@LT@chunks=\count343
-\LT@p@ftn=\toks32
+\LT@p@ftn=\toks33
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count344
-\float@exts=\toks33
-\float@box=\box118
-\@float@everytoks=\toks34
-\@floatcapt=\box119
+\float@exts=\toks34
+\float@box=\box119
+\@float@everytoks=\toks35
+\@floatcapt=\box120
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen304
 \WF@size=\dimen305
 \c@WF@wrappedlines=\count345
-\WF@box=\box120
-\WF@everypar=\toks35
+\WF@box=\box121
+\WF@everypar=\toks36
 Package: wrapfig 2003/01/31  v 3.6
 )
-\@float@every@codelisting=\toks36
+\@float@every@codelisting=\toks37
 \c@codelisting=\count346
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
@@ -695,51 +697,51 @@ Package caption Info: New subtype `subfigure' on input line 239.
 Package caption Info: New subtype `subtable' on input line 239.
 \c@subtable=\count348
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2023/03/17 version 6.0.3 text color boxes
+Package: tcolorbox 2023/06/19 version 6.0.4 text color boxes
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks37
-\verbatim@line=\toks38
+\every@verbatim=\toks38
+\verbatim@line=\toks39
 \verbatim@in@stream=\read3
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks39
+\@envbody=\toks40
 )
-\tcb@titlebox=\box121
-\tcb@upperbox=\box122
-\tcb@lowerbox=\box123
-\tcb@phantombox=\box124
+\tcb@titlebox=\box122
+\tcb@upperbox=\box123
+\tcb@lowerbox=\box124
+\tcb@phantombox=\box125
 \c@tcbbreakpart=\count349
 \c@tcblayer=\count350
 \c@tcolorbox@number=\count351
-\tcb@temp=\box125
 \tcb@temp=\box126
 \tcb@temp=\box127
 \tcb@temp=\box128
+\tcb@temp=\box129
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '6.0.3'
+Library (tcolorbox): 'tcbskins.code.tex' version '6.0.4'
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
 Package: tikzfill.image 2022/07/20 v1.0.0 Image filling library for TikZ
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
 Package: tikzfill-common 2022/07/20 v1.0.0 Auxiliary code for tikzfill
 ) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2022/07/20 v1.0.0 Image filling library
-\l__tikzfill_img_box=\box129
+\l__tikzfill_img_box=\box130
 )) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.0.3'
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.0.4'
 )) (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '6.0.3'
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.0.4'
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/pdfcol/pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
 )
 Package pdfcol Info: pdfTeX's color stacks are not available.
-\tcb@testbox=\box130
-\tcb@totalupperbox=\box131
-\tcb@totallowerbox=\box132
+\tcb@testbox=\box131
+\tcb@totalupperbox=\box132
+\tcb@totallowerbox=\box133
 ))
 \cslhangindent=\skip96
 \csllabelwidth=\skip97
@@ -761,7 +763,7 @@ LaTeX Font Info:    ... okay on input line 128.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 128.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 128.
 (/Users/ovandef/Library/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 128.
 LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 128.
@@ -879,11 +881,11 @@ Runaway argument?
 <*> mazzardo23.tex
                    
 Here is how much of TeX's memory you used:
- 28831 strings out of 478622
- 624682 string characters out of 5846219
- 1859388 words of memory out of 5000000
- 48540 multiletter control sequences out of 15000+600000
- 538621 words of font info for 61 fonts, out of 8000000 for 9000
+ 28556 strings out of 477869
+ 613862 string characters out of 5821587
+ 1923875 words of memory out of 5000000
+ 49018 multiletter control sequences out of 15000+600000
+ 583303 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,12n,103p,625b,722s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

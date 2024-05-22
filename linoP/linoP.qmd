@@ -1,89 +1,63 @@
 ---
-title: "Using Quarto to Generate MS Word Documents in APA Style (7th Edition)"
+title: "Investigating Expert-Rater Agreement and Inter/Intra-Rater Reliability of Two Fundamental Movement Skills for the Locomotor Subscale of the FG-COMPASS"
 # Lines above title in .docx format
 blank-lines-above-title: 2
 # If blank, the running header is the title in upper case.
-shorttitle: Template for the APAquarto Format
+shorttitle: RELIABILITY OF TWO SCALES
 # Set names and affiliations.
 # It is nice to specify everyone's orcid, if possible.
 # There can be only one corresponding author.
 author:
-  - name: Ana Fulana
-    corresponding: true
-    orcid: 0000-0000-0000-0000
-    email: sm@example.org
-    url: https://example.org/
-    # Roles are optional
-    # Select from the CRediT: Contributor Roles Taxonomy https://credit.niso.org/
-    # Conceptualization, Data curation, Formal Analysis, Funding acquisition, Investigation, 
-    # Methodology, Project administration, Resources, Software, Supervision, Validation, 
-    # Visualization, Writing – original draft, Writing – review & editing
-    role:
-      - Conceptualization
-      - Writing - original draft
+  - name: Lino Perez
+    corresponding: false
+    orcid: 0009-0008-3616-2964
     affiliations:
       - id: id1
-        name: Ana and Blanca's University
-        department: Department of Psychology
-        address: 1234 Capital St.
-        city: Albany
-        region: NY
-        postal-code: 12084-1234
-  - name: Blanca Zutana
-    role:
-      - Project administration
+        name: California State University, Northridge
+        department: Department of Kinesiology
+  - name: Ovande Furtado Jr
+    corresponding: true
+    orcid: 0000-0003-3847-6314 
+    email: ovande@gmail.com (818-564-7507)
     affiliations: 
-      - ref: id1
-  - name: Carina Mengana
-    orcid: 0000-0000-0000-0001
-    role:
-      - Formal Analysis
-    affiliations:
-      - name: Carina's Primary Affiliation
-      - name: Carina's Secondary Affiliation
-    # Because Dolorita is unaffiliated, specify her city instead
-  - name: Dolorita Perengana
-    orcid: 0000-0000-0000-0003
-    role:
-      - Writing - review & editing
-      - Methodology
-      - Formal Analysis
-    affiliations:
-      - name: ~
-        city: Buffalo
-        region: NY
+    - name: California State University, Northridge
+      department: Department of Kinesiology
+      address: 18111 Nordhoff St
+      city: Northridge
+      region: CA
+      postal-code: 91330-8287
 author-note:
   blank-lines-above-author-note: 1
   status-changes: 
     # Example: [Author name] is now at [affiliation].
-    affiliation-change: Ana Fulana is now at X University.
+    #affiliation-change: Ana Fulana is now at X University.
     # Example: [Author name] is deceased.
-    deceased: Carina Mengana is deceased.
+    #deceased: Carina Mengana is deceased.
   # Disclosures condensed to one paragraph, but you can start a field with two line breaks to break them up: \n\nNew Paragraph
   disclosures:
     # Example: This study was registered at ClinicalTrials.gov (Identifier NTC998877).
-    study-registration: ~
+    #study-registration: ~
     # Acknowledge and cite data/materials to be shared.
-    data-sharing: ~
+    #data-sharing: ~
     # Example: This article is based on data published in Pulaski (2017).
     # Example: This article is based on the dissertation completed by Graham (2018).    
-    related-report: This article is based on data published in Pulaski (2017). 
+    #related-report: This article is based on data published in Pulaski (2017). 
     # Example: Sally Jones earns royalties from the sale of Test X.
-    conflict-of-interest: ~
+    conflict-of-interest: 
     # Example: This study was supported by Grant A123 from the National Science Foundation.
-    financial-support: ~
+    #financial-support: The authors state that they have no conflicts of interest.
     # Example: The authors are grateful for the technical assistance of Dr. X during the initial design and setup of our lab equipment.
     gratitude: ~
     # Example. Because the authors are equal contributors, order of authorship was determined by a fair coin toss.
     authorship-agreements: ~
-abstract: "This document is a template demonstrating the apaquarto format."
-keywords: [keyword1, keyword2, keyword3]
+abstract: "The Furtado-Gallagher Child Observational Movement Pattern Assessment System (FG-COMPASS) is an observational tool using sequential decisions to assess fundamental movement skill proficiency. The current version of the test has three locomotor and five manipulative skills. This study assessed expert-rater agreement and inter- and intra-rater reliability of two new scales to be added to the locomotor subscale. This study was divided into two phases. In Phase I, 60 children between the ages of 5 and 10 were filmed performing the gallop and vertical jump skills. An expert in motor behavior classified the videotapes using the newly created rating scales. Next, eight videos were selected for training purposes and 24 videos for testing purposes. In Phase II, 30 undergraduate students served as raters and underwent training before the testing session. The data were analyzed using weighted kappa (Kw) and the intra-class correlation coefficient (ICC). The results suggested a ‘very good’ agreement between the expert and raters for vertical jump (Kw = .96) and gallop (Kw =.89). The ICC values for vertical jump and gallop were .98 and .94, respectively. The mean kappa values for inter-rater reliability were considered ‘very good’ for vertical jump (MKw=.92) and ‘good’ for gallop (MKw=.78). The ICC values were .98 and .95 for vertical jump and gallop, respectively - which is considered ‘excellent’. The kappa values for intra-rater reliability were .96 and .85 for vertical jump and gallop, respectively. The ICC values were .98 and .92 for vertical jump and gallop, respectively. These results show that the proposed rating scales are reliable in assessing vertical jump and gallop. Future studies should focus on criterion-related validity and reliability evidence from live performances."
+keywords: [fundamental movement skills, rating scales, assessment, reliability, agreement]
 # I like using Zotero with BetterBibTeX to output a continuously updated "Better CSL JSON" file. But BibTeX works, too.
 bibliography: bibliography.bib
 format:
   apaquarto-docx: default
   apaquarto-html: default
-  apaquarto-pdf:
+  apaquarto-pdf: 
     # can be jou (journal), man (manuscript), stu (student), or doc (document)
     # for now, tables and figures do not render properly in jou mode. 
     documentmode: man
@@ -122,6 +96,8 @@ format:
     course: ~
     professor: ~
     duedate: ~
+filters:
+  - abstract-section
 ---
 
 {{< include _extensions/wjschne/apaquarto/_apa_title.qmd >}}
@@ -138,183 +114,167 @@ conflicts_prefer(dplyr::filter, .quiet = TRUE)
 conflicts_prefer(flextable::separate_header, .quiet = TRUE)
 ```
 
-Fundamental movement skills (e.g., running, jumping, throwing) are considered the foundation the development of further skills required in physical activity throughout childhood and adolescence (Gallahue, 1982). During infancy, motor skill development allows children to explore their environmental context (Haywood & Getchell, 2014), and although children may reach a rudimentary level of fundamental movement skills (FMS), it is a common misconception that proficiency of FMS will be achieved solely through maturation. Children must be taught how to optimize their movement patterns in order to attain proficiency (Clark, 2007), especially during elementary years of education, where concepts and mastery of fundamental movements are easier to attain than at any other stage of development (Colvin, Markos, & Walker, 2000).
+Fundamental movement skills, such as running, jumping, and throwing, are the foundational building blocks for acquiring more complex skills essential for physical activity throughout childhood and adolescence [@gallahue1982b]. These motor skills enable children to explore and interact with their environment [@haywoodLifeSpanMotor2014a]. However, it is often erroneously assumed that children will naturally attain proficiency in these fundamental movement skills (FMS) through maturation alone. Instructing children on optimizing these movement patterns to achieve proficiency, particularly during elementary education. This developmental stage presents an unparalleled opportunity for children to understand and master these fundamental movements compared to other stages [@colvinTeachingNutsBolts2000; @clark2007].
 
-In addition, early mastery of FMS can lead to greater engagement in physical activity during adolescence and adulthood (Barnett, van Beurden, Morgan, Brooks, & Beard, 2009; Kuh & Cooper, 1992; Okely, Booth, & Patterson, 2001). Furthermore, children with lower FMS competence have been found to be less likely to engage in physical activity (Stodden et al., 2008) and have also been associated with childhood obesity (Cliff et al., 2012). Therefore, it is important to assess the development of FMS in children, whereas assessment tools can provide practitioners with an insight on motor skill proficiency, and may also provide insight on whether a child will develop towards an active or sedentary lifestyle (Stodden et al., 2008). Motor skill assessment tools are essential in the evaluation of motor skill development. Although many assessment tools have been developed, they are often designed for professionals in the field, such as kinesiologists, psychologists, and physical therapists, who often deal with gross and fine motor skills. Often, assessment tools are based on a component (specific body part configurations) or composite (total body configuration) method (insert citation). Alternative methods attempting to simplify the process of FMS assessment often use the three-stage model (restricting classification to three stages; e.g., "beginner", "intermediate", "advanced"; Gallahue & Donnelly, 2003) and other methods include a decision tree based on specific performance criteria (Haywood & Getchell, 2014), where observers can assess FMS based on 'yes' or 'no' checkpoints (referred to as the observational plan approach- OPA). In addition, there are generally two types of motor skill assessments. Product oriented assessments relates to quantitative measures (measurements of time, distance, successful attempts). An example of an assessment battery using product-oriented assessment includes the Movement Assessment Battery for Children, which measures manual dexterity, aiming and catching, and balance (Wuang, Su, & Su, 2012). On the other hand, process oriented assessments focus more on the quality of the skill performed (Burton & Miller, 1998) . Examples of assessment tools using a process-oriented approach include the Test of Gross Motor Development (Ulrich, 2000) and the Motor Skills Inventory, which classifies FMS into three levels: rudimentary, functional, and mature (Werder & Bruininks, 1998). Although assessment tools might be validated and reliable, they reveal little about the development of a child, instead, these tests can reveal information about a child at a specific time in terms of criterion measures. The TGMD---2 compares student's scores to a national norm for the student's age and gender (norm-referenced test), whereas the Motor Skill Inventory compares student's scores to a specific domain of behavior or a standard of performance (criterion-reference assessment). The two proposed rating scales developed for vertical jump and gallop do not focus on individual comparison, but rather, performance over time.
+Moreover, early mastery of FMS has been linked to increased physical activity participation during adolescence and adulthood [@barnettChildhoodMotorSkill2009b; @kuhPhysicalActivity361992; @okely-etal-2001]. Alarmingly, children exhibiting lower FMS competence are less inclined towards physical activity [@stodden-etal-2008] and be correlated with higher instances of childhood obesity [@cliff-etal-2012]. Consequently, evaluating the development of FMS in children is important. Assessment tools can equip practitioners with insights into a child's motor skill proficiency and potentially forecast whether a child will likely lead an active or sedentary lifestyle [@stodden-etal-2008].
 
-# Results
+The assessment in consideration in this study (Furtado-Gallagher Child Observational Movement Pattern Assessment System - FG-COMPASS) aims to assess children's qualitative aspects of FMS (locomotor and manipulative skills) proficiency. When developing the FG-COMPASS, @furtado-gallagher-2012 proposed a new method for creating FMS rating scales, which uses key performance criteria in a decision-tree format. A decision tree created for the skill of overhand throw using the method proposed by the authors is depicted in {apafg-fig1}. The flowchart is comprised of a) decision nodes (questions), b) chance nodes (Yes or No), and c) end nodes (levels). Although several performance criteria can be proposed for a skill, only three are selected to form the decision tree of a skill based on the suggested method. These performance criteria are then turned into questions which are the decision nodes of the decision tree. In Figure 1, the top decision node contains a discriminatory question. It aims to differentiate between levels 1 and 4 (end nodes). If the chance node is YES, the decision takes the path on the right, and the observer is presented with a confirmatory question, which is meant to verify if a performer is at level 4 (chance node is YES) regarding proficiency of the skill of overhand throw. If the decision tree fails to confirm a level 4 (chance node is NO), the performer is assessed as level 3. The same applies to the left side of the decision tree, except that the purpose is to confirm whether the performer is at level 1. The decision-tree approach simplifies assessing fundamental movement skill live performances as only two performance criteria are used when deciding the proficiency levels of performers.
 
-First, we present the degree of agreement between the expert and participant ratings. Then, inter-rater rater reliability will be presented, followed by intra-rater reliability data.
+\[Insert Figure 1\]
+
+The manipulative subscale of the FG-COMPASS currently comprises strike, hand dribble, kick, overhand throw, and catch, while the locomotor subscale includes skip, hop, and horizontal jump. Although the instrument is functional with three locomotor and five manipulative skills [@furtado-gallagher-2012], adding two additional locomotor skills would create a more balanced instrument, thus improving its efficacy in evaluating gross motor skill proficiency. Therefore, this study aimed to develop two rating scales for assessing vertical jump and gallop using the @furtado-gallagher-2012 method. Additionally, we aimed to examine the reliability of classification decisions of the scales by evaluating rater-expert agreement and rater consistency. We anticipated ratings to be "excellent" (.75 or above) and "very good" (.81 or above) when analyzed with Intraclass Correlation Coefficient and Weighted Kappa, respectively.
+
+# Materials and Methods
+
+This study was divided into two phases. In Phase I, we videotaped children performing the locomotor skills of vertical jump and gallop. In Phase II, we investigated initial psychometric characteristics for the proposed scales by assessing expert-rater agreement and inter/intra-rater reliability for the two new proposed skills.
+
+## Phase I
+
+### Scale Development
+
+We created the rating scales for gallop ( {apafg-fig2} ) and vertical jump ( {apafg-fig3} ) following the procedures outlined in @furtado-gallagher-2012.
+
+\[Insert Figure 2\]
+
+\[Insert Figure 3\]
+
+Following IRB approval, recruitment packets were distributed to K-5 Los Angeles Unified School District elementary school classrooms. Upon parental/guardian consent, 5-10-year-old children were filmed performing the skills under investigation. We instructed children to perform multiple performance trials. Later, videotapes comprising three trials were created and rated from 1 to 4 using the previously created scales. The videos were first rated independently by the PI (principal investigator) and an expert in motor behavior. Then, their scores were compared, and a consensus was reached for each video on their developmental level.
+
+### Scale Evaluation
+
+We returned to the same school to recruit different participants to help us assess the effectiveness of the previously developed scales. An information packet was sent to the students' households through their classroom teacher, and 60 children were recruited. The packet included a flyer with the study's description, a consent form for the parent/guardian, and an adapted version of the original Physical Activity Readiness Questionnaire - PAR-Q [@shephard1988]. The survey contains 15 questions to identify potential risks while engaging in moderate physical activity. It also assesses the severity of diseases or conditions in the individual's family history. Upon receiving the packets back, the PI randomly selected 12 children from each grade level (kindergarten through 4th grade) between the ages of 5-10. Parents were informed that not all children would be selected to participate. Children were excluded from the study if they 1) had disabilities that could affect the performance of motor skills, 2) had a recent surgery or had undergone surgery in the past six months, 3) had been deemed ineligible based on PAR-Q responses, 4) did not want to participate or be filmed.
+
+#### Filming Children
+
+Children were assigned a code ranging from 001 to 060 to ensure confidentiality. They were called individually and asked to perform five to six trials for each skill. A GoPro camera (Hero 7) was used to film children with a 1080/50/wide recording setting. Children were filmed galloping twenty feet with the camera placed nine feet away. Cones were placed to indicate where children should begin and stop each trial. To determine the lead foot, children were asked to alternate between right and left feet during practice trials and to use their preferred foot during the remaining trials. Children were asked not to switch feet during filming trials. For the vertical jump skill, tape markers were placed on a wall at 3 ½ feet, with a marker set at every half foot leading up to 7 feet. Children were asked to touch the highest marker with their dominant hand during each trial.
+
+Once the PI recorded all 60 videos, a consensus was reached on the outcome levels of all videos and selected 16 video clips for training purposes (2 videos X 4 levels X 2 skills), and 24 video clips for testing purposes (3 videos X 4 levels X 2 skills); 12 videos for gallop and 12 videos for vertical jump. In case of disagreement between the researchers' classifications of a video, the video was replaced with one in which the researchers reached a consensus. In Phase II, we recruited and trained undergraduate kinesiology students to participate as raters as part of the evaluation of the proposed rating scales.
+
+## Phase II
+
+### Recruiting Participant
+
+Thirty participants were recruited from undergraduate kinesiology classes via verbal announcements and flyers. Participants were excluded from the study if 1) they were not enrolled in six or more undergraduate units and 2) they were not enrolled in a motor development course. This was done to ensure minimal exposure to movement skill assessment.
+
+### Procedures
+
+#### Training Sessions
+
+As participants arrived at the lab, they were given general information about the project. Next, participants were asked to read and sign the research informed consent and to carefully study the rating scale for either gallop or vertical jump. The PI physically demonstrated the skill while emphasizing key points related to the skill performance for each level of the rating scale. Participants were then asked to sit before a portable (80 inches across) wide projection screen. Participants then used a pencil and paper version of the scale to classify eight video clips (two random videos of each stage level) depicting different children performing the evaluated skill. Participants received feedback on whether their classifications were correct and were encouraged to ask questions during the training session. The training was done with no more than three participants at a time and lasted about one hour.
+
+#### Testing Sessions
+
+The testing session took place 48 hours after the training session and recreated the same setup as the training session. Participants were shown a practice video, then classified 12 (two for each skill level) videos presented randomly. Furthermore, participants were instructed not to classify the videos based on the apparent age of the children, as skill levels were distributed across all age levels. Unlike the training session, participants did not receive feedback in case of disagreement with the PI's classifications. To avoid guessing, participants were not informed of the number of videos they were rating for each level. Each participant underwent individual testing, which took approximately an hour. A week later, they returned to the lab to classify the same videos but in a different order than the initial testing session. The retest was utilized to assess the consistency of measurements by the same rater.
+
+## Data Analysis
+
+Because a certain amount of agreement is expected to occur by chance [@fleiss1981], the weighted kappa (Kw) was calculated. Although kappa was originally established for nominal data, weighted kappa was created for categorical data with an ordinal structure. Both scales under investigation range from 1 to 4, with 1 being the lowest assessment score and 4 being the highest. Weighted kappa allows different penalties to be assigned to different mismatches based on the magnitude of disagreement [@hallgren2012]. If Rater A were to rate a child at a level of 1, and Rater B rated the same child at a level of 2, that would be less severe than a rating of 1 and 4. The values of weighted kappa were compared with the criteria suggested by @altman1991, with values equal or less than .20 = "poor"; .21 - .40 = "fair"; .41-.60 = moderate; .61-.80 = "good"; and .81-1.00 = "very good." In addition, the intraclass correlation coefficient (ICC) was used to test reliability. A two-way random (consistency), average-measures was used and interpreted as follows: less than .40 = "poor"; .40-.75 = "fair to good"; \>.75 = "excellent" [@fleiss2011]. To be included in the test, the ratings needed to meet a minimum of .75 for ICC and .81 for Kappa.
+
+<!--# change to:
+
+Cicchetti (1994)\[19\] gives the following often quoted guidelines for interpretation for kappa or ICC inter-rater agreement measures:
+
+Less than 0.40---poor. Between 0.40 and 0.59---fair. Between 0.60 and 0.74---good. Between 0.75 and 1.00---excellent.
+--> 
 
 
+# Results and Discussion
+
+This study aimed to propose and assess initial psychometric characteristics for two rating scales to be added to the locomotor subscale of the FG-COMPASS. All expected hypotheses were confirmed except for the Kappa value of gallop skill's inter-rater reliability. The results are detailed in the following section. First, we present the agreement between the expert and participants' ratings. Then, inter-rater rater reliability data are presented, followed by intra-rater reliability.
+
+## Expert-rater agreement
+
+The expert-rater agreement was assessed by comparing the ratings of all 30 participants with those of an expert. The agreement was considered "very good" for both vertical jump (Kw = .96) and gallop (Kw = .89;). In addition, ICC scores were considered "excellent" for both vertical jump (ICC = .98) and gallop (ICC = .94). Table 1 presents the results for both skills. The high agreement observed could be due to the specific performance criteria selected for the gallop and vertical jump rating scales. We followed @painter1994 suggestion of selecting only the critical performance criteria for the skill when creating the scales, which may have aided the raters in the study. It is important to note that the individuals involved in this research received thorough training before evaluating the videos. Moreover, this study solely focused on pre-recorded performances, which are less challenging to evaluate than live performances.
+
+```{asis}
+#| label: apatb-table1
+#| apa-cap: Weighted Kappa and ICC statistics for the expert-rater agreement
+#| apa-note: _N_ = 30. <br/> Kw = Weighted Kappa; ICC = Intraclass Correlation Coefficient; Values in parentheses refer to confidence intervals. 
+#| echo: true
 
 |               |       Kw        |       ICC       |
 |---------------|:---------------:|:---------------:|
 | Vertical Jump | .96(.939, .978) | .98(.974, .982) |
 | Gallop        | .89(.847, .926) | .94(.927, .952) |
-
-: Weighted Kappa and ICC statistics for the expert-rater agreement {#tbl-table1}
-
-_Note_. Sample size = 30. Values in parentheses refer to confidence interval.
-
-Kw= Weighted Kappa; ICC = Intraclass Correlation Coefficient.
-
-
-
-
-
-
-
-
-## How to Cite References
-
-I am going to cite a reference here in square brackets [@CameronTrivedi2013]. This reference was in my bibliography file. Here are some variations on parenthetical citations:
-
--   Page references (or any other suffixes are placed after the reference. If you want a comma, you'll need to insert it yourself: [@CameronTrivedi2013, pp. 35--41]
-
--   Prefixes (with or without a comma) are placed before the reference: [e.g., @CameronTrivedi2013]
-
--   2 or more citations separated by a semicolon [@CameronTrivedi2013; @cohen2003applied]
-
--   Any prefixes or suffixes needing a literal semicolon will confuse Quarto (actually Pandoc). To make it clear that you need to print a semicolon, put a backslash before the semicolon: [FOIL; @CameronTrivedi2013]
-
-Text references are possible, too.
-
--   @CameronTrivedi2013 said some interesting things.
-
--   @cohen2003applied [pp. 101--103] said specific things on specific pages.
-
--   Place the reference's year by itself with a minus sign: [-@CameronTrivedi2013]
-
-## Hypotheses, Aims, and Objectives
-
-The last paragraph of the introduction usually states the specific hypotheses of the study, often in a way that links them to the research design.
-
-# Method
-
-General remarks on method. This paragraph is optional.
-
-Not all papers require each of these sections. Edit them as needed. Consult the [Journal Article Reporting Standards](https://apastyle.apa.org/jars) for what is needed for your type of article.
-
-## Participants
-
-Who are they? How were they recruited? Report criteria for participant inclusion and exclusion. Perhaps some basic demographic stats are in order. A table is a great way to avoid repetition in statistical reporting.
-
-## Measures
-
-This section can also be titled **Materials** or **Apparatus**. Whatever tools, equipment, or measurement devices used in the study should be described.
-
-### Measure A
-
-Describe Measure A.
-
-### Measure B
-
-Describe Measure B.
-
-## Procedure
-
-What did participants do?
-
-How are the data going to be analyzed?
-
-# Results
-
-## Descriptive Statistics
-
-Here we describe the basic characteristics of our primary variables.
-
-Let's make a figure. A reference label for a figure in APA format must have the prefix `apafg-`. This is different from the usual Quarto prefix `fig-`.
-
-```{r}
-#| label: apafg-myplot
-#| apa-cap: This is the figure caption.
-#| apa-note: This is a note below the figure.
-
-plot(1:10)
 ```
 
-To refer to any figure or table, put the chunk label in curly braces. For example, see {apafg-myplot}. In {apafg-importedgraphic}, we import an image.
+## Inter-rater reliability
 
-```{r}
-#| label: apafg-importedgraphic
-#| apa-cap: This is an imported graphic.
-#| apa-note: My note.
-knitr::include_graphics("orcid.png")
+Inter-rater reliability was assessed by comparing the ratings of five raters chosen at random. Weighted kappa scores were computed for each rater pair and averaged to provide a single reliability index. The results are presented in Tables 2 and 3. The weighted kappa values for the vertical jump ranged from .82 to 1.0 (M = .92). Weighted kappa values for the skill of gallop ranged from .57 to 1.0 (MKw = .78). These scores were considered "very good" for the vertical jump and "good" for the skill of gallop (Kw \< .81). Note that for the skill of gallop, rater #2 fell below the expected agreement when compared with all raters. ICC scores were interpreted as "excellent" for both vertical jump (ICC = .98) and gallop (ICC = .95). It is possible that the discrepancy in ratings for the skill of gallop between rater #1 and three other raters was caused by rater #2's lack of understanding of the protocol, despite the training provided. This is supported by the fact that the ratings of all other raters fell within a range of (Kw = .81-1.00). If rater #2 is removed, the weighted kappa scores increase from .78 to .88, suggesting a "very good" agreement for Kappa.
+
+```{asis}
+#| label: apatb-table2
+#| apa-cap: Weighted Kappa for inter-rater-rater analyses
+#| apa-note: Sample size = 30. <br/> Kw= weighted kappa; 1x2, 1x3, …= rater pairs agreement; Mk= arithmetic mean of rater pairs agreement; Asterisks indicate disagreement below expected.
+#| echo: true
+
+|               | Raters |      |      |      |      |      |      |      |      |      | Mkw  |
+|:-------------|:------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|               | 1x2    | 1x3  | 1x4  | 1x5  | 2x3  | 2x4  | 2x5  | 3x4  | 3x5  | 4x5  |      |
+| Vertical Jump | 0.96   | 0.93 | 0.9  | 0.93 | 0.96 | 0.82 | 0.96 | 0.85 | 1.00    | 0.85 | 0.92 |
+| Gallop        | 0.73   | 0.82 | 0.82 | 0.81 | .63* | .63* | .57* | 1.00    | 0.91 | 0.91 | 0.78 |
 ```
 
-We can make a table the same way as a figure except that the label prefix is `apatb-`. Again, this is different from the usual quarto prefix `tbl-`, which will put the table table caption in the wrong place and with non-APA formatting.
+```{asis}
+#| label: apatb-table3
+#| apa-cap: Intraclass Correlation Coefficient for the inter-rater analyses
+#| apa-note: Sample size = 30. <br/> Values computed using two-way random, average measures ICC (2,1).
+#| echo: true
 
-```{r apatb-mytable}
-#| apa-cap: Here is the table caption.
-#| apa-note: Here is the note below the table.
-#| ft.align: left
-
-
-tibble(Numbers = seq(1,4), Letters = LETTERS[seq(Numbers)]) %>% 
-  flextable() %>% 
-  theme_apa() %>% 
-  line_spacing(part = "all") %>% 
-  padding(padding.top = 5, padding.bottom = 5)
-
+|          | ICC | 95% CI     |
+|:-------------|:---:|:----------:|
+| Vertical Jump | .98 | .963, .995 |
+| Gallop        | .95 | .890, .984 |
 ```
 
-To refer to this table in text, put the table's reference label in curly braces like so: As seen in {apatb-mytable}, there is not much information.
+## Intra-rater reliability
 
-What if you want the tables and figures to be at the end of the document? In the .pdf format, you can set the `floatsintext` option to false. For .html and .docx documents, there is not yet an automatic way to put tables and figures at the end. You can, of course, just put them all at the end, in order. The reference labels will work no matter where they are in the text.
+To determine intra-rater reliability, raters randomly reassessed the same videos one week after their initial assessment. Intra-rater reliability was considered "very good" for both vertical jump (Kw = .96) and gallop (Kw = .85). ICC scores were interpreted as "excellent" for vertical jump (ICC = .98) and gallop (ICC = .92). The results are presented in Table 4. Although the agreement for both skills was considered "very good," the kappa score was higher for the vertical jump. It is possible that the discrepancy in results is since assessing the skill of galloping is more complex compared to assessing the skill of vertical jumping. The criteria for evaluating galloping include questions like "Was the action smooth (not choppy) and performed at a moderate speed?" This may have posed some challenges for the raters to distinguish between a smooth and moderate-speed action versus a choppy and fast-paced one. Despite providing training and examples of different proficiency levels, there were still variations in performance among the children. Although the same holds for the skill of vertical jump, it may be that raters found it easier to assess the skill of vertical jump because the criteria might have been more objective than that of the skill of gallop. The criterion for discrimination in the vertical jump scale was whether the arms moved backward during the preparation phase. This criterion may have been easier for raters to assess than the gallop scale. There may have been more variability in skill when determining this criterion for gallop, while detecting variability in the vertical jump may have been simpler.
 
-<!-- Add Additional Sections as Needed -->
+```{asis}
+#| label: apatb-table4
+#| apa-cap: Weighted Kappa and ICC statistics for the intra-rater analyses
+#| apa-note: Sample size = 30. <br/> Kw = Weighted Kappa; ICC = Intraclass Correlation Coefficient; Values in parentheses refer to confidence intervals.
+#| echo: true
 
-# Discussion
+|               | Kw              | ICC             |
+|:------------- |:---------------:|:---------------:|
+| Vertical Jump | .96(.940, .976) | .98(.974, .983) |
+| Gallop        | .85(.795, .895) | .92(.897, .932) |
+```
 
-Describe results in non-statistical terms. <!-- Add sections as needed. -->
+# Conclusion
 
-## Limitations and Future Directions
+Fundamental movement skills have been proposed to be the foundation of an active lifestyle [@gallahue1982b; @clark2007]. Early detection of delays in FMS performance may lead to earlier and more appropriate interventions. Having a practical FMS assessment tool such as the FG-COMPASS may facilitate the detection of motor skill development of children in school settings where time may be of conflict. Existing assessment tools often comprise complex criteria, requiring extensive training [@lander-etal-2016]. By employing a method that uses only three performance criteria as part of the rating scales, the FG-COMPASS may be a more practical tool for the average K-5 educator, who might only get a limited amount of time with a surplus of students [@olrich2002]. The development of such tools may lead to enhancing physical education programs, allowing educators to tailor plans according to children's developmental levels. Thus, children with higher FMS are more likely to participate in physical activity, which may allow for continued active lifestyles later in life [@cliff-etal-2012]. The results of this study provide evidence of rater-expert agreement and inter/intra-rater reliability for two rating scales to be added to the locomotor subscale of the FG-COMPASS. These results show that the proposed rating scales are reliable in assessing vertical jump and gallop. Future studies should focus on criterion-related validity and reliability evidence from live performances.
 
-Every study has limitations. Based on this study, some additional steps might include...
+## Declaration of Conflicting Interest
 
-## Conclusion
+The authors state that they have no conflicts of interest.
 
-Let's sum this up.
+{{< pagebreak >}}
 
 # References
 
-<!-- References will auto-populate in the refs div below -->
-
 ::: {#refs}
 :::
-
-<!-- Delete any unnecessary sections or pagebreaks. -->
 
 {{< pagebreak >}}
 
 # Appendix
 
-If there are multiple appendices, label them with level 1 headings as Appendix A, Appendix B, and so forth.
+## Figure captions
 
-<!-- I like my tables and figures intermingled with the text, -->
+```{r}
+#| label: apafg-fig1
+#| apa-cap: Rating scale for the skill of overhand throw.
+```
 
-<!-- but all tables can go here. -->
+```{r}
+#| label: apafg-fig2
+#| apa-cap: Rating scale for the skill of gallop.
+```
 
-<!-- Uncomment the pagebreaks as needed-->
-
-<!-- {{< pagebreak >}} -->
-
-<!-- Figures can go here. -->
-
-<!-- {{< pagebreak >}} -->
-
-In {apatb-mymarkdowntable}, there are some numbers.
-
-```{asis}
-#| label: apatb-mymarkdowntable
-#| apa-cap: Figure caption of a markdown table
-#| apa-note: This is a note below the markdown table.
-#| echo: true
-
-| Default | Left | Right | Center |
-|---------|:-----|------:|:------:|
-| 12      | 12   |    12 |   12   |
-| 123     | 123  |   123 |  123   |
-| 1       | 1    |     1 |   1    |
+```{r}
+#| label: apafg-fig3
+#| apa-cap: Rating scale for the skill of vertical jump.
 ```

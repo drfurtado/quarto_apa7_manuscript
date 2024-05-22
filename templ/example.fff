@@ -1,0 +1,13 @@
+\begin{figure*}[!htbp]
+
+{\caption{{A Figure Spanning Two Columns When in Journal
+Mode}{\label{fig-twocolumn}}}}
+
+\begin{center}
+\includegraphics{example_files/figure-pdf/fig-twocolumn-1.pdf}
+\end{center}
+
+{\noindent \emph{Note.} Figures in two-column mode are only different
+for jou mode in .pdf documents}
+
+\end{figure*}

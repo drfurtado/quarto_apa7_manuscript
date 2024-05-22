@@ -23,3 +23,13 @@ cat(table_text)
 
 
 ```
+
+Table 1 Descriptive Statistics for Age
+
+|              |                |     |
+|--------------|----------------|-----|
+|              | Mean (SD)      |     |
+| Age (Years)  | 9.00 (n/a)     |     |
+| Age (Months) | 104.72 (26.09) |     |
+
+Note. SD = Standard Deviation.

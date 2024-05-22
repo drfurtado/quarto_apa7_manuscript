@@ -1,0 +1,43 @@
+## Comparisions between similar skills for the FG-COMPASS and TGMD-2
+
+Below we provide the analyses concerning the agreement between the skills that are common between the FG-COMPASS and the TGMD-2. We present the results for the ICC followed by the Bland-Altman analysis.
+
+In the evaluation of relative agreement between the two measurement methods, the Intraclass Correlation Coefficient (ICC) revealed varying levels of reliability across skills. The skill "Dribble" exhibited the highest reliability with an ICC of 0.82 ($F$ = 5.54, $p$ \< 0.001), closely followed by "Throw" with an ICC of 0.75. In contrast, "Kick" presented the lowest reliability at an ICC of 0.31, emphasizing its inconsistency compared to other skills. Other skills like "Hop", "Catch", and "Strike" displayed moderate reliability, falling within the ICC range of 0.50 to 0.61. Notably, the "Jump" skill, with an ICC of 0.40, indicated only fair reliability, further underscoring the variability in agreement levels among the skills. These findings highlight the diverse reliability landscapes that different skills offer when evaluated with the two measurement methods.
+
+```{asis}
+#| label: apatb-table6
+#| apa-cap: Intraclass Correlation Coefficient (ICC) for Common Skills Between the Tests
+#| apa-note: $N$:\ 34. ICC:\ Intraclass Correlation Coefficient (two-way, agreement, average model).
+#| echo: true
+
+| Skill   | ICC   | $F$ ($p$-value) | 95% CI           |
+|---------|-------|--------------|------------------|
+| Hop     | 0.61  | 2.52 (0.005) | 0.211 - 0.807    |
+| Jump    | 0.40  | 1.63 (0.082) | -0.234 - 0.701   |
+| Throw   | 0.75  | 3.84 (0.000) | 0.486 - 0.873    |
+| Kick    | 0.31  | 1.44 (0.151) | -0.410 - 0.659   |
+| Dribble | 0.82  | 5.54 (0.000) | 0.645 - 0.912    |
+| Catch   | 0.60  | 2.46 (0.006) | 0.189 - 0.801    |
+| Strike  | 0.50  | 1.97 (0.028) | -0.0174 - 0.752  |
+
+```
+
+The Bland-Altman analysis assessed the agreement between two measurement methods across various skills. The skills of "Hop" and "Strike" displayed negligible bias, indicating almost perfect agreement. "Jump", "Throw", "Kick", "Dribble", and "Catch" demonstrated slight biases, but these values remained close to zero, suggesting a high level of agreement between the measurements. For all skills, the range within which 95% of measurement differences lie (LLoA to ULoA) provides insight into the variability of agreement, with narrower ranges indicating more consistent agreement between the two methods.
+
+```{asis}
+#| label: apatb-table7
+#| apa-cap: Bland-Altman Analysis of Bias and Limits of Agreement for Various Skillss
+#| apa-note: Bias:\ Represents the average difference between the two measurement methods for each skill. A bias close to zero indicates that, on average, there isn't a consistent difference between the two methods. LLoA/ULoA:\ Lower/Upper boundaries where 95% of measurement differences are expected. 
+#| echo: true
+
+| Skill   | Bias (n = 34)  | LLoA       | ULoA       |
+|---------|----------------|------------|------------|
+| Hop     | -0.000         | -2.090     | 2.090      |
+| Jump    | 0.007          | -2.407     | 2.420      |
+| Throw   | 0.005          | -1.752     | 1.761      |
+| Kick    | -0.029         | -2.550     | 2.492      |
+| Dribble | 0.056          | -1.489     | 1.602      |
+| Catch   | 0.045          | -2.041     | 2.131      |
+| Strike  | -0.000         | -2.270     | 2.270      |
+
+```

@@ -1,0 +1,35 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[!htbp]
+
+{\caption{{The Figure Caption}{\label{fig-myplot}}}}
+
+\includegraphics{modi_golnick_files/figure-pdf/fig-myplot-1.pdf}
+
+{\noindent \emph{Note.} This is the note below the figure.}
+
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[!htbp]
+
+{\caption{{An Imported Graphic}{\label{fig-import1}}}}
+
+\includegraphics[width=1\textwidth,height=\textheight]{img/sampleimage.png}
+
+{\noindent \emph{Note.} A note below the figure}
+
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[!htbp]
+
+{\caption{{Another Way to Import Graphics}{\label{fig-import2}}}}
+
+\includegraphics{img/sampleimage.png}
+
+{\noindent \emph{Note.} A note below the figure}
+
+\end{figure*}

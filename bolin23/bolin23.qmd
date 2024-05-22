@@ -1,9 +1,9 @@
 ---
-title: "The Relationship Between Fundamental Movement Skills and Body Mass Index in Elementary-Age Children"
+title: "Examining the Relationship Between BMI, Sex, and Fundamental Movement Skill Performance in Low-Income Rural Children"
 # Lines above title in .docx format
 blank-lines-above-title: 2
 # If blank, the running header is the title in upper case.
-shorttitle: Template for the APAquarto Format
+shorttitle: BMI, SEX, AND FMS IN RURAL CHILDREN
 # Set names and affiliations.
 # It is nice to specify everyone's orcid, if possible.
 # There can be only one corresponding author.
@@ -21,6 +21,7 @@ author:
   - name: Ovande Furtado Jr
     corresponding: true
     orcid: 0000-0003-3847-6314
+    email: ovande@gmail.com (818-564-7507)
     affiliations:
       - name: California State University, Northridge
         department: Department of Kinesiology
@@ -52,7 +53,7 @@ author-note:
     gratitude: ~
     # Example. Because the authors are equal contributors, order of authorship was determined by a fair coin toss.
     authorship-agreements: ~
-abstract: "Mastery of fundamental movement skills (FMS) is considered a crucial component in securing physical activity participation and, in turn, decreasing the likelihood of obesity. This study aimed to investigate the relationship between body mass index (BMI) and FMS performance among children ages 5 to 7 years in a rural school system. Secondly, we intended to investigate BMI grouping and gender differences in FMS performance. Participants were 39 kindergarteners and 1st graders (20 boys and 19 girls) in an Eastern Illinois K–8 public school. BMI was calculated for each participant using CDC guidelines (CDC, 2008). FMS performance was assessed using the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System (FG-COMPASS). Pearson correlation coefficients were calculated to examine the relationship between BMI percentile and FMS performance. A small but negative correlation that was not significant was found for FMS Locomotor, r(2) = – .26, p > 05, and FMS Total r(2) = - .20, p > 05. In addition, a Two-way Factorial MANOVA was conducted to determine the effect of BMI levels and gender on the performance of FMS. MANOVA results indicated that gender, Wilks’ Lamda = .637, F(2,32) = 11.23, p < .001, significantly affected the combined dependent variables. No significant main effect was detected for BMI levels. Univariate analysis of variance post-hoc tests revealed that the performance of manipulative FMS significantly differs for gender, F(1,33) = 16.08, p < .001, with males (M = 12.38, SD = 2.8) overperforming females (M = 9.11, SD = 2.21). Performance of locomotor fundamental movement skills does not significantly differ for gender. These findings have implications for educators and health professionals working with rural children. Programs must ensure that boys and girls have equal opportunities to practice and master manipulative FMS."
+abstract: "This study examined the relationship between body mass index (BMI), sex, and Fundamental Movement Skills (FMS) performance among low-income rural children aged 5 to 7 years. 39 children (20 boys and 19 girls) participated in the study. FMS proficiency was evaluated using the Furtado-Gallagher Child Observational Movement Pattern Assessment System (FG-COMPASS). The children's height and weight were measured to calculate BMI, which was then classified into 'Normal weight' and 'Overweight'. A two-way factorial ANOVA assessed the effects of sex and BMI group on Manipulative Fundamental Motor Skills (MFMS), Locomotor Fundamental Motor Skills (LFMS), and Total Fundamental Motor Skills (TFMS). We hypothesized that non-overweight children would outperform their overweight counterparts in locomotor (LFMS), manipulative (MFMS), and total (TFMS) fundamental motor skills and that boys would outperform girls on MFMS and TFMS but not on LFMS. Our findings showed a significant main effect of sex on MFMS, with boys performing significantly better than girls. However, no significant main effects were found for LFMS or TFMS based on sex or BMI group. Furthermore, Pearson correlation analysis revealed weak, negative, non-significant correlations between BMI percentiles and all three motor skill scores. The study's results highlight the importance of considering sex differences when assessing FMS in children and indicate that overweight status may not necessarily relate to poorer motor skill performance in a rural, low-income context. Further research should ensure a balanced representation across BMI categories and explore the potential influence of demographic factors on motor skill development."
 keywords: [body mass index, fundamental movement skills, obesity, physical activity]
 # I like using Zotero with BetterBibTeX to output a continuously updated "Better CSL JSON" file. But BibTeX works, too.
 bibliography: bibliography.bib
@@ -114,202 +115,145 @@ conflicts_prefer(dplyr::filter, .quiet = TRUE)
 conflicts_prefer(flextable::separate_header, .quiet = TRUE)
 ```
 
-According to the National Centers for Disease Control and Prevention [-@ObesityHealthySchools2022], childhood obesity has almost tripled since 1980. The occurrence of obesity in 1st-grade to 5th-grade students has increased from 6.5% in 1980 to 19.6% in 2008. In grades 6^th^ through 12^th^, the percentage has risen from 5.0% to 18.1%. Obesity can be caused by several factors, including but not limited to low-energy supply, inactivity, and possible genetic predisposition. Children who are overweight/obese have a greater chance of remaining overweight/obese throughout adolescence and into adulthood [@naderIdentifyingRiskObesity2006]. In addition, health conditions such as diabetes, hypertension, and cardiovascular disease may be absent during childhood but may appear as the individual ages [@danielsConsequencesChildhoodOverweight2006c]. Thus, it is important for children to stay active and one way to achieve this is by making sure they reach proficient levels on most fundamental motor skills (e.g., skipping, galloping, hopping, overhand throwing, kicking, dribbling, etc.). 
+Childhood obesity is a prevalent issue with long-term health implications, as children who are overweight or obese are more likely to remain so into adulthood [@nader2006]. Although obesity-related health conditions such as diabetes and hypertension may not manifest during childhood, they can emerge as individuals age [@daniels2006]. The prevalence of obesity among children aged 2--19 years increased from 13.9% in 1999--2000 to 19.3% in 2015--2016 [@pan2018]. Obesity arises from several factors, including genetic predisposition [@gurnani2015], low-energy supply [@bandini1990a], and inactivity [@rodrigues2011].
 
-ha1:fms-obe
+In response to the growing problem of inactivity and obesity among children, professionals need to promote physical activity. A crucial component of this approach is the development of Fundamental Movement Skills (FMS). Children proficient in FMS tend to engage in more physical activity and participate in sports more often compared to those with lower skill proficiency [@wrotniak2006; @stodden2008]. FMS proficiency forms the basis for developing more complex motor skills in sport-like activities [@barnett2008]. Therefore, examining the correlation between body weight and FMS levels in young children is critical to understanding the timing and nature of this association.
 
-Typically, FMS are divided into locomotor (LFMS) and manipulative (MFMS) skills. Researchers often consider total FMS (TFMS) by combining scores from LFMS and MFMS. Evidence shows that overweight children may be less proficient in fundamental movement skills than non-overweight children. This relationship may be an extension of infant weight and motor activity relationships [@wrotniakRelationshipMotorProficiency2006]. In addition, overweight children tend to engage less often in physical activities, preventing them from acquiring fundamental movement skills [@stoddenDynamicRelationshipsMotor2014]. Moreover, past research [@wrotniakRelationshipMotorProficiency2006] has indicated that children who acquire mastery in FMS tend to engage in more physical activity and participate in sports more often in comparison to those with lower levels of motor skill proficiency. This is important considering that FMS proficiency is the basis for developing more complex (specialized) motor skills used in sport-like activities [@barnettDoesChildhoodMotor2008]. According to @stoddenDevelopmentalPerspectiveRole2008, the association between motor skill proficiency and regular participation in physical activity begins in early childhood, fully matures in the teenage years, and continues into adulthood. Thus, children lacking fundamental movement skill development will likely have decreased participation in activities involving skills such as running, jumping, skipping, or specialized sport-related skills during the middle to late childhood, which could impact an active lifestyle as they age [@lopesCorrelationBMIMotor2012]. Hence, it is crucial to examine the correlation between body weight and FMS levels in young children to understand the timing and nature of this association. Armed with this understanding, professionals can improve their approach toward intervening in school environments.
+Recent research indicates that obesity may influence the correlation between FMS and physical activity. Overweight children may be less proficient in FMS than their non-overweight counterparts [@okely2004], suggesting a cyclical relationship between FMS, physical activity, and obesity levels [-@stodden2014]. Therefore, strategies to prevent unhealthy weight gain in young people should include enhancing movement abilities as an integral facet of the intervention [@okely2004].
 
-ha2: fms-sex
+Contrary to the widespread belief that maturation is the sole factor influencing FMS development, environmental factors, practice opportunities, reassurance, and teaching also contribute significantly [@clark2007; @gallahue1998a]. Similarly, sex differences in FMS performance cannot be attributed solely to physiological factors becoming apparent after puberty [@malina2004]. Recent research reveals significant disparities between boys and girls in manipulative and locomotor abilities, with boys generally performing better in manipulative skills and girls showing a trend towards better locomotor skill proficiency [@zheng2022; @barnett2008]. Boys' superiority in manipulative skills may be due to their preference for sports requiring these skills [@wrotniak2006].
 
-Additionally, it is important to take into account sex differences in FMS performance. There is a prevailing belief that fundamental movement skills are primarily influenced by maturation and not greatly affected by external factors. However, while maturation does play a role in the development of these skills, it is not the only factor at play [@clarkProblemMotorSkill2007a]. The environment, chances for practice, reassurance, and teaching all contribute to developing fundamental movement skills [@gallahue1998a]. Research has indicated that there are significant disparities in manipulative and locomotor abilities between boys and girls. A recent meta-analysis [@zhengGenderDifferencesFundamental2022] examined sex differences in the proficiency of fundamental movement skills among children aged 3 to 6 years, a crucial period for motor skill development. The study found that boys were more proficient in total FMS and maniputive skills compared to girls. Meanwhile, girls showed a trend toward better locomotor skill proficiency, though this was not statistically significant. In addition, the study revealed that age was associated with gender differences in object control skills, with boys' advantage in these skills increasing as they aged. In a study involving 1045 elementary-age children (7-11) [@barnettDoesChildhoodMotor2008] found that boys performed better in executing manipulative skills such as catching, overhand throwing, and kicking in comparison to girls. On the other hand, girls performed slightly higher on locomotor skills, but again the difference was not statistically significant.
+Given this context, our study aimed to investigate the relationship between body mass index (BMI), sex, and FMS performance among low-income rural children aged 5 to 7 years. We hypothesized that non-overweight children would outperform their overweight counterparts in locomotor (LFMS), manipulative (MFMS), and total (TFMS) fundamental motor skills, and that there would be a significant negative correlation between BMI percentiles and LFMS, MFMS, and TFMS. Additionally, we anticipated that boys would outperform girls on MFMS and TFMS but not on LFMS.
 
-In another study, @wrotniakRelationshipMotorProficiency2006 found that boys displayed superior performance in terms of running speed and agility, and also excelled in the skill of overhand throw, as compared to girls. The authors argue that this could be due to the type of sports and games they are drawn to participate in, which may give males more opportunities to practice and refine motor skills. Males are drawn to more sports involving manipulative skills than locomotor skills. One potential reason for the differences in motor skills between males and females could be connected to their surroundings and social interactions with peers. @wrotniakRelationshipMotorProficiency2006 suggests that the reason why males tend to have better motor skills than females could be because of the types of sports and games they participate in. Specifically, males seem to be more interested in sports that require manipulative skills rather than locomotor skills.
-
-Therefore, this study aimed to investigate the relationship between body mass index (BMI), sex, and FMS performance among low-income rural children ages 5 to 7 years.
-
-ha1: fms-obe
-
-Our first hypothesis relate to fundamental motor skill and obesity levels. We proposed that disparities would exist in the performance of fundamental movement skills between overweight and non-overweight children, with an anticipation of superior performance exhibited by non-overweight children compared to their overweight counterparts on locomotor (LFMS), manipulative (MFMS), and total (TFMS) - locomotor and manipulative combined - fundamental motor skills. In addition to grouping comparisons, we correlated BMI percentiles and FMS performance and anticipated negative significant correlation between BMI percentiles and LFMS, MFMS, and TFMS.
-
-ha2: fms-sex
-
-For our second hypothesis, we anticipated that boys would outperform girls on MFMS and TFMS but not on LFMS.
-
-# Method
+# Materials and Methods
 
 ## Participants
 
-Twenty boys (mean age in months = 78.8, SD=8.17) and 19 girls (mean age in months = 79.0, SD=9.76) participated in this study. The sample came from a K-6 public school in Shelby County, Illinois. Most students were Caucasian (99%), and over 50% of the parents whose children attended the school were considered low-income families. Because prospective participants were required to perform various fundamental movement skills (e.g., skipping, running, throwing) as part of the research protocol, children with special needs were excluded from this study. A letter briefly explaining the study's purpose, along with the informed consent, was sent to parents. Two weeks after the initial contact, we emailed only those parents who still need to return the signed informed consent. Only those children whose parents signed and returned the informed consent were selected to be part of the study. Research procedures were approved through the Eastern Illinois University Institutional Review Board. To encourage student participation in the study, those who submitted their informed consent form on time were given a pedometer as a reward.
+The study involved 20 boys (mean age in months = 78.8, SD = 8.17) and 19 girls (mean age in months = 79.0, SD = 9.76) from a K--6 public school in Shelby County, Illinois. The predominantly Caucasian (99%) student population came from over 50% low-income families. Children with special needs were excluded due to the requirement to perform fundamental movement skills (FMS) as part of the research protocol. Parents received a letter explaining the study's purpose and informed consent. Two weeks later, reminders were sent to parents who had not yet returned the signed consent forms. Only children with signed and returned consent forms were included in the study. This study was conducted in accordance with ethical standards and guidelines, and it received approval from the relevant Institutional Review Board (IRB). Participating students received a pedometer to encourage involvement in the study.
 
 ## Instrumentation and Procedures
 
 ### Anthropometry
 
-Eligible students had their height and weight measured. Mass was measured on a calibrated electronic scale (EatSmart Products Precision Digital) to the nearest 0.1 pounds before being later converted to kilograms. We measured students with shoes and heavy clothing removed. The scale was calibrated using a 10-pound weight after every 15 students were measured to ensure scale accuracy. Height was measured to the nearest millimeter using a tape taped to the wall. Students were barefoot and stood with their backs to the wall while their height was being taken. Participants' height and weight measurements were used to calculate the BMI of each student.
+Eligible students underwent height and weight measurements. A calibrated electronic scale (EatSmart Products Precision Digital) measured mass to the nearest 0.1 pounds, later converted to kilograms. Students were measured without shoes and heavy clothing. The scale was recalibrated after every 15 students to ensure accuracy. Height was measured to the nearest millimeter using wall-mounted tape. We calculated the BMI for each student using the height and weight measurements.
 
 ### Fundamental Movement Skill Proficiency
 
-Like the anthropometric data, we assessed FMS proficiency during the daily physical education classes. The gym was split in two so that assessment and the physical education class could be carried out concurrently. Students were taken five at a time from their physical education classes and videotaped while performing the fundamental movement skills per the test protocol's instructions. A trained person administered the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System (FG-COMPASS).
-
-The FG-COMPASS is a criterion-related and process-oriented assessment tool developed for school settings. Content-related validity evidence and reliability of classification decisions (Furtado & Gallagher, 2012) have been reported for the FG-COMPASS. We collected data on three locomotor (hop, horizontal jump, and skip) and five manipulative (throw, strike, kick, hand dribble, and catch) skills.
+FMS proficiency was assessed during daily physical education classes using the Furtado-Gallagher Child Observational Movement Pattern Assessment System (FG-COMPASS). The FG-COMPASS is a validated and reliable criterion-related, process-oriented assessment tool designed for school settings [@furtado2012]. The assessment covered three locomotor (hop, horizontal jump, and skip) and five manipulative (throw, strike, kick, hand dribble, and catch) skills. The gym was divided into two sections to allow concurrent assessment and physical education class. Students were taken five at a time from their physical education classes and videotaped performing the fundamental movement skills per the test protocol's instructions.
 
 ### Scoring
 
-BMI was calculated for each participant, and scores were converted to percentile ranks following the CDC guidelines (CDC, 2022b). In addition, participants were classified based on the following criteria: underweight - less than the 5th%; health weight - 5th% to less than the 85th%; overweight - 85th% to less than the 95th%; and obesity - equal or greater than the 95th%.
-
-Before FMS data collection, the principal investigator (PI) coding the videos was trained to become familiar with the test protocol. Videos of children performing locomotor and manipulative skills were used for training purposes. The PI and someone highly experienced with the FG-COMPASS testing protocol classified eight videos per skill. Classification scores between the PI and the expert were compared, and disagreements were discussed between the two raters. This served to improve the internal validity of this study. Per the test's protocol, children are coded as 1, 2, 3, or 4 based on their performance on each fundamental movement skill. We added the scores for each skill within their respective subscale. Each participant was assigned a score for the locomotor subscale, the manipulative subscale, and the total test (i.e., subscales combined).
+We calculated BMI percentile ranks for each participant according to the CDC guidelines [@cdc2022]. Based on these results, we classified the participants into four categories: underweight, healthy weight, overweight, and obesity. It is important to note that none of the students were deemed underweight. Videos of children performing locomotor and manipulative skills were used to train the principal investigator (PI) in the FG-COMPASS testing protocol. The PI and an experienced FG-COMPASS practitioner classified eight videos per skill. This joint classification improved the internal validity of the study. As per the test protocol, children received a score from 1 to 4 based on their performance for each fundamental movement skill. Each participant received a score for the locomotor subscale, the manipulative subscale, and the total test.
 
 ## Statistical Analyses
 
-Preliminary analyses were first conducted to ensure no violation of the assumptions of normality, linearity, and homogeneity of variances. Descriptive statistics were calculated for all the main variables in the study.
-
-Next, a series of factorial ANOVAs were conducted to examine the effects of sex and BMI group (normal weight versus overweight) on three separate dependent variables: Manipulative Fundamental Motor Skills (MFMS), Locomotor Fundamental Motor Skills (LFMS), and Total Fundamental Motor Skills (TFMS). The ANOVAs were designed to test the main effects of sex and BMI group, as well as the interaction between these two factors on each of the motor skill types. A stricter significance level of p \< .01 was adopted to control for Type I error due to multiple comparisons.
-
-Furthermore, non-parametric Mann-Whitney U tests were used to compare boys and girls on individual motor skills, namely, hop, jump, skip, throw, kick, dribble, catch, and batting. Mann-Whitney U tests were used in this case because these measures were ordinal, and it was unclear whether the data followed a normal distribution.
-
-Additionally, Pearson's correlation analysis was implemented to examine the relationships between BMI% and the three motor skills scores (LFMS, MFMS, TFMS). Pearson's criteria were employed to interpret the strength of the correlations, with r values below 0.3 regarded as weak, 0.3 to 0.5 as moderate, and above 0.5 as strong.
-
-All statistical analyses were conducted using jamovi software package (ref).
+Preliminary analyses ensured no violation of the assumptions of normality, linearity, and homogeneity of variances. Descriptive statistics were calculated for all main variables. Factorial ANOVAs tested the main effects of Sex and BMI group (normal weight versus overweight) and the interaction between these two factors on Manipulative Fundamental Motor Skills (MFMS), Locomotor Fundamental Motor Skills (LFMS), and Total Fundamental Motor Skills (TFMS). A stricter significance level of alpha = .01 was adopted to control for Type I error due to multiple comparisons. Non-parametric Mann-Whitney U tests compared individual motor skills of boys and girls, while Pearson's correlation analysis examined the relationships between the BMI percentile and the three motor skills scores. Pearson's criteria interpreted the strength of the correlations. All statistical analyses were conducted using the jamovi software package [@jamovi233].
 
 # Results
 
-We start by presenting the descriptive data in Table 1. Then, we separate the results based on our stated hypotheses. We first address the grouping and correlation analysis for our first hypothesis - differences between FMS and BMI. Then, we present the results concerning our second hypothesis - sex difference in FMS performance.
+The results are presented in line with the study hypotheses. First, we address the relationship between Fundamental Movement Skills (FMS) and Body Mass Index (BMI), followed by the analysis of sex differences in FMS performance. Descriptive statistics for FMS, split by sex and group, are available in {apatb-table1}. Participants were initially categorized into "normal weight," "overweight," and "obese" groups based on CDC guidelines [@cdc2022b]. However, due to the small sample sizes in the "overweight" and "obese" groups, these categories were merged and labeled "overweight".
 
-You can find the descriptive statistics for FMS splitted by sex and group in Table 1. We originally placed participants into three groups based on CDC guidelines (ref): Normal weight, Overweight, and Obese. Because of a small sample sizes in the Overweight and Obese groups, we decided to combine these categories and call it Overweight.
+```{asis}
+#| label: apatb-table1
+#| apa-cap: Descriptive Statistics of Fundamental Movement Skills by Sex and BMI Group
+#| apa-note: LFMS = Locomotor Fundamental Movement Skills; MFMS = Manipulative Fundamental Movement Skills; TFMS = Total Fundamental Movement Skills.
+#| echo: true
 
-\<insert table 1 near here\>
+| DV   | Sex   | BMI Group     | N  | Mean  | SD   |
+|------|-------|---------------|----|-------|------|
+| LFMS | Boys  | Normal Weight | 14 | 7.07  | 2.62 |
+|      |       | Overweight    | 6  | 6     | 1.67 |
+|      | Girls | Normal Weight | 11 | 7.73  | 2.05 |
+|      |       | Overweight    | 8  | 7.25  | 2.38 |
+| MFMS | Boys  | Normal Weight | 14 | 12.14 | 2.32 |
+|      |       | Overweight    | 6  | 12.5  | 2.95 |
+|      | Girls | Normal Weight | 11 | 9.09  | 2.26 |
+|      |       | Overweight    | 8  | 9.13  | 2.36 |
+| TFMS | Boys  | Normal Weight | 14 | 19.21 | 4.25 |
+|      |       | Overweight    | 6  | 18.5  | 4.23 |
+|      | Girls | Normal Weight | 11 | 16.82 | 3.19 |
+|      |       | Overweight    | 8  | 16.38 | 3.81 |
+```
 
 ## BMI grouping
 
-A two-way factorial ANOVA was conducted to examine the effects of sex and BMI group on manipulative fundamental motor skills (MFMS). There was a significant main effect of sex on MFMS, F(1, 35) = 15.6865, p \< .001, partial η² = .309. Boys (M = 12.32, SE = 0.814) scored significantly higher on MFMS than girls (M = 9.11, SE = 0.788). However, there was no significant effect of BMI group, F(1, 35) = 0.0581, p = .811, partial η² = .002, and no significant interaction between sex and BMI group, F(1, 35) = 0.0396, p = .843, partial η² = .001.
+A two-way factorial ANOVA was conducted (see {apatb-table2}) to examine the effects of Sex and BMI group on Manipulative Fundamental Motor Skills (MFMS). There was a significant main effect of sex on MFMS, *F*(1, 35) = 15.6865, p \< .001, partial η² = .309, with boys (M = 12.32, SE = 0.814) scoring significantly higher than girls (M = 9.11, SE = 0.788). However, neither the BMI group nor the interaction between sex and the BMI group had a significant effect on MFMS. Another two-way factorial ANOVA examining the effects of Sex and BMI groups on Locomotor Fundamental Motor Skills (LFMS) revealed no significant main or interaction effects. Similarly, an ANOVA evaluating the effects of Sex and BMI group on Total Fundamental Motor Skills (TFMS) found no significant main or interaction effects. In summary, while boys significantly outperformed girls in MFMS, there were no significant differences for LFMS or TFMS based on sex or BMI group.
 
-An additional two-way factorial ANOVA was conducted to assess the impact of Sex and BMI group on locomotor fundamental motor skills (LFMS). No significant main effect was found for either Sex, F(1, 35) = 1.517, p = .226, partial η² = .042, or BMI group, F(1, 35) = 1.002, p = .324, partial η² = .028. There was also no significant interaction between Sex and BMI group, F(1, 35) = 0.147, p = .703, partial η² = .004.
+```{asis}
+#| label: apatb-table2
+#| apa-cap: Two-Way Factorial ANOVA Results for Manipulative Fundamental Movement Skills by Sex and BMI Group
+#| echo: true
+|                 | SS      | df | MS     | F       | p      | η²p   |
+|-----------------|---------|----|--------|---------|--------|-------|
+| Sex             | 90.981  | 1  | 90.981 | 15.6865 | < .001 | 0.309 |
+| BMI Group       | 0.337   | 1  | 0.337  | 0.0581  | 0.811  | 0.002 |
+| Sex ✻ BMI Group | 0.23    | 1  | 0.23   | 0.0396  | 0.843  | 0.001 |
+| Residuals       | 202.998 | 35 | 5.8    |
+```
 
-Lastly, a two-way factorial ANOVA was conducted to examine the effects of sex and BMI group on total fundamental motor skills (TFMS). There were no significant main effects for sex, F(1, 35) = 2.988, p = .093, partial η² = .079, or BMI group, F(1, 35) = 0.1958, p = .661, partial η² = .006. Additionally, the interaction between sex and BMI group was not significant, F(1, 35) = 0.0107, p = .918, partial η² = .000.
+## Sex Differences for Individual Skills
 
-In summary, while there was a significant effect of sex on MFMS, with boys performing significantly better than girls, no significant effects were observed on LFMS or TFMS. Additionally, no significant differences were found between BMI groups across all motor skill categories. The interaction effects between sex and BMI group were not significant in any of the analyses.
+Significant sex differences were found in two motor skills: striking and kicking. The Mann-Whitney U test indicated significant differences in performance between boys and girls for these skills, with effect sizes suggesting large differences. Specifically, boys outperformed girls in both striking (U = 82.0, p = 0.001, r = 0.5684) and kicking (U = 92.5, p = 0.003, r = 0.5132). In contrast, no significant sex differences were found for the other individual motor skills, including dribbling, catching, hopping, jumping, skipping, and throwing. Although the Mann-Whitney U test results for these skills were not statistically significant, effect sizes varied, indicating varying degrees of difference in performance between boys and girls.
 
-## Sex differences for individual skills
+```{asis}
+#| label: apatb-table3
+#| apa-cap: Mann-Whitney _U_ test Results for Individual Motor Skills
+#| apa-note: Hₐ μ Boys ≠ μ Girls
+#| echo: true
 
-Significant sex differences were found in two motor skills, striking and kicking. The non-parametric Mann-Whitney U test, utilized due to the non-normal distribution of the data, indicated a significant difference in striking between boys and girls, U = 82.0, p = .001, with a rank biserial correlation of 0.5684, suggesting a large effect size. The median batting skill score for boys was 3.00 compared to 1.00 for girls, indicating that boys outperformed girls in batting in our sample.
-
-Additionally, boys and girls showed a significant difference in kicking, U = 92.5, p = 0.003, with a rank biserial correlation of .5132, indicating a large effect size. The median kicking skill score for boys was 2.00, compared to 1.00 for girls, signifying that boys outperformed girls in kicking within our sample.
-
-In contrast, no significant sex differences were found for the other individual motor skills, namely dribbling, catching, hopping, jumping, skipping, and throwing (p \> .05).
+| Motor Skill | Statistic | p-value | Effect Size |
+|-------------|-----------|---------|-------------|
+| Hop         | 142.0     | 0.164   | 0.2526      |
+| Jump        | 187.5     | 0.954   | 0.0132      |
+| Skip        | 167.5     | 0.508   | 0.1184      |
+| Throw       | 129.5     | 0.076   | 0.3184      |
+| Kick        | 92.5      | 0.003   | 0.5132      |
+| Dribble     | 141.5     | 0.131   | 0.2553      |
+| Catch       | 165.5     | 0.479   | 0.1289      |
+| Strike      | 82.0      | 0.001   | 0.5684      |
+```
 
 ## Correlations
 
-A Pearson's correlation analysis was conducted to investigate the associations between BMI% and different motor skills scores (LFMS, MFMS, TFMS).
+A Pearson correlation analysis was conducted to examine the relationships between the Body Mass Index percentile (BMI%) and Locomotor Fundamental Movement Skills (LFMS), Manipulative Fundamental Movement Skills (MFMS), and Total Fundamental Movement Skills (TFMS). The analysis revealed weak and non-significant correlations between BMI% and all three motor skill scores: LFMS (r = -0.261, p = 0.108), MFMS (r = -0.067, p = 0.687), and TFMS (r = -0.199, p = 0.225).
 
-The correlation between BMI% and LFMS was found to be weak and negative, but not statistically significant (r(37) = -0.261, p = .108). This suggests that while there is a small downward trend indicating that higher BMI% may be associated with lower LFMS, this correlation is not strong enough to be statistically significant within this sample.
+```{asis}
+#| label: apatb-table4
+#| apa-cap: Pearson Correlation Coefficients between BMI and LFMS, MFMS, and TFMS
+#| apa-note: n = 39
+#| echo: true
 
-Similarly, the correlation between BMI% and MFMS was found to be very weak and negative, but also not statistically significant (r(37) = -0.067, p = .687). This indicates that higher BMI% does not significantly impact MFMS within this sample.
+|        | BMI% (r, p-value) |
+|--------|-------------------|
+| LFMS   | -0.261, 0.108     |
+| MFMS   | -0.067, 0.687     |
+| TFMS   | -0.199, 0.225     |
 
-The correlation between BMI% and TFMS was found to be weak and negative, but not statistically significant (r(37) = -0.199, p = .225). This suggests a slight downward trend where higher BMI% might be associated with lower TFMS, but this correlation is also not statistically significant within this sample.
-
-In summary, while there are weak negative trends between BMI% and the different motor skills scores, none of these correlations reached statistical significance in this sample. According to Pearson's criteria, the strength of these correlations is considered weak. This suggests that in this sample, BMI% may not significantly impact these motor skills.
-
-table 2 here
-
-table 3 here
-
-table 4 here
+```
 
 # Discussion
 
-The purpose of this study was to explore the connection between body mass index (BMI) and FMS performance in children aged 5 to 7 years. Additionally, the study aimed to examine any differences in FMS performance based on BMI grouping and gender.
+This study examined the relationship between body mass index (BMI) and FMS performance among low-income rural children aged 5 to 7. Additionally, we aimed to determine if there were sex differences in FMS performance. Despite our initial hypotheses, our research found no evidence to support the assertion that BMI is related to FMS locomotor, FMS manipulative, or total FMS performance. Regarding sex differences, we observed that boys and girls differed in the performance of manipulative FMS but not in locomotor FMS or total FMS. Specifically, boys performed significantly better than girls in striking and kicking.
 
-Our study did not find any evidence to support the idea that BMI is associated with FMS locomotor, FMS manipulative, and FMS total. Our results align with Logan et al.'s study in 20, which also found no significant connections between BMI and FMS.
+Our findings align with other studies [@logan2013; @graf2004; @wrotniak2006], which found weak negative associations between BMI and FMS performance. However, when grouping participants based on their BMI (normal weight and overweight), we could not confirm our hypothesis that FMS performance would differ based on BMI groupings. This contrasts with other studies that found significant differences between BMI groups when measuring FMS performance. For instance, @logan2013 found that children classified as "overweight/obese" by their BMI percentiles ranked significantly lower than their peers on the MABC-2 percentiles. Similarly, using the Kiphard-Schilling's body coordination test - KTK, @lopes2012 and @graf2004 found that normal-weight children of both sexes had significantly higher FMS scores than children classified as "overweight".
 
-We discovered that BMI had only small and insignificant correlations with FMS Locomotor (r = - 0.26) and FMS Total (r = - 0.20). Unlike previous investigations by Field, Graf et al., Logan et al., and Lopes et al., we were unable to confirm the hypothesis that manipulative and locomotor skills performance varied based on BMI levels. Children classified as "normal weight" had no significant differences in their skills compared to those classified as "overweight" or "obese."
+Several factors could account for the non-significant findings among BMI groupings in relation to FMS performance. One primary consideration is the difference in participant demographics. Unlike previous studies, which predominantly involved urban populations, our research focused on participants from rural areas. @tomaz2019 reported superior performance in striking and horizontal jumping amongst rural (low-income) children, irrespective of income status, compared to their urban counterparts. This suggests that rural environments offer more play opportunities, allowing children to become proficient in some fundamental movement skills regardless of their weight status. Moreover, the inability to find a significant main effect of BMI Group on LFMS, MFMS, and TFMS may be due to the disparity in sample sizes between groups. The 'normal weight' and 'overweight' groups were not equally represented in the sample, which may have affected the ANOVA result. When sample sizes are unequal, the statistical power to detect an effect can be reduced, especially if the smaller group exhibits greater variability in the dependent variable. This underrepresentation could increase the risk of Type I errors in the larger group and Type II errors in the smaller group. As a result, the disparity in our group samples may have obscured any potential effect of BMI Group on the dependent variables. Future research would benefit from ensuring a more balanced representation across BMI categories, possibly via stratified sampling or oversampling of underrepresented groups.
 
-Method
+Our study supports the second hypothesis, consistent with previous research conducted by @barnett2008 and @wrotniak2006. We found that boys (M = 12.38) outperformed girls (M = 9.11) in manipulative but not locomotor skills. This is similar to the results of previous studies, where boys were more skilled in manipulative activities than girls. One possible explanation is that boys are more interested in activities that require manipulative skills, which could contribute to this gender difference [@wrotniak2006]. Interestingly, @barnett2008 found that girls scored slightly higher than boys in locomotor activities, but the difference was not statistically significant. Boys and girls in early elementary school may be attracted to activities requiring fundamental movement skills.
 
-General remarks on method. This paragraph is optional.
+# Limitations
 
-Not all papers require each of these sections. Edit them as needed. Consult the [Journal Article Reporting Standards](https://apastyle.apa.org/jars) for what is needed for your type of article.
+Several limitations should be considered when interpreting the findings of this study. First, our sample predominantly comprised low-income, rural children aged 5 to 7 years. Therefore, the results may not generalize to children from different socioeconomic backgrounds, urban areas, or other age groups. Second, our study relied on BMI as a proxy for children's adiposity. While BMI is a widely accepted measure, it does not directly assess body fat and its distribution, which may have different implications for motor performance. Future research could benefit from including more direct measures of adiposity, such as skinfold thickness or dual-energy X-ray absorptiometry (DXA). Third, the disparity in sample sizes across the 'Normal Weight' and 'Overweight' groups may have influenced our ability to detect significant differences in FMS performance based on BMI groupings. Future studies should aim for a more balanced sample size across groups to increase statistical power and improve the robustness of findings. Despite these limitations, our study provides valuable insights into the relationships between BMI, sex, and FMS performance among young children in low-income, rural settings. Our findings emphasize the need for additional study to fully comprehend these relationships and their implications for children's development and health.
 
-Participants
+# Conclusion
 
-Who are they? How were they recruited? Report criteria for participant inclusion and exclusion. Perhaps some basic demographic stats are in order. A table is a great way to avoid repetition in statistical reporting.
+This study explored the relationships between BMI, sex, and Fundamental Movement Skills (FMS) performance among low-income, rural children aged 5 to 7 years. Our findings revealed no significant effect of BMI on FMS performance, indicating that children's weight status did not significantly influence their motor skills in this sample. However, we identified a significant difference in manipulative FMS performance between boys and girls, suggesting that sex may play a role in developing certain motor skills. Our results contribute to the growing body of literature examining the complex relationships between physical characteristics and motor skill development in children. Importantly, these findings underscore the need for further research to elucidate these relationships, particularly in underrepresented populations such as low-income, rural children. Despite the lack of a significant association between BMI and FMS performance in our sample, it's important to recognize the broader health implications of obesity levels and poor fundamental motor skill development. Both factors have been independently linked to adverse health outcomes, such as cardiovascular disease and reduced physical activity levels. Therefore, comprehensive strategies that promote healthy weight and motor skill development remain crucial for supporting children's health and well-being. In conclusion, our study highlights the nuances and complexities in the relationships between BMI, sex, and FMS performance. We hope that our findings stimulate further research in this area, ultimately leading to more effective interventions to support children's physical development and overall health.
 
-Measures
+## Declaration of Conflicting Interest
 
-This section can also be titled **Materials** or **Apparatus**. Whatever tools, equipment, or measurement devices used in the study should be described.
+The authors state that they have no conflicts of interest.
 
-Measure A
-
-Describe Measure A.
-
-Measure B
-
-Describe Measure B.
-
-Procedure
-
-What did participants do?
-
-How are the data going to be analyzed?
-
-Results
-
-Descriptive Statistics
-
-Here we describe the basic characteristics of our primary variables.
-
-Let's make a figure. A reference label for a figure in APA format must have the prefix `apafg-`. This is different from the usual Quarto prefix `fig-`.
-
-```{r}
-#| label: apafg-myplot
-#| apa-cap: This is the figure caption.
-#| apa-note: This is a note below the figure.
-
-plot(1:10)
-```
-
-To refer to any figure or table, put the chunk label in curly braces. For example, see {apafg-myplot}. In {apafg-importedgraphic}, we import an image.
-
-```{r}
-#| label: apafg-importedgraphic
-#| apa-cap: This is an imported graphic.
-#| apa-note: My note.
-knitr::include_graphics("orcid.png")
-```
-
-We can make a table the same way as a figure except that the label prefix is `apatb-`. Again, this is different from the usual quarto prefix `tbl-`, which will put the table table caption in the wrong place and with non-APA formatting.
-
-```{r apatb-mytable}
-#| apa-cap: Here is the table caption.
-#| apa-note: Here is the note below the table.
-#| ft.align: left
-
-
-tibble(Numbers = seq(1,4), Letters = LETTERS[seq(Numbers)]) %>% 
-  flextable() %>% 
-  theme_apa() %>% 
-  line_spacing(part = "all") %>% 
-  padding(padding.top = 5, padding.bottom = 5)
-
-```
-
-To refer to this table in text, put the table's reference label in curly braces like so: As seen in {apatb-mytable}, there is not much information.
-
-What if you want the tables and figures to be at the end of the document? In the .pdf format, you can set the `floatsintext` option to false. For .html and .docx documents, there is not yet an automatic way to put tables and figures at the end. You can, of course, just put them all at the end, in order. The reference labels will work no matter where they are in the text.
-
-<!-- Add Additional Sections as Needed -->
-
-Discussion
-
-Describe results in non-statistical terms. <!-- Add sections as needed. -->
-
-Limitations and Future Directions
-
-Every study has limitations. Based on this study, some additional steps might include...
-
-Conclusion
-
-Let's sum this up.
+{{< pagebreak >}}
 
 # References
 
@@ -318,49 +262,38 @@ Let's sum this up.
 ::: {#refs}
 :::
 
-<!-- Delete any unnecessary sections or pagebreaks. -->
-
-{{< pagebreak >}}
-
-Appendix
-
-If there are multiple appendices, label them with level 1 headings as Appendix A, Appendix B, and so forth.
-
-<!-- I like my tables and figures intermingled with the text, -->
-
-<!-- but all tables can go here. -->
-
-<!-- Uncomment the pagebreaks as needed-->
-
-<!-- {{< pagebreak >}} -->
-
-<!-- Figures can go here. -->
-
-<!-- {{< pagebreak >}} -->
-
 ```{r}
-# Install the apaTables package if you haven't already
-install.packages("apaTables")
 
-# Load the apaTables package
-library(apaTables)
+# Load the libraries
+library(ggplot2)
+library(dplyr)
 
-# Create a data frame with ratings from two raters
-data <- data.frame(
-  rater1 = c(1, 2, 3, 3, 2),
-  rater2 = c(1, 2, 2, 3, 2)
-)
+# Read your data
+data <- read.csv("data.csv")
 
-# Create an APA-style table
-apa_table <- apa.cor.table(data,
-                           caption = "Inter-Rater Agreement",
-                           format = "markdown")
+# Assuming 'data' is your data frame and it has 'sex_label', 'cdc3_new_cat', and 'fms_man' columns
+# You may need to adjust this code if your data has different column names
 
-# Print the table
-print(apa_table)
+# Calculate the means and standard errors
+data_summary <- data %>%
+  group_by(sex_label, cdc3_new_cat) %>%
+  summarise(mean_fms_man = mean(fms_man), se = sd(fms_man) / sqrt(n()), .groups = 'drop')
 
+# Create the ggplot
+p <- ggplot(data_summary, aes(x = sex_label, y = mean_fms_man, color = cdc3_new_cat, group = cdc3_new_cat)) +
+  geom_point() +
+  geom_line() +
+  geom_errorbar(aes(ymin = mean_fms_man - se, ymax = mean_fms_man + se), width = 0.2) +
+  scale_color_grey(start = 0, end = 1) +  # Use grayscale for color
+  theme_minimal() +
+  theme(text = element_text(family = "Times New Roman")) +
+  labs(x = "Sex", y = "MFMS", color = "BMI Group")
 
+# Print the plot
+print(p)
 
-
+# Save the plot
+ggsave("my_plot.png", p, width = 7, height = 4.5, dpi = 300)
+``
 
 ```

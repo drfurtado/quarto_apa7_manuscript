@@ -1,0 +1,303 @@
+---
+title: "\\vskip 1.5cm \\bfseries Acute Beetroot Supplementation May Improve Blood Pressure \\\\ but not Exercise Economy in Female Masters Swimmers"
+
+# If blank, the running header is the title in upper case.
+shorttitle: Template for the apaquarto Extension
+# Set names and affiliations.
+# It is nice to specify everyone's orcid, if possible.
+# There can be only one corresponding author, but declaring one is optional.
+author:
+  - name: Ana Fulano
+    corresponding: true
+    orcid: 0000-0000-0000-0001
+    email: sm@example.org
+    url: https://example.org/
+    # Roles are optional. 
+    # Select from the CRediT: Contributor Roles Taxonomy https://credit.niso.org/
+    # conceptualization, data curation, formal Analysis, funding acquisition, investigation, 
+    # methodology, project administration, resources, software, supervision, validation, 
+    # visualization, writing, editing
+    roles:
+      - conceptualization
+      - writing
+    affiliations:
+      - id: id1
+        name: "Ana and Blanca's University"
+        group: Clinical Psychology Program
+        department: Department of Psychology
+        address: 1234 Capital St.
+        city: Albany
+        region: NY
+        postal-code: 12084-1234
+  - name: Blanca Zutano
+    orcid: 0000-0000-0000-0002
+    roles:
+      - project administration
+      - formal analysis
+    affiliations: 
+      - ref: id1
+  - name: Carina Mengano
+    orcid: 0000-0000-0000-0003
+    deceased: true
+    roles:
+      - formal analysis
+      - writing
+    affiliations:
+      - name: "Carina's Primary Affiliation"
+      - name: "Carina's Secondary Affiliation"
+    # Because Dolorita is unaffiliated, specify her city instead
+  - name: Dolorita Perengano
+    orcid: 0000-0000-0000-0004
+    roles:
+      - writing
+      - methodology
+      - formal analysis
+    # List city and region/state for unaffiliated authors
+    affiliations:
+      - city: Buffalo
+        region: NY
+author-note:
+  status-changes: 
+    # Example: [Author name] is now at [affiliation].
+    affiliation-change: ~
+    # Example: [Author name] is deceased.
+    deceased: ~
+  # Disclosures condensed to one paragraph, but you can start a field with two line breaks to break them up: \n\nNew Paragraph
+  disclosures:
+    # Example: This study was registered at X (Identifier Y).
+    study-registration: ~
+    # Acknowledge and cite data/materials to be shared.
+    data-sharing: ~
+    # Example: This article is based on data published in [Reference].
+    # Example: This article is based on the dissertation completed by [citation].  
+    related-report: ~
+    # Example: [Author name] has been a paid consultant for Corporation X, which funded this study.
+    conflict-of-interest: ~
+    # Example: This study was supported by Grant [Grant Number] from [Funding Source].
+    financial-support: ~
+    # Example: The authors are grateful to [Person] for [Reason].
+    gratitude: ~
+    # Example. Because the authors are equal contributors, order of authorship was determined by a fair coin toss.
+    authorship-agreements: ~
+abstract: "This document is a template demonstrating the apaquarto format. This document is a template demonstrating the apaquarto format.This document is a template demonstrating the apaquarto format. This document is a template demonstrating the apaquarto format. This document is a template demonstrating the apaquarto format. This document is a template demonstrating the apaquarto format. This document is a template demonstrating the apaquarto format. This document is a template demonstrating the apaquarto format. This document is a template demonstrating the apaquarto format. This document is a template demonstrating the apaquarto format. This document is a template demonstrating the apaquarto format. This document is a template demonstrating the apaquarto format. This document is a template demonstrating the apaquarto format."
+# Put as many keywords at you like, separated by commmas (e.g., [reliability, validity, generalizability])
+keywords: [keyword1, keyword2, keyword3]
+# If true, tables and figures are mingled with the text instead of listed at the end of the document.
+floatsintext: false
+# Numbered lines (.pdf and .docx only)
+numbered-lines: false
+# File with references
+bibliography: bibliography.bib
+# Masks references that appear in the masked-citations list
+mask: false
+masked-citations:
+  - schneider2012cattell
+  - schneider2015intelligence
+# Language options. See https://quarto.org/docs/authoring/language.html
+lang: en
+language:
+  citation-last-author-separator: "and"
+  citation-masked-author: "Masked Citation"
+  citation-masked-date: "n.d."
+  citation-masked-title: "Masked Title"
+  title-block-author-note: "Author Note"
+  title-block-correspondence-note: "Correspondence concerning this article should be addressed to"
+  title-block-role-introduction: "Author roles were classified using the Contributor Role Taxonomy (CRediT; https://credit.niso.org/) as follows:"
+
+format:
+  apaquarto-docx: default
+  apaquarto-html: default
+  apaquarto-pdf:
+    journal: "\\bfseries \\Large Journal of Kinesiology and Wellness"
+    volume: "\\vskip 1mm \\normalsize A Publication of the Western Society for Kinesiology and Wellness \\newline Volume 12, Number 1, Pages 1--9, 2023\\newline ISSN# 2323-4505"
+    documentmode: jou
+    keep-tex: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(conflicted)
+library(tidyverse)
+library(flextable)
+library(ftExtra)
+library(officer)
+library(knitr)
+
+conflicts_prefer(dplyr::filter, .quiet = TRUE)
+conflicts_prefer(flextable::separate_header, .quiet = TRUE)
+```
+
+Weight bias (i.e., anti-fat bias) is unreasonable judgments about someone based on weight (Washington, 2011). It is pervasive in the health industry, including those who work as physicians (Schwartz et al., 2003), physical educators (Fontana et al., 2017), fitness professionals (Dimmock et al., 2009; Fontana et al., 2018; Robertson & Vohora, 2008), and exercise science students (Chambliss et al., 2004; Fontana et al., 2013; Langdon et al., 2016; Rukavina et al., 2010; Wijayatunga et al., 2019). In the fitness industry, potential implications of these biases include negative perceptions of larger bodied individuals’ abilities, motivation, and potential job qualifications (Sartore & Cunningham, 2007). Weight stigma is defined as discriminatory acts towards individuals in larger bodies due to their size (Washington, 2011). Consequences of experiencing weight stigma include a) poor physical health, such as an increased likelihood of maintained obesity or weight gain (Sutin & Terracciano, 2013), and b) increased psychological distress, including greater rates of body dissatisfaction and symptoms of eating disorders (Vartanian & Novak, 2011). Paradoxically, individuals who experience weight stigma are more likely to avoid exercise as a result of internalized anti-fat attitudes (Vartanian & Novak, 2011) and experience an increased allostatic load (cumulative response to ongoing stress) (Guidi et al., 2021), which has a greater impact on their health than being in a larger body does (Gordon, 2020; Milburn et al., 2019).
+
+A systematic review on weight bias among exercise and nutrition professionals included 31 studies; however, only three focused specifically on fitness professionals (e.g., personal trainers or group fitness instructors) compared to “exercise professional trainees” (e.g., exercise science students). Robertson and Vohora (2008) were the first to report strong anti-fat implicit and explicit biases in fitness professionals (n = 57, “gym instructors” and “aerobics instructors”), with the bias being greater in those who had never been overweight and believed obesity was controllable. In a study surveying fitness center employees (management and administrative staff n = 15, personal trainers n = 16, fitness instructors n =19, and exercise/sport physiologists n = 20), Dimmock et al. (2009) reported a moderately strong implicit bias, but no explicit bias, towards individuals in larger body sizes. More recently, Fontana et al. (2018) found that personal trainers (n = 52) report strong implicit biases against individuals who are obese.
+
+Recently, Zaroubi et al. (2021) published a review article on the predictors of weight bias in fitness professionals and exercise science students (Zaroubi et al., 2021). Most of the studies in this review sampled undergraduate students in the exercise science field, with only four of the 18 sample fitness professionals. Of those four studies, only three included weight bias as a dependent variable (Dimmock et al., 2009; Fontana et al., 2018; Robertson & Vohora, 2008). A thematic analysis was conducted, and six themes emerged. First, exercise science students and fitness professionals strongly believe that weight is controllable and associate individuals with larger bodies with negative attributes such as laziness. Second, the relationship between gender and weight bias is still unknown as data is conflicting. Third, being enrolled in an exercise science or similar educational program is likely a predictor of weight bias. Fourth, personal and psychosocial factors (e.g., the tendency to internalize an athletic body as the ideal body shape) likely influence weight bias. Fifth, knowledge of the uncontrollable aspects of obesity (e.g., genetics) is likely to lower weight bias. Lastly, there is conflicting evidence regarding the influence of one’s personal history with someone in a larger body. Chambliss et al. (2004) report that a lack of family history of having a larger body leads to higher explicit weight bias in fitness professionals and regular exercisers (Chambliss et al., 2004). In contrast, DeBarr and Pettit reported no statistical differences in weight bias held by health educators classified as overweight compared to normal weight.
+
+Little research has examined explicit weight biases of fitness professionals, and no research has focused on whether their social identities and/or role in the industry (e.g., group fitness instructor versus personal trainer) influence their weight bias. This research is particularly important due to the influential nature of this field. Clients often look to fitness professionals for advice and education on changing their health behaviors. If fitness professionals hold strong weight biases, they may contribute to a harmful cycle whereby their clients become less likely to participate and/or adhere to their health behavior changes. Fitness professionals need to have more knowledge of weight biases. Thus, the study aimed to examine the influence of age, gender, body dissatisfaction, race, role in industry, BMI, income, and education on weight bias in fitness professionals.
+
+# Results
+
+There was a statistically significant interaction between gender and BMI on total AFAT scores, F(2,272) = 3.139, p = .045, partial 2 = .023. Therefore, an analysis of simple main effects for gender and BMI was performed with statistical significance receiving a Bonferroni adjustment. Women in the healthy (2.02  .51) and overweight (1.97  .49) BMI categories had significantly greater total AFAT scores (p = .003 and p = .023, respectively) compared to women in the obese BMI category (1.63  .48). There was also a statically significant interaction between education and BMI on total AFAT scores, F(9,266) = 2.201, p = .022, partial 2 = .069. An analysis of simple main effects for education and BMI was performed with statistical significance receiving a Bonferroni adjustment. For participants who had completed some college, those who were classified in the healthy BMI category had significantly greater total AFAT scores (2.05  .50) compared to those in the overweight BMI category (1.72  .46), p = .045. For participants who completed a master’s degree, those in the healthy BMI category (2.08  .56) and overweight BMI category (2.05  .43) had significantly greater total AFAT scores (p = .003 and .016, respectively) compared to those in the obese BMI category (1.48  .46). No other interaction effects were found. Therefore, one-way ANOVAs and MANOVAs were conducted to assess the direct effect of the IVs on AFAT total and AFAT subscales, respectively. The mean total AFAT scores for each IV are listed in Table 7.
+
+## Age
+
+rrr
+
+## Displaying Figures
+
+A reference label for a figure must have the prefix `fig-`, and in a code chunk, the caption must be set with `fig-cap`. Captions are in [title case](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case).
+
+```{r}
+#| label: fig-myplot
+#| fig-cap: The Figure Caption
+#| apa-note: This is the note below the figure.
+#| fig-height: 4
+#| fig-width: 6
+ggplot(data.frame(x = c(0, 35)), aes(x)) +
+  stat_function(fun = dchisq, 
+                args = list(df = 10),
+                geom = "area",
+                n = 1000,
+                color = NA,
+                fill = "#41448780") +
+  theme_void(base_size = 18)
+```
+
+To refer to any figure or table, use the `@` symbol followed by the reference label (e.g., @fig-myplot).
+
+## Imported Graphics
+
+One way to import an existing graphic as a figure is to use `knitr::include_graphics` in a code chunk. For example, @fig-import1 is an imported image. Note that in apaquarto-pdf documents, we can specify that that a figure or table should span both columns when in journal mode by setting the `apa-twocolumn` chunk option to `true`. For other formats, this distinction does not matter.
+
+```{r fig-import1}
+#| fig-cap: An Imported Graphic
+#| apa-note: A note below the figure
+#| apa-twocolumn: true
+#| out-width: "100%"
+knitr::include_graphics("img/sampleimage.png")
+```
+
+Figure graphics can be imported directly with Markdown:
+
+![Another Way to Import Graphics](img/sampleimage.png){#fig-import2 apa-note="A note below the figure"}
+
+## Displaying Tables
+
+We can make a table the same way as a figure. Generating a table that conforms to APA format in all document formats can be tricky. When the table is simple, the `kable` function from knitr works well. Feel free to experiment with different methods, but I have found that David Gohel's [flextable](https://davidgohel.github.io/flextable/) to be the best option when I need something more complex.
+
+```{r tbl-mytable}
+#| tbl-cap: The Table Caption
+#| apa-note: The note below the table.
+#| ft.align: left
+tibble(Numbers = seq(1,4), Letters = LETTERS[seq(Numbers)]) |> 
+  flextable() %>%
+  theme_apa() |> 
+  line_spacing(part = "all", space = 1)
+
+```
+
+To refer to this table in text, use the `@` symbol followed by the reference label like so: As seen in @tbl-mytable, the first few numbers and letters of the alphabet are displayed.
+
+In @tbl-mymarkdowntable, there is an example of a plain markdown table with a note below it.
+
+::: {#tbl-mymarkdowntable apa-note="This is a note below the markdown table."}
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+Table Caption of a Markdown Table
+:::
+
+What if you want the tables and figures to be at the end of the document? In the .pdf format, you can set the `floatsintext` option to false. For .html and .docx documents, there is not yet an automatic way to put tables and figures at the end. You can, of course, just put them all at the end, in order. The reference labels will work no matter where they are in the text.
+
+## Citations
+
+See [here](https://quarto.org/docs/authoring/footnotes-and-citations.html) for instructions on setting up citations and references.
+
+A parenthetical citation requires square brackets [@CameronTrivedi2013]. This reference was in my bibliography file. An in-text citation is done like so: @CameronTrivedi2013.
+
+See [here](https://wjschne.github.io/apaquarto/writing.html#references) for explanations, examples, and citation features exclusive to apaquarto like masked citations (citations masked for peer review) and possessive citations (e.g., "@schneider2012cattell ['s] idea seemed reasonable at the time.")
+
+## Masking Author Identity for Peer Review
+
+Setting `mask` to `true` will remove author names, affiliations, and correspondence from the title page. Any references listed in the `masked-citations` field will be masked as well. See [here](https://wjschne.github.io/apaquarto/writing.html#masked-citations-for-anonymous-peer-review) for more information.
+
+## Hypotheses, Aims, and Objectives
+
+The last paragraph of the introduction usually states the specific hypotheses of the study, often in a way that links them to the research design.
+
+# Method
+
+General remarks on method. This paragraph is optional.
+
+Not all papers require each of these sections. Edit them as needed. Consult the [Journal Article Reporting Standards](https://apastyle.apa.org/jars) for what is needed for your type of article.
+
+## Participants
+
+Who are they? How were they recruited? Report criteria for participant inclusion and exclusion. Perhaps some basic demographic stats are in order. A table is a great way to avoid repetition in statistical reporting.
+
+## Measures
+
+This section can also be titled **Materials** or **Apparatus**. Whatever tools, equipment, or measurement devices used in the study should be described.
+
+### Measure A
+
+Describe Measure A.
+
+### Measure B
+
+Describe Measure B.
+
+## Procedure
+
+What did participants do?
+
+How are the data going to be analyzed?
+
+# Results
+
+::: {apa-note="This is a note below the markdown table."}
+| Measure                    | F    | df  | *p*   | Partial η\^2 |
+|----------------------------|------|-----|-------|--------------|
+| Age X education            | 0.95 | 17  | 0.517 | 0.06         |
+| Age X income               | 1.27 | 27  | 0.174 | 0.13         |
+| Age X BMI                  | 1.76 | 8   | 0.086 | 0.05         |
+| Age X body dissatisfaction | 1.00 | 11  | 0.446 | 0.04         |
+| Age X industry role        | 1.28 | 7   | 0.261 | 0.03         |
+
+Table Caption of a Markdown Table
+:::
+
+## Descriptive Statistics
+
+Here we describe the basic characteristics of our primary variables.
+
+<!-- Add Additional Sections as Needed -->
+
+# Discussion
+
+Describe results in non-statistical terms. <!-- Add sections as needed. -->
+
+## Limitations and Future Directions
+
+Every study has limitations. Based on this study, some additional steps might include...
+
+## Conclusion
+
+Let's sum this up.
+
+# References
+
+<!-- References will auto-populate in the refs div below -->
+
+::: {#refs}
+:::
+
+<!-- Delete Appendix if not needed. -->
+
+# Appendix
+
+If there are multiple appendices, label them with level 1 headings as Appendix A, Appendix B, and so forth.

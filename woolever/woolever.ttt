@@ -1,69 +1,309 @@
 \begin{table*}[hbt]
 \ifnextchar[{\eatarg}{}
 
-\caption{Here is the table caption.}
-\label{apatb-mytable}
+\caption{Concurrent Validity Analysis for FG-COMPASS}
+\label{apatb-table1}
 
-\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1169}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1364}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1494}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.2273}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.2273}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ICC (95\% CI)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+F-Statistic (p-value)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Bias (95\% CI)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+LLA (95\% CI)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ULA (95\% CI)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Locomotor} & 0.68 (0.350, 0.840) & 3.05 (0.001) & 1.73e−16
+(−0.347, 0.347) & −1.95 (−2.547, −1.350) & 1.95 (1.350, 2.547) \\
+\textbf{Manipulative} & 0.89 (0.779, 0.945) & 8.85 (\textless0.001) &
+2.60e−16 (−0.222, 0.222) & −1.25 (−1.633, −0.865) & 1.25 (0.865,
+1.633) \\
+\textbf{Total test} & 0.89 (0.783, 0.946) & 9.00 (\textless0.001) &
+−2.53e−16 (−0.221, 0.221) & −1.24 (−1.621, −0.859) & 1.24 (0.859,
+1.621) \\
+\end{longtable}
 
-\global\setlength{\Oldtabcolsep}{\tabcolsep}
+\textbackslash tablenote\{ICC:~Intraclass Correlation Coefficient (ICC,
+2, k). Bias:~Mean difference between the two methods. LLA \& ULA:~95\%
+lower and upper limits of agreement in the Bland-Altman analysis.\}
 
-\setlength{\tabcolsep}{0pt}
+\textbackslash end\{table\}
 
-\renewcommand*{\arraystretch}{1.5}
-
-
-
-\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
-
-\begin{longtable*}[l]{|p{0.75in}|p{0.75in}}
-
-
-
-\ascline{0.75pt}{000000}{1-2}
-
-\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{Numbers}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{Letters}}} \\
-
-\ascline{0.75pt}{000000}{1-2}\endhead
-
-
-
-\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{1}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{A}}} \\
-
-
-
-
-
-\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{2}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{B}}} \\
-
-
-
-
-
-\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{3}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{C}}} \\
-
-
-
-
-
-\multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{4}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{11}{11}\selectfont{D}}} \\
-
-\ascline{0.75pt}{000000}{1-2}
+\begin{verbatim}
+:::
 
 
 
-\end{longtable*}
+
+## Inter-Rater Reliability
+
+The inter-rater reliability of the FG-COMPASS was assessed by comparing the live scores of all five raters involved in the study (see {apatb-table2}). Weighted kappa values were computed for each pair of raters, and then the mean was calculated to provide a single index of reliability [@light1971]. Weighted kappa values ranged from 0.42 to 0.93 (M = 0.66 SD = .15) for the LFMS subtest and from 0.31 to 0.93 (M = 0.77 SD = 0.15) for the MFMS subtest. The test's combined score (TFMS) was 0.72 (SD = 0.15). The resulting weighted kappa indicates 'good' agreement for the LFMS, MFMS subtests, and the total test (TFMS).
 
 
 
-\arrayrulecolor[HTML]{000000}
 
-\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+::: {.cell apa-cap='Weighted Kappa Statistics for the Inter-Rater Analysis' apa-note='_N_ = ???. LFMS = Locomotor Subtest. MFMS = Manipulative Subtest. TFMS = Locomotor and Manipulative scores combined. <br/> Asterisks indicate major disagreement between rater 5 and all other raters.'}
+```{=latex}
+\begin{table}
+\caption{Weighted Kappa Statistics for the Inter-Rater Analysis}
+\label{apatb-table2}
+\end{verbatim}
 
-\global\setlength{\tabcolsep}{\Oldtabcolsep}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.1471}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.1471}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 26\tabcolsep) * \real{0.0588}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Skill
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+1x2
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+1x3
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+1x4
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+1x5
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+2x3
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+2x4
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+2x5
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+3x4
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+3x5
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+4x5
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mean
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+SD
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{LFMS} & & & & & & & & & & & & \textbf{.66} & .15 \\
+& Hop & .56 & .43 & .43 & .50 & .42 & .49 & .46 & .53 & .64 & .52 & .50
+& .07 \\
+& Jump & .93 & .91 & .70 & .65 & .84 & .73 & .62 & .61 & .61 & .69 & .73
+& .12 \\
+& Skip & .78 & .74 & .60 & .63 & .87 & .77 & .76 & .69 & .71 & .83 & .74
+& .08 \\
+\textbf{MFMS} & & & & & & & & & & & & \textbf{.77} & .15 \\
+& Throw & .85 & .79 & .85 & .45* & .80 & .73 & .35* & .71 & .31* & .40*
+& .62 & .22 \\
+& Kick & .83 & .68 & .64 & .82 & .63 & .59 & .73 & .50 & .72 & .64 & .68
+& .10 \\
+& Dribble & .86 & .87 & .83 & .92 & .88 & .84 & .91 & .88 & .93 & .93 &
+.89 & .04 \\
+& Catch & .87 & .91 & .87 & .90 & .83 & .84 & .90 & .80 & .80 & .89 &
+.86 & .04 \\
+& Strike & .81 & .80 & .72 & .72 & .87 & .80 & .80 & .69 & .78 & .79 &
+.78 & .05 \\
+\textbf{TFMS} & & & & & & & & & & & & \textbf{.72} & .15 \\
+\end{longtable}
 
-\renewcommand*{\arraystretch}{1}
+\tablenote{_N_ = ???. LFMS = Locomotor Subtest. MFMS = Manipulative Subtest. TFMS = Locomotor and Manipulative scores combined. <br/> Asterisks indicate major disagreement between rater 5 and all other raters.}
 
-\tablenote{Here is the note below the table.}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\caption{Intra-Rater Agreement Measured by Weighted Kappa Coefficients Across Different Skills}
+\label{apatb-table3}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0441}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 30\tabcolsep) * \real{0.0637}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rater 1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rater 2
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rater 3
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rater 4
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rater 5
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+& IR1 & IR2 & IR3 & IR1 & IR2 & IR3 & IR1 & IR2 & IR3 & IR1 & IR2 & IR3
+& IR1 & IR2 & IR3 \\
+Hop (17) & 0.72 & 0.83 & 0.89 & 0.44 & 0.55 & 0.75 & 0.64 & 0.62 & 0.88
+& 0.69 & 0.40 & 0.62 & 0.84 & 0.62 & 0.80 \\
+Jump (18) & 0.56 & 0.49 & 0.83 & 0.46 & 0.68 & 0.39 & 0.74 & 0.38 & 0.49
+& 0.56 & 0.28 & 0.56 & 0.67 & 0.67 & 1.00 \\
+Skip (18) & 0.96 & 0.96 & 1.00 & 0.94 & 0.78 & 0.86 & 0.92 & 0.86 & 0.89
+& 0.51 & 0.68 & 0.86 & 0.66 & 0.52 & 0.83 \\
+Throw (18) & 0.80 & 0.52 & 0.53 & 0.63 & 0.62 & 0.97 & 0.52 & 0.54 &
+0.60 & 0.69 & 0.76 & 0.70 & 0.54 & 0.66 & 0.86 \\
+Kick (19) & 0.72 & 0.68 & 0.78 & 0.66 & 0.60 & 0.76 & 0.80 & 0.70 & 0.74
+& 0.74 & 0.64 & 0.72 & 0.64 & 0.62 & 0.80 \\
+Dribble (17) & 0.86 & 0.80 & 0.82 & 0.70 & 0.78 & 0.86 & 0.66 & 0.60 &
+0.82 & 0.76 & 0.68 & 0.74 & 0.60 & 0.64 & 0.68 \\
+Catch (20) & 0.68 & 0.62 & 0.86 & 0.86 & 0.66 & 0.80 & 0.76 & 0.78 &
+0.82 & 0.66 & 0.60 & 0.78 & 0.84 & 0.88 & 0.88 \\
+Strike (20) & 0.62 & 0.56 & 0.60 & 0.74 & 0.70 & 0.70 & 0.64 & 0.64 &
+0.64 & 0.74 & 0.68 & 0.68 & 0.70 & 0.62 & 0.78 \\
+\end{longtable}
+
+\tablenote{Quadratic weighted kappa values range from -1 to 1. IR1, IR2, IR3 represent three different comparison pairs:\ IR1 compares the ratings from the live performances with the recorded video (time 1), IR2 compares ratings from the live performances with the recorded video (time 2), and IR3 compares the ratings from the recorded performances from time 1 and time 2. Sample sizes for each skill are provided in parentheses next to the skill name. Rater 1 to Rater 5 represent five different individuals who rated the performances.}
+
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\caption{Summary of Quadratic Weighted Kappa for Intra-Rater Comparisons Across Motor Skills}
+\label{apatb-table4}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Skill & IR1 Mean (SD) & IR2 Mean (SD) & IR3 Mean (SD) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+LFMS & \textbf{0.69} & 0.62 & 0.78 \\
+Hop & 0.67 (0.13) & 0.60 (0.14) & 0.79 (0.10) \\
+Jump & 0.60 (0.10) & 0.50 (0.16) & 0.65 (0.23) \\
+Skip & 0.80 (0.18) & 0.76 (0.15) & 0.89 (0.06) \\
+MFMS & \textbf{0.70} & 0.66 & 0.76 \\
+Throw & 0.64 (0.10) & 0.62 (0.09) & 0.73 (0.16) \\
+Kick & 0.71 (0.06) & 0.65 (0.04) & 0.76 (0.03) \\
+Dribble & 0.72 (0.09) & 0.70 (0.08) & 0.78 (0.06) \\
+Catch & 0.76 (0.08) & 0.71 (0.11) & 0.83 (0.04) \\
+Strike & 0.69 (0.05) & 0.64 (0.05) & 0.68 (0.06) \\
+TFMS & \textbf{0.70} & 0.64 & 0.77 \\
+\end{longtable}
+
+\tablenote{IR1, IR2, IR3:\ Represent different inter-rater comparisons (e.g., live vs. video 1, live vs. video 2, video 1 vs. video 2). Mean:\ The average of the quadratic weighted kappa values for each scenario across all raters and skills. SD:\ The standard deviation of the quadratic weighted kappa values for each scenario across all raters and skills.}
+
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\caption{Weighted Kappa Scores between Raters and an Expert}
+\label{apatb-table5}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0876}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0949}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1387}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1387}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1387}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1460}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1460}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0584}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0511}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Skill
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rater 1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rater 2
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rater 3
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rater 4
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rater 5
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mean
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+SD
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+LFMS & & & & & & & \textbf{0.64} & 0.12 \\
+& Hop (17) & 0.71 (0.39, 0.90) & 0.77 (0.55, 0.87) & 0.50 (0.14, 0.73) &
+0.65 (0.32, 0.90) & 0.70 (0.36, 0.88) & 0.67 & 0.09 \\
+& Jump (18) & 0.74 (0.21, 1.00) & 0.83 (0.44, 1.00) & 0.78 (0.28, 1.00)
+& 0.75 (0.44, 0.93) & 0.57 (0.18, 0.89) & 0.73 & 0.09 \\
+& Skip (18) & 0.67 (0.37, 0.89) & 0.76 (0.36, 0.96) & 0.59 (0.26, 0.92)
+& 0.29 (-0.06, 0.66) & 0.35 (-0.02, 0.72) & 0.53 & 0.18 \\
+MFMS & & & & & & & 0.74 & 0.08 \\
+& Throw (19) & 0.92 (0.74, 1.00) & 0.79 (0.42, 0.97) & 0.65 (0.17, 0.94)
+& 0.71 (0.38, 0.89) & 0.69 (0.32, 0.92) & \textbf{0.75} & 0.10 \\
+& Kick (19) & 0.82 (0.56, 0.95) & 0.70 (0.31, 0.89) & 0.51 (0.13, 0.85)
+& 0.78 (0.40, 0.94) & 0.82 (0.57, 0.95) & 0.73 & 0.12 \\
+& Dribble (17) & 0.91 (0.75, 1.00) & 0.77 (0.47, 0.94) & 0.94 (0.84,
+1.00) & 0.77 (0.46, 0.93) & 0.89 (0.72, 0.97) & 0.86 & 0.07 \\
+& Catch (20) & 0.89 (0.77, 0.97) & 0.84 (0.72, 0.93) & 0.83 (0.67, 0.93)
+& 0.82 (0.61, 0.95) & 0.76 (0.54, 0.90) & 0.83 & 0.04 \\
+& Strike (19) & 0.61 (0.21, 0.89) & 0.57 (0.08, 0.87) & 0.50 (0.01,
+0.80) & 0.49 (-0.02, 0.82) & 0.40 (-0.09, 0.75) & 0.51 & 0.07 \\
+TFMS & & & & & & & \textbf{0.70} & 0.10 \\
+\end{longtable}
+
+\tablenote{Kappa scores are displayed with 95% confidence intervals. Mean and SD columns represent the average kappa score and dispersion for each skill, respectively. For LFMS, MFMS, and TFMS, these represent averages of the skills under each category. Sample sizes for each skill are indicated in parentheses after the skill name.}
 
 \end{table*}

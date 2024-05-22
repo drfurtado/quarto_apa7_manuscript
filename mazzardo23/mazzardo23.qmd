@@ -32,7 +32,7 @@ author:
   - name: Ovande Furtado Jr
     corresponding: true
     orcid: /0000-0003-3847-6314 
-    email: ovande@gmail.com
+    email: ovandef@csun.edu (818-564-7507)
     affiliations: 
     - name: California State University, Northridge
       department: Department of Kinesiology

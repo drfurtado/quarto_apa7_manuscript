@@ -7,6 +7,7 @@ author:
         address: 18111 Nordhoff St 
         city: Northridge, CA
         postal-code: 91330-8287
+    
 address:
   - J.D. Ball, Ph.D., ABPP
   - Eastern Virginia Medical School
@@ -18,18 +19,23 @@ cc:
 encl:
   - Anonymized Manuscript
   - Title page
+  - Images
 ps: |
 format: letter-pdf
 ---
 
-Greetings and well wishes to you! I am writing on behalf of myself and my co-authors to submit our manuscript titled "Association Between Fundamental Motor Skill Domains and Physical Fitness Components in Children Aged 5 to 11 Years" for publication consideration in the "Journal of Perceptual and Motor Skills." I hope this letter finds you in good health and high spirits.
+Dear Dr. J.D. Ball, Ph.D.,
 
-The manuscript examines the relationship between fundamental motor skills and the physical fitness components in children within the age of 5 to 11 years. It uncovers new insights into child development and lays groundwork for further research in this critical area. The manuscript is 18 pages long, concise yet comprehensive, and has been formatted according to the guidelines provided by your esteemed journal.
+I trust this message finds you in good health and spirits. I am writing to submit our recent manuscript entitled "Collecting Concurrent Validity, Expert-Rater Agreement, and Inter/Intra-Rater Reliability for the FG-COMPASS" for your consideration for publication in the revered "Journal of Perception and Motor Skills".
 
-We confirm that this manuscript is being submitted solely to "Perceptual and Motor Skills" and will not be concurrently submitted elsewhere until a final decision regarding its publication has been made by your journal.
+The manuscript, which extends over 28 pages and includes 1 figure and 5 tables, aimed to collect criterion-related (concurrent) validity for the FG-COMPASS by comparing its results with those of a criterion measure. In addition, this study sought to collect further inter-, intra-, and expert-rater reliability evidence for the FG-COMPASS from live assessments.
 
-All authors have reviewed the manuscript, contributed significantly to the research and writing process, and are in agreement with both the content of the article and the order of authorship. We collectively believe that our research adds significantly to the existing body of knowledge, and hope that it will be considered favorably by your review committee.
+The manuscript builds upon an earlier work we published in the PMS (https://doi.org/10.1177/0031512518769205).
 
-Should you require any further information, please do not hesitate to contact me. We look forward to the opportunity to contribute to the "Journal of Perceptual and Motor Skills".
+Hereby, we affirm the following: 1. The manuscript is being submitted exclusively to the "Journal of Perception and Motor Skills," and is not under consideration for publication elsewhere. 2. All authors have reviewed and approved the content of the article, agreeing unanimously on the order of authorship.
 
-Thank you for considering our submission.
+We are enthusiastic about the opportunity to share our findings with the readership of the "Journal of Perception and Motor Skills," and eagerly anticipate your feedback. We remain open to undertaking any revisions deemed necessary to elevate the contribution to meet the exacting standards of your esteemed journal.
+
+Best regards,
+
+Ovande Furtado Jr.

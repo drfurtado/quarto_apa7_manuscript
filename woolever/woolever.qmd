@@ -1,65 +1,42 @@
 ---
-title: " 
-Collecting Concurrent Validity, Expert-Rater Agreement, and Inter/Intra-Rater Reliability for the ANONYMIZED"
+title: "Collecting Concurrent Validity, Expert-Rater Agreement, and Inter/Intra-Rater Reliability for the FG-COMPASS"
 # Lines above title in .docx format
 blank-lines-above-title: 2
 # If blank, the running header is the title in upper case.
-shorttitle: Template for the APAquarto Format
+shorttitle: Validity and reliability of a test
 # Set names and affiliations.
 # It is nice to specify everyone's orcid, if possible.
 # There can be only one corresponding author.
 author:
-  - name: Ana Fulana
-    corresponding: true
+  - name: Mackinsey Woolever
+    corresponding: false
     orcid: 0000-0000-0000-0000
-    email: sm@example.org
-    url: https://example.org/
-    # Roles are optional
-    # Select from the CRediT: Contributor Roles Taxonomy https://credit.niso.org/
-    # Conceptualization, Data curation, Formal Analysis, Funding acquisition, Investigation, 
-    # Methodology, Project administration, Resources, Software, Supervision, Validation, 
-    # Visualization, Writing – original draft, Writing – review & editing
-    role:
-      - Conceptualization
-      - Writing - original draft
     affiliations:
       - id: id1
-        name: Ana and Blanca's University
-        department: Department of Psychology
-        address: 1234 Capital St.
-        city: Albany
-        region: NY
-        postal-code: 12084-1234
-  - name: Blanca Zutana
-    role:
-      - Project administration
+        name: California State University, Northridge
+        department: Department of Kinesiology
+  - name: Ovande Furtado Jr
+    corresponding: true
+    orcid: 0000-0003-3847-6314 
+    email: ovande@gmail.com (818-564-7507)
     affiliations: 
-      - ref: id1
-  - name: Carina Mengana
-    orcid: 0000-0000-0000-0001
-    role:
-      - Formal Analysis
-    affiliations:
-      - name: Carina's Primary Affiliation
-      - name: Carina's Secondary Affiliation
-    # Because Dolorita is unaffiliated, specify her city instead
-  - name: Dolorita Perengana
-    orcid: 0000-0000-0000-0003
-    role:
-      - Writing - review & editing
-      - Methodology
-      - Formal Analysis
-    affiliations:
-      - name: ~
-        city: Buffalo
-        region: NY
+    - name: California State University, Northridge
+      department: Department of Kinesiology
+      address: 18111 Nordhoff St
+      city: Northridge
+      region: CA
+      postal-code: 91330-8287
+  - name: Jere D. Gallagher
+    corresponding: false
+    affiliations: 
+    - name: University of Pittsburgh
 author-note:
   blank-lines-above-author-note: 1
   status-changes: 
     # Example: [Author name] is now at [affiliation].
-    affiliation-change: Ana Fulana is now at X University.
+   # affiliation-change: Ana Fulana is now at X University.
     # Example: [Author name] is deceased.
-    deceased: Carina Mengana is deceased.
+    deceased: Jere D. Gallagher is deceased.
   # Disclosures condensed to one paragraph, but you can start a field with two line breaks to break them up: \n\nNew Paragraph
   disclosures:
     # Example: This study was registered at ClinicalTrials.gov (Identifier NTC998877).
@@ -68,7 +45,7 @@ author-note:
     data-sharing: ~
     # Example: This article is based on data published in Pulaski (2017).
     # Example: This article is based on the dissertation completed by Graham (2018).    
-    related-report: This article is based on data published in Pulaski (2017). 
+    #related-report: This article is based on data published in Pulaski (2017). 
     # Example: Sally Jones earns royalties from the sale of Test X.
     conflict-of-interest: ~
     # Example: This study was supported by Grant A123 from the National Science Foundation.
@@ -77,8 +54,8 @@ author-note:
     gratitude: ~
     # Example. Because the authors are equal contributors, order of authorship was determined by a fair coin toss.
     authorship-agreements: ~
-abstract: "Fundamental movement skills (FMS) are considered the building blocks for developing specialized sports skills. In addition, fundamental movement skill competency has been linked to decreased levels of obesity and increased levels of physical activity/sports participation. Thus, assessing FMS development is crucial. This study aimed to collect evidence for concurrent validity, expert-rater agreement, and inter/intra-rater reliability for the ANONYMIZED. Participants were 34 children ages 5-10 years and 5 raters. Partial Pearson correlations comparing the scores of both tests indicate a moderate to strong correlation for locomotion (rxy.z =.52, p < .01), object manipulation (rxy.z =.59, p < .001), and total scores (rxy.z =.63, p < .001). The expert-rater agreement was assessed by comparing the live scores of five raters with those of an expert. Inter-rater reliability was assessed by comparing the scores across the five raters. Intra- rater reliability was assessed by comparing each rater’s live and video scores. Weighted kappa scores ranged from .51 to .83, .50 to .89, and .60 to .87 for expert-rater agreement and inter and intra-rater reliability, respectively. These results provide further validity and reliability evidence for the FG-COMPASSANONYMIZED. Further studies involving children with different ethnic backgrounds and larger sample size are recommended. ADD LIMITATIONS HERE."
-keywords: [Assessment, Fundamental Movement Skills, Children, Movement Competence]
+abstract: "Fundamental movement skills (FMS) are the building blocks for developing specialized sports skills. In addition, fundamental movement skill competency has been linked to decreased levels of obesity and increased levels of physical activity/sports participation. This study aimed to collect evidence for concurrent validity, inter-intra-, and expert-rater reliability for the FG-COMPASS. Participants were 34 children ages 5-10 years. The agreement between the FG-COMPASS and TGMD-2 was evaluated using the intraclass correlation coefficient (ICC) and Bland-Altman analysis for LFMS, MFMS, and TFMS. The ICC for the LFMS subtest was 0.68, indicating a 'good' agreement between the two tests. The Bland-Altman analysis revealed a mean bias close to zero. 'Excellent' agreement was observed for the MFMS subtest, with an ICC of 0.89 and Bland-Altman bias close to zero. The TFMS also demonstrated 'excellent' agreement, with an ICC of 0.89 and Bland-Altman bias close to zero. The inter-rater reliability of the FG-COMPASS was assessed by comparing the live scores of all five raters involved in the study. Weighted kappa values ranged from 0.42 to 0.93 (M = 0.66, SD = .15) for the LFMS subtest and from 0.31 to 0.93 (M = 0.77, SD = 0.15) for the MFMS subtest. The test's combined score (TFMS) was 0.72 (SD = 0.15). The resulting weighted kappa indicates 'good' agreement for the LFMS, MFMS subtests, and the total test (TFMS). The weighted kappa results for the intra-rater reliability indicate a ‘good’ agreement for LFMS (0.69), MFMS (0.70), and TFMS (0.70). The agreement between raters and the expert indicates a 'good' agreement for LFMS (0.64), MFMS (0.75), and TFMS (0.70). This study shows that the FG-COMPASS is a reliable and effective tool for assessing motor skills. Future research should focus on exploring any minor differences in the locomotor subtest and understanding the variations in rater interpretations. Additionally, adding two more skills to the locomotor subtest would be beneficial."
+keywords: [Assessment, Fundamental Movement Skills, Children, Movement Competence, Rating Scales, Assessment, Reliability, Agreement, Concurrent Validity]
 # I like using Zotero with BetterBibTeX to output a continuously updated "Better CSL JSON" file. But BibTeX works, too.
 bibliography: bibliography.bib
 format:
@@ -139,128 +116,245 @@ conflicts_prefer(dplyr::filter, .quiet = TRUE)
 conflicts_prefer(flextable::separate_header, .quiet = TRUE)
 ```
 
-It is crucial for young children to master fundamental movement skills, which can have both positive and negative impacts on their development and lifestyle. Competence in motor skills plays a significant role in their ability to participate in physical activities (Castelli & Valley, 2007). Engaging in physical activities is positively correlated with fundamental movement skills (FMS), particularly when the activities involve moderate to vigorous exertion (Bellows, Davies, Anderson, & Kennedy, 2013; Carroll & Loumidis, 2001; Fisher et al., 2005; Lemos, Avigo, & Barela, 2012; McKenzie et al., 2002) and negatively associated with obesity (Bayer, Bolte, Morlock, Ruckinger, & von Kries, 2009; Graf et al., 2004; Lopes, Stodden, Bianchi, Maia, & Rodrigues, 2012). Studies have shown that children who lack motor skill proficiency are less physically active (Fisher et al., 2005; McKenzie et al., 2002) and are more likely to be overweight or obese (Cliff et al., 2012).
+The acquisition of basic movement skills (FMS) holds significant importance for young children, as it has the potential to impact their development and lifestyle in both positive and negative ways. The level of motor competence is crucial to an individual's engagement in physical activities [@castelli2007]. Previous research has demonstrated a favorable correlation between perceived motor competence and proficiency in fundamental motor skills (FMS) among children and adolescents [@woods2007]. There is a favorable correlation between engagement in physical activity and the development of fundamental movement skills (FMS), particularly when the activities are of moderate to vigorous intensity [@bellows2013; @fisher2005; @lemos2012; @mckenzie2002]. Additionally, there is an inverse relationship between physical activity involvement and the prevalence of obesity [@bayer2009; @graf2004; @lopes2012]. Research has indicated a correlation between inadequate motor skill competence in children and reduced physical activity levels [@fisher2005; @mckenzie2002]. Furthermore, this lack of motor skill proficiency has been associated with an increased likelihood of being overweight or obese [@cliff2012].
 
-Thus, assessing the development of fundamental movement skills (FMS) is crucial for preschool and elementary school children. However, it has been noticed that gross motor skills are often ignored in childhood education. Ulrich (2000) points out that assessment tools can help detect delays and ensure children receive the necessary support and guidance. If not addressed early, delays in motor skill development may hinder future gross motor skill development (Ulrich, 2000), and likely impact the acquisition of specialized skills (Gabbard, 2012). According to Provost, Crowe, and McClain (2000), a developmental delay is defined as a 25% or greater difference between the child's actual age and their developmental age. If a motor delay is detected early, practitioners, parents, and educators can implement strategies to help the child to catch up.
+Assessing the development of fundamental movement skills (FMS) is crucial for preschool and primary school children, as these skills significantly influence their overall development and well-being throughout their lifespan. According to @ulrich2000, early childhood education tends to neglect the development of gross motor abilities. Assessment instruments are specifically developed to identify variations in motor development that can span a spectrum of severity, encompassing slight and significant delays. Failure to promptly address delays in motor skill development may impede the subsequent development of gross motor abilities [@ulrich2000] and may affect the acquisition of specialized skills [@gabbard2021]. According to @provost2000, a developmental delay is a discrepancy of 25% or greater between a child's chronological age and developmental age. Early detection of motor delay enables practitioners, parents, and educators to employ intervention measures to assist the child. A range of instruments exists for assessing fundamental movement skills, as highlighted by @cools2009. Nevertheless, it is important to note that these assessment tools are often not intended for real-time assessment by a single practitioner. Typically, test administrators are required to record the performances and then evaluate them. Developing an assessment tool that enables professionals to assess children's FMS proficiency without needing performance recording will enhance convenience.
 
-There are several instruments designed to assess and evaluate the development of fundamental movement skills. In general, these instruments are not designed to be administered in a live setting by a single practitioner. Often, test administrators are required to film skill performances and later code/rate the videos. Therefore, a more practical assessment tool would allow professionals to perform live assessments without the need to videotape performances. Recently, Furtado (2012) proposed a decision-tree method for assessing the skill level of a live FMS performance. A decision-tree is a decision hierarchical model that uses a tree-like method of decisions and potential consequences, leading to a final decision. This approach has traditionally being used in computer science and more recently in machine-learning, but can also be used in the behavioral sciences for making decisions based on empirical data [@vonwinterfeldtDecisionAnalysisBehavioral1986].
+It is essential to have a practical assessment instrument to assess gross motor development in school-age children. This helps identify any potential motor delays and ensures typical development. The Furtado-Gallagher Child Observational Movement Pattern Assessment System (FG-COMPASS) was developed to fill this gap, relying on only three performance criteria to evaluate FMS performance [@furtado2012]. To date, there have been no attempts to compare the results of the FG-COMPASS with those of a criterion measure. In addition, while the FG-COMPASS has demonstrated evidence of both inter- and intra-rater reliability, the agreement data utilized in these studies were obtained through video analysis rather than live performances [@furtado2012; @furtado2018]. Therefore, this study aimed to collect criterion-related (concurrent) validity for the FG-COMPASS by comparing its results with the TGMD-2 [@ulrich2000], a popular instrument for assessing FMS in children. In addition, this study sought to collect further inter-, intra-, and expert-rater reliability evidence for the FG-COMPASS from live assessments. Several hypotheses were proposed for this study. We anticipated that there would be at least a 'good' agreement (ICC/kappa scores above 0.74) for the locomotor (LFMS), manipulative (MFMS), and total test (TFMS) when investigating concurrent validity, inter- and intra-rater reliability, and expert-rater reliability for the FG-COMPASS.
 
-In the case of FMS, the empirical data are derived from validated or hypothesized developmental sequences from various motor skills [@halversonDevelopmentalSequencesHopping1985; @strohmeyerDevelopmentalSequencesCatching1991; @painterDevelopmentalSequencesHopping1994; @robertonDevelopmentLocomotorCoordination1988]. Following these studies, performance criteria are proposed for the motor skill under investigation. These performance criteria can be used for the development of informal checklists and instruments that are used assess fundamental movement skill proficiency.
-
-A decision-tree created for the skill of overhand using the method proposed by Furtado (2012) is depicted in Figure 1. The flowchart is comprised of a) decision nodes (questions) b) chance nodes (Yes or No), and c) end nodes (levels). Although several performance criteria can be proposed for a skill, only three are selected to form the decision-tree of a skill based on the method suggested by Furtado (2012). These performance criteria are then turned into questions which are the decision nodes of the decision-tree. In Figure 1, the top decision node contains a discriminatory question. It's purpose is to differentiate between levels 1 and 4 (end nodes). If the chance node is YES, the decision takes the path on the left and the observer is presented with a confirmatory question, which is meant to verify if a performer is at level 4 (chance node is YES) regarding proficiency of the skill of overhand throw. If the decision-tree fails to confirm a level 4 (chance node is NO), then the performer is assessed as level 3. The same applies to the right side of the decision-tree, except that the purpose is to confirm whether the performer is at level 1. The decision-tree approach simplifies the process of assessing fundamental movement skill live performances as only two performance criteria are used when deciding the proficiency levels of performers.
-
-![](images/dt-throw.png){width="569"}
-
-The development of an assessment tool involves several steps to confirm validity and reliability evidence of its scores. The ANONYMIZED is a criterion-related and process-oriented assessment tool developed for school settings and is the instrument under investigation in this study. Multiple studies have been conducted to collect psychometric evidence for the FG-COMPASS, namely, content-related validity [@furtadojr2009], reliability of classification decisions [@furtadojr2012], and non-live expert-rater agreement and inter-/intra-rater reliability [@furtadojr2018]. However, additional psychometric studies are needed for it to be utilized confidently in clinical and educational settings that require live assessments. In addition, the test's concurrent validity needs to be investigated.
-
-Therefore, this study aimed to attain concurrent validity for the ANONYMIZED by comparing its findings with those of the TGMD-2 [@ulrich2000], a commonly used gross motor skill assessment tool. The second purpose of this study was to collect expert-rater agreement from live assessments and additional inter-/intrarater reliability evidence for the test.
-
-<!--# no correlation, use bland-altman plot here. -->
-
-Three hypotheses were proposed for this study. First, we anticipated that there would be a positive "strong" (.50 or higher) correlation between the total scores of both tests.
-
-Second, there will be a positive strong correlation between the locomotor and manipulative scores between both tests. Finally, there will be a "good" (weighted kappa =.61 or higher) inter-rater and intra-rater agreement on the locomotor, manipulative, and total scores for the new instrument.
-
-Having a practical, valid, and reliable assessment tool to assess gross motor development is critical for identification of typical development and any potential motor delays in school-age children. Until now, there have been no attempts to compare the results of the ANONYMIZED to a criterion instrument such as the TGMD-2.
-
-In addition, although evidence of inter and intra-rater reliability for the ANONYMIZED exists \[source omitted\] [(Furtado & Gallagher, 2018)]{.underline}, agreement data were collected from video analysis. The current study assessed inter and intra-rater agreement in a live setting.
-
-<!--# talk about the purpose of the study and main hypotheses -->
-
-<!--# move this under method -->
-
-The Test of Gross Motor Development (TGMD-2) is considered to be the gold standard for assessing FMS competency in children between the ages of 3 and 10 years (Ulrich, 2000) and was used as the criterion for the analysis of concurrent validity in this study. The TGMD-2 has two gross motor subcategories (locomotor and object control) and assesses 12 skills.
-
-The (ANONYMIZED) was developed to assess gross motor skill development in children between the ages of 5 and 10 years \[source omitted\] (Furtado, 2009). The ANONYMIZED is similar to the TGMD-2 in that it assesses locomotor and object manipulation fundamental gross motor skills. The ANONYMIZED is designed to be administered in a live setting by a single practitioner without the need for video recordings.
-
-# Method
-
-General remarks on method. This paragraph is optional.
-
-Not all papers require each of these sections. Edit them as needed. Consult the [Journal Article Reporting Standards](https://apastyle.apa.org/jars) for what is needed for your type of article.
+# Materials and Methods
 
 ## Participants
 
-Who are they? How were they recruited? Report criteria for participant inclusion and exclusion. Perhaps some basic demographic stats are in order. A table is a great way to avoid repetition in statistical reporting.
+A convenient sampling method was used to recruit participants for this study. After Institutional Review Board approval, 41 children between the ages of 5 and 10 were recruited. However, only 34 children, 22 girls (M = 8.14, SD = 1.78) and 12 boys (M = 8.44, SD = 1.49), participated fully. Three participants dropped out independently; two never attended the assessment sessions; one was injured before the assessment, and one child moved out of the state during the data collection. Informed consent was obtained from each participant's parents or legal guardians before their involvement in the study. One randomly selected kindergarten through fourth-grade classroom received a recruitment packet to control for an even distribution of age ranges. Recruitment packets were given to additional classrooms if no consent forms were returned. A participant was excluded from the study if he/she: 1) was younger than five years or older than 10 years and 11 months; 2) had developmental delays or disabilities that may have affected their motor performance; 3) had no parental or verbal consent; or 4) had a "yes" response on any of the first five Physical Activity Readiness-Questionnaire (PAR-Q) questions [@adams1999].
 
 ## Measures
 
-This section can also be titled **Materials** or **Apparatus**. Whatever tools, equipment, or measurement devices used in the study should be described.
+### TGMD-2
 
-### Measure A
+The TGMD-2 [@ulrich2000], served as the gold standard for the concurrent validity analysis. This tool evaluates twelve gross motor skills, divided into two categories: six concerning locomotion and six related to object manipulation, suitable for children aged between 3 and 10 years. The TGMD-2 assesses various performance criteria focusing on different body components, including the arms, legs, and trunk. For instance, one criterion for hopping is that the "arms be flexed and swing forward to generate force." Each child is given two attempts to demonstrate each skill; a successful attempt awards a score of 1, while unsuccessful attempts receive a score of 0. After two trials for each skill, the scores are totaled to find the overall raw score for each subtest. These raw scores are then converted to standard scores, enabling comparison to normative data. Researchers can determine age equivalents and percentiles by analyzing the standard scores from both subtests. These standard scores, when combined, form a gross motor quotient value.
 
-Describe Measure A.
+Several studies have addressed the validity and reliability of the TGMD-2. The instrument demonstrates strong construct validity, effectively measuring the fundamental theoretical construct of gross motor development [@ulrich2000]. Its concurrent validity is supported through correlations with other established motor skill assessments, such as the Movement Assessment Battery for Children (MABC) [@cools2009]. High test-retest reliability of the TGMD-2 is reported, with coefficients frequently exceeding 0.90 [@valentini2004]. The test maintains good internal consistency, evidenced by Cronbach's alpha values generally above 0.80 for both the locomotion and object manipulation subtests [@wiart2001]. The TGMD-2 has also been adapted and validated in different cultural contexts, indicating its utility across various populations [@barnett2009]. The standardization process involved a representative sample of children in the United States, ensuring the relevance of the normative data for the target age group.
 
-### Measure B
+### FG-COMPASS
 
-Describe Measure B.
+The FG-COMPASS is a tool created to assess the gross motor skills of children aged 5 to 10 years. It evaluates eight skills, including three pertaining to locomotion and five to object manipulation. In the development of FG-COMPASS, @furtado2012 introduced a novel approach to constructing FMS rating scales. This method, detailed further in works by @perez2018 and @furtado2012, utilizes only key performance criteria arranged in a decision tree. Figure 1 depicts the decision tree for the 'Overhand Throw' skill, demonstrating three types of nodes: decision nodes, which pose questions; chance nodes, offering 'yes or no' options; and end nodes, which indicate levels.
 
-## Procedure
+Despite the availability of many performance criteria for each skill, only three are selected to create the decision tree, which is then formed through questions derived from these criteria. A particular instance of this can be observed in Figure 1, where a question at the top decision node aims to differentiate between levels 1 and 4. A 'yes' at the chance node directs to the right pathway, prompting a follow-up question to confirm if the individual exhibits a level 4 proficiency in overhand throws. If the answer is 'no', the rating settles at level 3.
 
-What did participants do?
+A similar process occurs on the left side of the tree, this time to assess for level 1 proficiency. This approach allows for a simplified evaluation of live performances of fundamental movement skills, restricting the assessment to just two performance criteria when determining skill proficiency levels. It enjoys support from several studies validating its efficacy and reliability, including evidence for content-related validity [@furtado2004], expert-rater agreement [@furtado2012; @furtado2018], and intra- and inter-rater reliability [@furtado2018].
 
-How are the data going to be analyzed?
+\[figure 1 here\]
+
+## Research Assistants
+
+Sixteen undergraduate students studying kinesiology were selected as research assistants for the study. Ten students were chosen to work as raters in the assessment of gross motor skills, with a random assignment of five raters per instrument: TGMD-2 and FG-COMPASS. The remaining students were assigned roles as test administrators- three for TGMD-2 and two for FG-COMPASS- except for one individual assigned to edit videos remotely, hence not requiring presence at the research site.
+
+Before initiating data collection, all participants underwent training tailored to their designated roles and respective instruments. This involved multiple sessions aimed at acquainting them with the necessary skills, including instruction on the setup for skills assessment, demonstrating tasks accurately, and the appropriate use and positioning of cameras for recording. The training ensured that both raters and test administrators were well-prepared to carry out their tasks effectively during the data collection phase.
+
+## Procedures
+
+### Data collection
+
+The TGMD-2 and the FG-COMPASS, although assessing the same construct, have distinct differences in their evaluation methods. Despite these differences, there were common procedures followed in administering both tests. The assessments were conducted during the morning or lunch recess periods, ensuring all student participants could complete both tests.
+
+Before the onset of data collection, the primary investigator assigned identification numbers to the participants to maintain order and organization. Upon reaching the test location, participants were guided to either the TGMD-2 or the FG-COMPASS stations as determined by a randomized list. This setup was revisited weekly to negate potential learning effects from repeated measurements of the same skill. After concluding the initial test at one of the stations, participants moved to the alternate station for further assessment. In certain instances, participants were asked to demonstrate multiple skills across both stations, alternating between them as needed.
+
+The administrators overseeing the TGMD-2 station visited the site weekly to conduct assessments per the directives detailed in the user manual by @ulrich2000. All skill performances were videotaped. Subsequently, the TGMD-2 raters were called to the lab to assess the performances through the recorded videos. The FG-COMPASS raters evaluated the participants directly on-site, though these performances were also recorded to allow for intra-rater reliability analysis. The participants were accorded one practice trial and three test trials for each skill.
+
+## Data Analysis
+
+Concurrent validity was assessed using the intraclass correlation coefficient (ICC, 2, k) and Bland-Altman plots. The reliability of the FG-COMPASS, both in terms of inter- and intra-rater consistency and the agreement between the expert and raters, was examined using weighted kappa statistics.
+
+The ICC is designed to evaluate the reliability of ratings by comparing the variation of different ratings for the same participant to the total variation across all ratings and participants [@mcgraw1996]. The Bland-Altman method involves determining the agreement between two quantitative measurements by studying the average difference and setting agreement limits, a strategy preferred over correlation techniques [@bland1986; @giavarina2015].
+
+The weighted kappa index is recommended when more than two coders independently classify an entity into three or more categories at an ordinal level, assigning different weights based on the degree of disagreement [@fleiss1973]. Unlike kappa, the weighted version considers the degree of disagreement in its calculation. The interpretation of weighted kappa and ICC values followed this scheme: above 0.75 indicated excellent agreement; values between 0.74 and 0.60 were good; values between 0.59 and 0.40 were fair, and values below 0.40 were poor [@cicchetti1994].
+
+A cross-sectional design was utilized in this study, and all statistical analyses were conducted using the statistical package jamovi [@jamovi233].
 
 # Results
 
-## Descriptive Statistics
+## Concurrent Validity
 
-Here we describe the basic characteristics of our primary variables.
+The agreement between the FG-COMPASS and TGMD-2 (see {apatb-table1}) was evaluated using the intraclass correlation coefficient and Bland-Altman analysis for LFMS, MFMS, and TFMS. The ICC for the LFMS subtest was 0.68, indicating a 'good' agreement between the two tests. The Bland-Altman analysis for the LMS subtest revealed a mean bias close to zero (see Figure 2). 'Excellent' agreement was observed for the MFMS subtest, with an ICC of 0.89 and Bland-Altman bias close to zero (see Figure 3). The TFMS also demonstrated 'excellent' agreement, with an ICC of 0.89 and Bland-Altman bias close to zero (see Figure 4).
 
-Let's make a figure. A reference label for a figure in APA format must have the prefix `apafg-`. This is different from the usual Quarto prefix `fig-`.
-
-```{r}
-#| label: apafg-myplot
-#| apa-cap: This is the figure caption.
-#| apa-note: This is a note below the figure.
-
-plot(1:10)
+```{asis}
+#| label: apatb-table1
+#| apa-cap: Concurrent Validity Analysis for FG-COMPASS
+#| apa-note: ICC:\ Intraclass Correlation Coefficient (ICC, 2, k). Bias:\ Mean difference between the two methods. LLA & ULA:\ 95% lower and upper limits of agreement in the Bland-Altman analysis.<br/> (*):\ p < 0.05.<br/> (**):\ p < 0.001.
+#| echo: true
+|                  | ICC       | F-Statistic (p-value) | Bias       | LLA       | ULA       |
+|------------------|-----------|-----------------------|------------|-----------|-----------|
+| **Locomotor**    | 0.68      | 3.05 (*)              | 1.73e−16   | −1.95     | 1.95      |
+| **Manipulative** | 0.89      | 8.85 (**)             | 2.60e−16   | −1.25     | 1.25      |
+| **Total test**   | 0.89      | 9.00 (**)             | −2.53e−16  | −1.24     | 1.24      |
 ```
 
-To refer to any figure or table, put the chunk label in curly braces. For example, see {apafg-myplot}. In {apafg-importedgraphic}, we import an image.
+\[figure 2 here\] \[figure 3 here\] \[figure 4 here\]
 
-```{r}
-#| label: apafg-importedgraphic
-#| apa-cap: This is an imported graphic.
-#| apa-note: My note.
-knitr::include_graphics("orcid.png")
+## Inter-Rater Reliability
+
+The inter-rater reliability of the FG-COMPASS was assessed by comparing the live scores of all five raters involved in the study (see {apatb-table2}). Weighted kappa values were computed for each pair of raters, and then the mean was calculated to provide a single index of reliability [@light1971]. Weighted kappa values ranged from 0.42 to 0.93 (M = 0.66 SD = .15) for the LFMS subtest and from 0.31 to 0.93 (M = 0.77 SD = 0.15) for the MFMS subtest. The test's combined score (TFMS) was 0.72 (SD = 0.15). The resulting weighted kappa indicates 'good' agreement for the LFMS, MFMS subtests, and the total test (TFMS).
+
+```{asis}
+#| label: apatb-table2
+#| apa-cap: Weighted Kappa Statistics for the Inter-Rater Analysis
+#| apa-note: LFMS:\ Locomotor Subtest. MFMS:\ Manipulative Subtest. TFMS:\ Locomotor and Manipulative scores combined. <br/> Asterisks indicate major disagreement between rater 5 and all other raters. 
+#| echo: true
+
+|               | Skill         | 1x2  | 1x3  | 1x4  | 1x5  | 2x3  | 2x4  | 2x5  | 3x4  | 3x5  | 4x5  | Mean | SD   |
+|---------------|---------------|------|------|------|------|------|------|------|------|------|------|------|------|
+| **LFMS**      |               |      |      |      |      |      |      |      |      |      |      | **.66**  | .15  |
+|               | Hop       | .56  | .43  | .43  | .50  | .42  | .49  | .46  | .53  | .64  | .52  | .50  | .07  |
+|               | Jump        | .93  | .91  | .70  | .65  | .84  | .73  | .62  | .61  | .61  | .69  | .73  | .12  |
+|               | Skip      | .78  | .74  | .60  | .63  | .87  | .77  | .76  | .69  | .71  | .83  | .74  | .08  |
+| **MFMS**      |               |      |      |      |      |      |      |      |      |      |      | **.77**  | .15  |
+|               | Throw       | .85  | .79  | .85  | .45* | .80  | .73  | .35* | .71  | .31* | .40* | .62  | .22  |
+|               | Kick       | .83  | .68  | .64  | .82  | .63  | .59  | .73  | .50  | .72  | .64  | .68  | .10  |
+|               | Dribble   | .86  | .87  | .83  | .92  | .88  | .84  | .91  | .88  | .93  | .93  | .89  | .04  |
+|               | Catch      | .87  | .91  | .87  | .90  | .83  | .84  | .90  | .80  | .80  | .89  | .86  | .04  |
+|               | Strike       | .81  | .80  | .72  | .72  | .87  | .80  | .80  | .69  | .78  | .79  | .78  | .05  |
+| **TFMS**      |               |      |      |      |      |      |      |      |      |      |      | **.72**  | .15  |
+
 ```
 
-We can make a table the same way as a figure except that the label prefix is `apatb-`. Again, this is different from the usual quarto prefix `tbl-`, which will put the table table caption in the wrong place and with non-APA formatting.
+## Intra-rater reliability for the FG-COMPASS
 
-```{r apatb-mytable}
-#| apa-cap: Here is the table caption.
-#| apa-note: Here is the note below the table.
-#| ft.align: left
+We evaluated the consistency of ratings by comparing live assessments with those obtained through video assessments (see {apatb-table3}). Of particular interest is 'IR1', which compares the ratings obtained from live assessments with those from recorded performances (time 1), which took place one week after the live assessment at the site. Additionally, we included ratings from a second video assessment and compared it with the live assessment (IR2) and the first video assessment (IR3). {apatb-table4} provides the mean and standard deviation scores for each intra-rater comparison across all five raters. Scores ranged from 0.50 to 0.89, indicating agreement from 'fair' to 'excellent' [@cicchetti1994].
 
+{{< pagebreak >}}
 
-tibble(Numbers = seq(1,4), Letters = LETTERS[seq(Numbers)]) %>% 
-  flextable() %>% 
-  theme_apa() %>% 
-  line_spacing(part = "all") %>% 
-  padding(padding.top = 5, padding.bottom = 5)
+```{asis}
+#| label: apatb-table3
+#| apa-cap: Intra-Rater Agreement Measured by Weighted Kappa Coefficients Across Different Skills
+#| apa-note: Quadratic weighted kappa values range from -1 to 1. IR1, IR2, and IR3 represent three different comparison pairs:\ IR1 compares the ratings from the live performances with the recorded video (time 1), IR2 compares ratings from the live performances with the recorded video (time 2), and IR3 compares the ratings from the recorded performances from time 1 and time 2. Sample sizes for each skill are provided in parentheses next to the skill name. Rater 1 to Rater 5 represents five different individuals who rated the performances.
+#| echo: true
+
+|         |        Rater 1       |        Rater 2       |        Rater 3       |        Rater 4       |        Rater 5       |
+|---------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+|         |     IR1     |     IR2     |     IR3     |     IR1     |     IR2     |     IR3     |     IR1     |     IR2     |     IR3     |     IR1     |     IR2     |     IR3     |     IR1     |     IR2     |     IR3     |
+| Hop (17)    |    0.72     |    0.83     |    0.89     |    0.44     |    0.55     |    0.75     |    0.64     |    0.62     |    0.88     |    0.69     |    0.40     |    0.62     |    0.84     |    0.62     |    0.80     |
+| Jump (18)   |    0.56     |    0.49     |    0.83     |    0.46     |    0.68     |    0.39     |    0.74     |    0.38     |    0.49     |    0.56     |    0.28     |    0.56     |    0.67     |    0.67     |    1.00     |
+| Skip (18)   |    0.96     |    0.96     |    1.00     |    0.94     |    0.78     |    0.86     |    0.92     |    0.86     |    0.89     |    0.51     |    0.68     |    0.86     |    0.66     |    0.52     |    0.83     |
+| Throw (18)  |    0.80     |    0.52     |    0.53     |    0.63     |    0.62     |    0.97     |    0.52     |    0.54     |    0.60     |    0.69     |    0.76     |    0.70     |    0.54     |    0.66     |    0.86     |
+| Kick (19)   |    0.72     |    0.68     |    0.78     |    0.66     |    0.60     |    0.76     |    0.80     |    0.70     |    0.74     |    0.74     |    0.64     |    0.72     |    0.64     |    0.62     |    0.80     |
+| Dribble (17)|    0.86     |    0.80     |    0.82     |    0.70     |    0.78     |    0.86     |    0.66     |    0.60     |    0.82     |    0.76     |    0.68     |    0.74     |    0.60     |    0.64     |    0.68     |
+| Catch (20)  |    0.68     |    0.62     |    0.86     |    0.86     |    0.66     |    0.80     |    0.76     |    0.78     |    0.82     |    0.66     |    0.60     |    0.78     |    0.84     |    0.88     |    0.88     |
+| Strike (20) |    0.62     |    0.56     |    0.60     |    0.74     |    0.70     |    0.70     |    0.64     |    0.64     |    0.64     |    0.74     |    0.68     |    0.68     |    0.70     |    0.62     |    0.78     |
+
 
 ```
 
-To refer to this table in text, put the table's reference label in curly braces like so: As seen in {apatb-mytable}, there is not much information.
+{{< pagebreak >}}
 
-What if you want the tables and figures to be at the end of the document? In the .pdf format, you can set the `floatsintext` option to false. For .html and .docx documents, there is not yet an automatic way to put tables and figures at the end. You can, of course, just put them all at the end, in order. The reference labels will work no matter where they are in the text.
+```{asis}
+#| label: apatb-table4
+#| apa-cap: Summary of Quadratic Weighted Kappa for Intra-Rater Comparisons Across Motor Skills
+#| apa-note: IR1, IR2, IR3:\ Represent different inter-rater comparisons (e.g., live vs. video 1, live vs. video 2, video 1 vs. video 2). Mean:\ The average of the quadratic weighted kappa values for each scenario across all raters and skills. SD:\ The standard deviation of the quadratic weighted kappa values for each scenario across all raters and skills.
+#| echo: true
 
-<!-- Add Additional Sections as Needed -->
+| Skill   | IR1 Mean (SD) | IR2 Mean (SD) | IR3 Mean (SD) |
+|---------|---------------|---------------|---------------|
+| LFMS    | **0.69**          | 0.62          | 0.78          |
+| Hop     | 0.67 (0.13)   | 0.60 (0.14)   | 0.79 (0.10)   |
+| Jump    | 0.60 (0.10)   | 0.50 (0.16)   | 0.65 (0.23)   |
+| Skip    | 0.80 (0.18)   | 0.76 (0.15)   | 0.89 (0.06)   |
+| MFMS    | **0.70**          | 0.66          | 0.76          |
+| Throw   | 0.64 (0.10)   | 0.62 (0.09)   | 0.73 (0.16)   |
+| Kick    | 0.71 (0.06)   | 0.65 (0.04)   | 0.76 (0.03)   |
+| Dribble | 0.72 (0.09)   | 0.70 (0.08)   | 0.78 (0.06)   |
+| Catch   | 0.76 (0.08)   | 0.71 (0.11)   | 0.83 (0.04)   |
+| Strike  | 0.69 (0.05)   | 0.64 (0.05)   | 0.68 (0.06)   |
+| TFMS    | **0.70**          | 0.64          | 0.77          |
+
+```
+
+## Expert-Rater Agreement for the FG-COMPASS
+
+The study aimed to assess the level of agreement between raters and expert ratings for the FG-COMPASS. The live ratings of five raters were compared with the expert's video scores. The results showed that the level of agreement varied across the skills assessed. For 'Hop', the agreement ranged from 'fair' to 'excellent', with a mean kappa value of 0.67. The agreement was more varied for' Skip', with kappa values ranging from 'poor' to 'excellent'. In the MFMS subtest, the agreement was considered 'excellent'. For 'Throw', the agreement ranged from good to excellent, with a mean kappa value of 0.75. For 'Dribble', all raters showed 'excellent' agreement, with kappa values ranging from 0.77 to 0.94 and a mean kappa of 0.86. For 'Catch', the agreement was 'excellent', with a mean kappa value of 0.83. For 'Strike', the agreement was 'fair' to 'good' with kappa values ranging from 0.40 to 0.61 and a mean kappa of 0.51. Considering all skills (TFMS), the mean kappa value was 0.70, indicating 'good' agreement across all skills when considering all raters.
+
+```{asis}
+#| label: apatb-table5
+#| apa-cap: Weighted Kappa Scores between Raters and an Expert 
+#| apa-note: Kappa scores are displayed without 95% confidence intervals. The mean and SD columns represent each skill's average kappa score and dispersion, respectively. For LFMS, MFMS, and TFMS, these represent averages of the skills under each category. Sample sizes for each skill are indicated in parentheses after the skill name. 
+#| echo: true
+
+|            | Skill       | Rater 1   | Rater 2   | Rater 3   | Rater 4    | Rater 5    | Mean   | SD    |
+|:-----------|:------------|:----------|:----------|:----------|:-----------|:-----------|:-------|:------|
+|  LFMS      |             |           |           |           |            |            | **0.64**   | 0.12  |
+|            | Hop (17)    | 0.71      | 0.77      | 0.50      | 0.65       | 0.70       | 0.67   | 0.09  |
+|            | Jump (18)   | 0.74      | 0.83      | 0.78      | 0.75       | 0.57       | 0.73   | 0.09  |
+|            | Skip (18)   | 0.67      | 0.76      | 0.59      | 0.29       | 0.35       | 0.53   | 0.18  |
+|  MFMS      |             |           |           |           |            |            | 0.74   | 0.08  |
+|            | Throw (19)  | 0.92      | 0.79      | 0.65      | 0.71       | 0.69       | **0.75**   | 0.10  |
+|            | Kick (19)   | 0.82      | 0.70      | 0.51      | 0.78       | 0.82       | 0.73   | 0.12  |
+|            | Dribble (17)| 0.91      | 0.77      | 0.94      | 0.77       | 0.89       | 0.86   | 0.07  |
+|            | Catch (20)  | 0.89      | 0.84      | 0.83      | 0.82       | 0.76       | 0.83   | 0.04  |
+|            | Strike (19) | 0.61      | 0.57      | 0.50      | 0.49       | 0.40       | 0.51   | 0.07  |
+|  TFMS      |             |           |           |           |            |            | **0.70**   | 0.10  |
+```
 
 # Discussion
 
-Describe results in non-statistical terms. <!-- Add sections as needed. -->
+This study aimed to establish the FG-COMPASS's concurrent validity by comparing its results to those of the TGMD-2. The study also sought further evidence of the FG-COMPASS's inter-, intra-, and expert-rater reliability.
 
-## Limitations and Future Directions
+## Concurrent Validity Between the FG-COMPASS and the TGMD-2
 
-Every study has limitations. Based on this study, some additional steps might include...
+The concurrent validity assessment between the FG-COMPASS and the TGMD-2 provides insights into the agreement and potential discrepancies between the two tests. Establishing concurrent validity is important when testing motor skills because it shows how much a new instrument, like the FG-COMPASS, can be used in place of or with an established test, like the TGMD-2.
 
-## Conclusion
+For the LFMS, the observed ICC of 0.68 falls within the 'good' range of agreement. This suggests that while both tests are aligned in their assessment of locomotor skills to a considerable extent, there are nuances or specific elements captured differently by each test. The Bland-Altman analysis further elucidates this observation. With a mean bias close to zero, there is virtually no systematic difference between the two tests regarding the locomotor subtest. The 95% limits of agreement, however, ranging from −1.95 to 1.95, show that individual scores can differ by almost two units (z-scores) in either direction. This range of disagreement suggests that, while the tests are generally aligned, they might occasionally produce different scores for the same individual.
 
-Let's sum this up.
+The MFMS demonstrated a stronger alignment between the FG-COMPASS and TGMD-2, with an ICC of 0.89. This level of agreement underscores that both tests have a similar evaluation framework for manipulative skills. The Bland-Altman analysis further supports this, with a mean bias close to zero, indicating negligible systematic differences. The 95% limits of agreement, spanning from −1.25 to 1.25, are tighter than those of the locomotor subtest, indicating more consistent agreement between the tests for individual scores in this category. It should be noted that the FG-COMPASS has three locomotor and five manipulative skills compared to the TGMD-2, which has six skills in each subtest. This imbalance in the number of skills in the locomotor subtest between the two tests likely affected the observed difference. This can be verified in future studies since two new locomotor skills have recently been added [@perez2018] to the locomotor subtest of the FG-COMPASS.
 
-Table 1
+For the TFMS, the ICC was also 0.89, mirroring the 'excellent' agreement observed in the manipulative subtest. The Bland-Altman analysis revealed a bias close to zero, again suggesting no meaningful systematic difference. The 95% limits of agreement ranged from −1.24 to 1.24, comparable to the manipulative subtest, showing a consistent level of individual score agreement across the entirety of the tests.
+
+In light of these findings, the FG-COMPASS has acceptable concurrent validity with the TGMD-2, especially for assessing manipulative skills. Although there is 'good' agreement in the locomotor subtest, the results indicate that the FG-COMPASS can be reliably used in contexts where the TGMD-2 is the standard. However, practitioners should exercise caution and consider potential discrepancies, especially when assessing locomotor skills. The observed differences could be attributed to the inherent variations in test structures, scoring criteria, or specific motor skills targeted. Further investigation could explore these nuances to improve the FG-COMPASS or offer more specific direction on its use in conjunction with or instead of the TGMD-2.
+
+## Inter-Rater Analysis
+
+The FG-COMPASS's inter-rater reliability assessment provided insights into the agreement of different raters' ratings. The weighted kappa values showed 'good' agreement for the LFMS, 'excellent' for the MFMS subtests, and 'good' for the overall test (TFMS). The agreement for the manipulative skills (0.77) was slightly higher when compared to the locomotor skills (0.66) - see {apatb-table2}. This trend has been seen in previous research when measuring inter-rater reliability [@houwen2010; @valentini2012]. In addition, a previous study [@furtado2018] found similar but higher kappa scores for LFMS (0.89), MFMS (0.88), and TFMS (0.89) when investigating the inter-rater reliability of the FG-COMPASS. These scores suggest an 'excellent' agreement. In the @furtado2018 study, raters assessed performers based on videos, whereas in the present study, we assessed live performances.
+
+For the LFMS subtest, 'Skip' achieved the highest mean reliability (0.74), followed by 'Jump' (0.73), suggesting a 'good' agreement among raters for both skills. This is consistent with @furtado2018 study, in which the inter-rater reliability for 'Jump' was found to be 0.92. On the other hand, 'Hop' had a lower mean reliability of 0.50, implying more variability in raters' scores. More training on the performance criteria for 'Hop' was necessary to avoid guessing when classifying the performers. A potential misunderstanding of the criteria may also have led to guessing and poor agreement among the raters. Thirdly, borderline performances may have led to disagreement among raters. Performances from individuals who are transitioning between levels are difficult to classify. After closely examining the recorded performances, it was noted that approximately two-thirds of the performers could be considered "borderline."
+
+Within the MFMS subtest, 'Dribble' and 'Catch' had particularly high agreement scores of 0.89 and 0.86, respectively. These values are similar to @furtado2018 study and reinforce the robustness of the scoring system for these skills. In contrast, the 'Throw' skill had an interesting result. While the kappa value (0.62) was considered 'good', it had a significantly higher standard deviation (0.22) than the other skills. The asterisks in the {apatb-table2} further highlight substantial disagreements between rater #5 and the other raters for this skill, suggesting potential inconsistencies or misinterpretations in the rating criteria or procedure for 'Throw'. In the current study, the weighted kappa of 0.62 (good) would increase to 0.79 (excellent) if rater #5 was removed from the analysis. Rater #5 showed the largest disagreement compared to the other four raters (see {apatb-table2}). The estimated agreement values were 0.45, 0.35, 0.31, and 0.40 between rater #5 and raters 1, 2, 3, and 4, respectively. These values are considerably lower when compared to the pair agreement values for the other raters, which ranged from 0.71 to 0.85. Such a discrepancy suggests that rater #5 misunderstood the criteria associated with 'Throw'. The kappa values for 'Kick' (0.68) and 'Strike' (0.78) are slightly lower when compared to the @furtado2018 study (e.g., Kick = 0.90, Strike = 0.86). The reason for the difference can be traced back to the fact that the raters in the current study evaluated performances in a live setting. In contrast, the raters in the 2018 study evaluated performances recorded on video.
+
+The TFMS combined score reliability of 0.72 reflects a balanced representation of the LFMS and MFMS subtests, adding to the tool's reliability. However, it is important to address the discrepancies and variations among the raters, especially the pronounced differences with rater #5 for the skill of 'Throw'. Such discrepancies could arise from several factors, including differing interpretations of scoring criteria, rater training, or even the subjective nature of certain skills. Future attempts to collect inter-rater reliability for the FG-COMPASS should give special attention to standardizing interpretations and emphasizing areas where disagreements are most apparent.
+
+## Intra-Rater Reliability
+
+Evaluating intra-rater reliability is crucial for assessing the consistency of measurements taken by raters at two different times, typically one week apart. Because the FG-COMPASS is being developed to assess motor skill performance in a live setting, this study was particularly focused on how live assessments compare with video recordings of the same performance. Following the live assessment of performances, which were recorded on video, participants returned to the lab twice to re-assess the recorded performances: one week after the live performances and again two weeks after the live performances. The mean values presented in {apatb-table4} provide a comprehensive overview of each rater's consistency across the three combinations: live versus recording - time 1 (IR1), live versus recording - time 2 (IR2), and recording time 1 versus recording time 2 (IR3). Based on {apatb-table4}, the average reliability score for the IR1 comparison is a noteworthy finding. This evaluation is especially interesting because it assesses the agreement between real-time ratings and those gathered from video recordings one week after the initial assessments.
+
+The results indicate a 'good' agreement for LFMS (0.69), MFMS (0.70), and TFMS (0.70). Regarding individual skills, 'Skip' demonstrated a high mean kappa intra-rater reliability of 0.80 for IR1. This suggests an 'excellent' agreement between the live and the first video assessments for this skill. On the other hand, the skill 'Jump' had a lower mean reliability score of 0.60, suggesting a possible inconsistency in intra-rater reliability. The TFMS mean kappa value (0.70) observed between live ratings and video recordings is considered 'good'. This value is lower than that obtained (0.91) in a previous study [@furtado2018], which assessed intra-rater reliability from video recordings. This difference was expected since assessing performance from videos is less challenging compared to live assessment.
+
+## Raters vs. Expert Agreement for the FG-COMPASS
+
+The expert-rater agreement is the degree to which raters in this study agreed with an expert familiar with the FG-COMPASS testing protocol. Thus, one of the aims of this study was to measure the level of agreement between the ratings of five raters and the expert's video scores.
+
+An average kappa value of 0.64 indicates that the agreement between the raters and the expert in the LFMS category was generally 'good'. For 'Hop', the raters' evaluations closely aligned with the expert, yielding a mean kappa value of 0.67. The 'Jump' skill exhibited even greater alignment between the raters and the expert, with a kappa value 0.73. On the other hand, the 'Skip' skill demonstrated a fair agreement level, with an average kappa value of 0.53. The 'Hop' and 'Jump' results indicate a shared interpretation of the evaluation criteria between the raters and the expert. The variability in kappa values for 'Skip' indicates potential differences in interpretation or understanding between the raters and the expert, which may need further clarification or training for the raters.
+
+When investigating agreement between trained raters and an expert from video performances, @furtado2012 found 'excellent' and 'good' agreement between raters and an expert for 'Skip' (0.77) and 'Jump' (0.70), respectively, and 'excellent' agreement for 'Hop' (0.85). It is important to note that the decision tree for "Jump' was modified following the @furtado2012 study and re-assessed recently [@furtado2018]. The agreement improved from 0.70 (good) to 0.88 (excellent). The lower kappa score (0.73) observed in the current study for 'Jump' is likely due to rater variability and the source of observation, which in the current study was from live performance compared to video performance in the 2018 study.
+
+A mean kappa value of 0.74 indicated an 'excellent' alignment between the raters and the expert in the MFMS category. The evaluations for the 'Throw' and 'Kick' skills aligned well with the expert's ratings, resulting in 'excellent' (0.75) and 'good' (0.73) agreement levels, respectively. The scores for 'Dribble' and 'Catch' had higher scores, with mean kappa values of 0.86 and 0.83, respectively. Like 'Jump', the decision trees for 'Dribble' and 'Catch' were modified following the @furtado2012 study and re-assessed in the @furtado2018 study. The kappa values improved from 0.72 (good) to 0.81 (excellent) and 0.72 (good) to 0.94 (excellent) for 'Dribble' and 'Catch', respectively. For the current study, 'Strike' displayed fair agreement (0.51). In its initial assessment [@furtado2012], the kappa value for 'Strike' was 0.79. This value, however, significantly improved to 0.93 in a subsequent study [@furtado2018]. Similar to 'Skip', the differences in the kappa values for 'Strike' suggest that there may be discrepancies in how the raters and the expert interpret or understand the test's protocol or criteria, which may require additional clarification or training for the raters in future studies.
+
+When looking at all eight FG-COMPASS skills, an average kappa value of 0.70 for the total test (TFMS) suggests a good agreement between the expert and the raters. The empirical findings highlight the significance of familiarizing oneself with the test protocol before utilizing the FG-COMPASS, particularly in skills where agreement with the expert was moderate (e.g., skip and strike).
+
+# Conclusion
+
+This study looked closely at the FG-COMPASS. It focused on how well it worked with the TGMD-2, how reliable it was between and within raters, and how much an expert and raters agreed. The results demonstrate promising evidence of the FG-COMPASS's applicability and robustness as a motor skill assessment tool. The assessment of concurrent validity with the TGMD-2 shows an excellent match between the two instruments. This shows that the FG-COMPASS could be a good alternative or supplementary tool. The 'good' agreement in the locomotor subtest calls for attention to specific nuances, which may be further explored in future studies. The evaluation of inter-rater reliability reveals 'good' agreement for LFMS, 'excellent' for MFMS, and 'good' for the overall test (TFMS). The discrepancies observed, especially with rater #5 for 'Throw', underline the importance of standardized interpretations and training among raters. The intra-rater reliability assessment, which explored consistency in live versus video assessments, indicates 'good' agreement. The variance in some skills, such as 'Jump', highlights the complexities of live assessment and warrants further examination. Finally, the analysis of agreement between raters and an expert emphasizes the significance of understanding and aligning with the test protocol. The agreement for LFMS was deemed 'good', while MFMS received an 'excellent' rating, resulting in an overall 'good' agreement. This reinforces the FG-COMPASS's ability to provide a strong agreement between FMS classifications from raters and a 'gold standard'.
+
+## Implications and Future Directions
+
+The findings collectively support the FG-COMPASS as a valuable instrument for motor skill assessment. The observed discrepancies in some areas provide constructive insights for refining the test, ensuring better alignment with established tests like the TGMD-2, and enhancing rater training and standardization. Future research should delve into the subtle differences in the locomotor subtest and seek to understand the variations in rater interpretations. Enhancing the FG-COMPASS through ongoing refinement and validation is important for more accurate and consistent motor skill evaluations in research and practical settings. This study contributes to the growing body of knowledge supporting FG-COMPASS's efficacy. It sets the stage for its broader implementation and potential impact on motor skill assessment.
+
+# Limitations
+
+Although precautions were taken, it's important to note that this study has some limitations. Compared to the TGMD-2, which consists of six locomotor and six manipulative skills, the FG-COMPASS has three locomotor and five manipulative skills. This discrepancy may have affected the alignment between the two tests, particularly in the locomotor subtest. Second, the discrepancies observed with certain raters, such as rater #5, may point to inconsistencies in rater training or interpretation of the criteria. This could affect the overall reliability of the ratings. Third, the variability in kappa values between raters and the expert for certain skills indicates potential differences in interpretation or understanding of the evaluation criteria. This may warrant further clarification or training. Fourth, due to the small sample size, there may be limitations in generalizing the findings to broader populations.
+
+## Declaration of Conflicting Interest
+
+The authors state that they have no conflicts of interest.
+
+{{< pagebreak >}}
 
 # References
 
@@ -269,22 +363,20 @@ Table 1
 ::: {#refs}
 :::
 
-<!-- Delete any unnecessary sections or pagebreaks. -->
-
-{{< pagebreak >}}
-
 # Appendix
 
-If there are multiple appendices, label them with level 1 headings as Appendix A, Appendix B, and so forth.
+## Caption for Figure 1
 
-<!-- I like my tables and figures intermingled with the text, -->
+Figure 1: The ANONYMIZED decision tree for the 'Overhand Throw' skill assessment. The tree starts with a primary decision node posing a question to differentiate between levels 1 and 4. Depending on the answer, the assessor is guided to subsequent nodes, simplifying the identification of proficiency levels down to two critical performance criteria, and ultimately leading to the end nodes representing the proficiency levels determined.
 
-<!-- but all tables can go here. -->
+## Caption for Figure 2
 
-<!-- Uncomment the pagebreaks as needed-->
+Figure 2: Bland-Altman plot analyzing the LFMS subtest scores from the ANONYMIZED and the TGMD-2. The plot contrasts the mean of the scores (x-axis) against their differences (y-axis), with 95% limits of agreement highlighted.
 
-<!-- {{< pagebreak >}} -->
+## Caption for Figure 3
 
-<!-- Figures can go here. -->
+Figure 3: Bland-Altman plot analyzing the MFMS subtest scores from the ANONYMIZED and the TGMD-2. The plot contrasts the mean of the scores (x-axis) against their differences (y-axis), with 95% limits of agreement highlighted.
 
-<!-- {{< pagebreak >}} -->
+## Caption for Figure 4
+
+Figure 4: Bland-Altman plot analyzing the TFMS subtest scores from the ANONYMIZED and the TGMD-2. The plot contrasts the mean of the scores (x-axis) against their differences (y-axis), with 95% limits of agreement highlighted.

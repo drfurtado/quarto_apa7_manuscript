@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Kellie Walters">
+<meta name="author" content="Alison Ede">
+<meta name="keywords" content="Anti-fat bias, fitness professionals, social identities, explicit bias, weight stigma">
+<meta name="description" content="TEMPLATE FOR THE APAQUARTO EXTENSION">
+
+<title> </title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="jkw-126_files/libs/clipboard/clipboard.min.js"></script>
+<script src="jkw-126_files/libs/quarto-html/quarto.js"></script>
+<script src="jkw-126_files/libs/quarto-html/popper.min.js"></script>
+<script src="jkw-126_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="jkw-126_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="jkw-126_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="jkw-126_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="jkw-126_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="jkw-126_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="_extensions/wjschne/apaquarto/apa.css">
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#firstheader" id="toc-firstheader" class="nav-link active" data-scroll-target="#firstheader"> </a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#participants" id="toc-participants" class="nav-link" data-scroll-target="#participants">Participants</a></li>
+  <li><a href="#instruments" id="toc-instruments" class="nav-link" data-scroll-target="#instruments">Instruments</a>
+  <ul class="collapse">
+  <li><a href="#anti-fat-attitudes-test-afat" id="toc-anti-fat-attitudes-test-afat" class="nav-link" data-scroll-target="#anti-fat-attitudes-test-afat">Anti-fat Attitudes Test (AFAT)</a></li>
+  <li><a href="#contour-drawing-rating-scale" id="toc-contour-drawing-rating-scale" class="nav-link" data-scroll-target="#contour-drawing-rating-scale">Contour Drawing Rating Scale</a></li>
+  </ul></li>
+  <li><a href="#statistical-analysis" id="toc-statistical-analysis" class="nav-link" data-scroll-target="#statistical-analysis">Statistical Analysis</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#age" id="toc-age" class="nav-link" data-scroll-target="#age">Age</a></li>
+  <li><a href="#gender" id="toc-gender" class="nav-link" data-scroll-target="#gender">Gender</a></li>
+  <li><a href="#body-dissatisfaction" id="toc-body-dissatisfaction" class="nav-link" data-scroll-target="#body-dissatisfaction">Body Dissatisfaction</a></li>
+  <li><a href="#race" id="toc-race" class="nav-link" data-scroll-target="#race">Race</a></li>
+  <li><a href="#bmi" id="toc-bmi" class="nav-link" data-scroll-target="#bmi">BMI</a></li>
+  <li><a href="#role-in-industry" id="toc-role-in-industry" class="nav-link" data-scroll-target="#role-in-industry">Role in Industry</a></li>
+  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
+  <li><a href="#income" id="toc-income" class="nav-link" data-scroll-target="#income">Income</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a>
+  <ul class="collapse">
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="jkw-126.docx"><i class="bi bi-file-word"></i>MS Word (apaquarto)</a></li><li><a href="jkw-126.pdf"><i class="bi bi-file-pdf"></i>PDF (apaquarto)</a></li></ul></div></nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</div>
+<main class="content" id="quarto-document-content">
+
+
+
+
+<br>
+
+<br>
+
+<section id="title" class="level1 title unnumbered unlisted">
+<h1 class="title unnumbered unlisted"> </h1>
+<div class="Author">
+<br>
+
+<p>Kellie Walters and Alison Ede</p>
+<p>Department of Kinesiology, California State University, Long Beach</p>
+</div>
+</section>
+<section id="author-note" class="level1 unnumbered unlisted AuthorNote">
+<h1 class="unnumbered unlisted AuthorNote">Author Note</h1>
+<p>Kellie Walters <img src="_extensions/wjschne/apaquarto/ORCID-iD_icon-vector.svg" id="orchid" class="img-fluid" width="16" alt="Orcid ID Logo: A green circle with white letters ID"> http://orcid.org/0000-0002-0892-8028</p>
+<p>Alison Ede <img src="_extensions/wjschne/apaquarto/ORCID-iD_icon-vector.svg" id="orchid" class="img-fluid" width="16" alt="Orcid ID Logo: A green circle with white letters ID"> http://orcid.org/0000-0001-8144-0013</p>
+<p>Correspondence concerning this article should be addressed to Kellie Walters, Department of Kinesiology, California State University, Long Beach, 1250 Bellflower Blvd, HHS2-221, Long Beach, CA 90840, Email: kellie.walters@csulb.edu</p>
+</section>
+<section id="abstract" class="level1 unnumbered unlisted AuthorNote">
+<h1 class="unnumbered unlisted AuthorNote">Abstract</h1>
+<div class="Abstract">
+<p>Limited and conflicting research is available regarding weight biases in the fitness industry, yet implications of such biases are pervasive. Individuals in larger bodies often experience stigma and prejudices due to their weight, and anti-fat attitudes have been normalized in the fitness industry and associated educational pipelines. Current literature on weight biases in the fitness industry lacks context and fails to examine these biases from an intersectional lens. Therefore, this study explored how social identities (e.g., age, gender, race, etc.) influence weight biases in fitness professionals. Fitness professionals completed an electronic survey that included demographic questions and measures of weight bias (Anti-Fat Attitudes Test; AFAT) and body dissatisfaction (Contour Drawing Rating Scale). Women in the healthy (2.02 ± .51) and overweight (1.97 ± .49) BMI categories had significantly greater total AFAT scores (p = .003 and p = .023, respectively) compared to women in the obese BMI category (1.63 ± .48). For participants who had completed some college, those who were classified in the healthy BMI category had significantly greater total AFAT scores (2.05 ± .50) compared to those in the overweight BMI category (1.72 ± .46). For participants who completed a master’s degree, those in the healthy BMI category (2.08 ± .56) and overweight BMI category (2.05 ± .43) had significantly greater total AFAT scores compared to those in the obese BMI category (1.48 ± .46). There was a direct effect of gender, body dissatisfaction, race and BMI on AFAT subscales. There was also a significant direct effect of body dissatisfaction on AFAT subscales. Across all variables, AFAT scores were highest for the physical subscale (2.69 ± .91) and lowest for the social subscale (1.43 ± .45). Fitness professionals exhibit explicit weight biases, and future research should examine the implications of such biases.</p>
+</div>
+<p><em>Keywords</em>: Anti-fat bias, fitness professionals, social identities, explicit bias, weight stigma</p>
+</section>
+<section id="firstheader" class="level1 title">
+<h1 class="title"> </h1>
+<p>Weight bias (i.e., anti-fat bias) is unreasonable judgments about someone based on weight <span class="citation" data-cites="washington2011a">Washington (<a href="#ref-washington2011a" role="doc-biblioref">2011</a>)</span> (Washington, 2011). It is pervasive in the health industry, including those who work as physicians (Schwartz et al., 2003), physical educators (Fontana et al., 2017), fitness professionals (Dimmock et al., 2009; Fontana et al., 2018; Robertson &amp; Vohora, 2008), and exercise science students (Chambliss et al., 2004; Fontana et al., 2013; Langdon et al., 2016; Rukavina et al., 2010; Wijayatunga et al., 2019). In the fitness industry, potential implications of these biases include negative perceptions of larger bodied individuals’ abilities, motivation, and potential job qualifications (Sartore &amp; Cunningham, 2007). Weight stigma is defined as discriminatory acts towards individuals in larger bodies due to their size (Washington, 2011). Consequences of experiencing weight stigma include a) poor physical health, such as an increased likelihood of maintained obesity or weight gain (Sutin &amp; Terracciano, 2013), and b) increased psychological distress, including greater rates of body dissatisfaction and symptoms of eating disorders (Vartanian &amp; Novak, 2011). Paradoxically, individuals who experience weight stigma are more likely to avoid exercise as a result of internalized anti-fat attitudes (Vartanian &amp; Novak, 2011) and experience an increased allostatic load (cumulative response to ongoing stress) ((Guidi et al., 2021), which has a greater impact on their health than being in a larger body does (Gordon, 2020; Milburn et al., 2019).</p>
+<p>A systematic review on weight bias among exercise and nutrition professionals included 31 studies; however, only three focused specifically on fitness professionals (e.g., personal trainers or group fitness instructors) compared to “exercise professional trainees” (e.g., exercise science students). Robertson and Vohora (2008) were the first to report strong anti-fat implicit and explicit biases in fitness professionals (n = 57, “gym instructors” and “aerobics instructors”), with the bias being greater in those who had never been overweight and believed obesity was controllable. In a study surveying fitness center employees (management and administrative staff n = 15, personal trainers n = 16, fitness instructors n =19, and exercise/sport physiologists n = 20), Dimmock et al.&nbsp;(2009) reported a moderately strong implicit bias, but no explicit bias, towards individuals in larger body sizes. More recently, Fontana et al.&nbsp;(2018) found that personal trainers (n = 52) report strong implicit biases against individuals who are obese.</p>
+<p>Recently, Zaroubi et al.&nbsp;(2021) published a review article on the predictors of weight bias in fitness professionals and exercise science students (Zaroubi et al., 2021). Most of the studies in this review sampled undergraduate students in the exercise science field, with only four of the 18 sample fitness professionals. Of those four studies, only three included weight bias as a dependent variable (Dimmock et al., 2009; Fontana et al., 2018; Robertson &amp; Vohora, 2008). A thematic analysis was conducted, and six themes emerged. First, exercise science students and fitness professionals strongly believe that weight is controllable and associate individuals with larger bodies with negative attributes such as laziness. Second, the relationship between gender and weight bias is still unknown as data is conflicting. Third, being enrolled in an exercise science or similar educational program is likely a predictor of weight bias. Fourth, personal and psychosocial factors (e.g., the tendency to internalize an athletic body as the ideal body shape) likely influence weight bias. Fifth, knowledge of the uncontrollable aspects of obesity (e.g., genetics) is likely to lower weight bias. Lastly, there is conflicting evidence regarding the influence of one’s personal history with someone in a larger body. Chambliss et al.&nbsp;(2004) report that a lack of family history of having a larger body leads to higher explicit weight bias in fitness professionals and regular exercisers Field (Chambliss et al.(Chambliss et al., 2004). In contrast, DeBarr and Pettit reported no statistical differences in weight bias held by health educators classified as overweight compared to normal weight. Little research has examined explicit weight biases of fitness professionals, and no research has focused on whether their social identities and/or role in the industry (e.g., group fitness instructor versus personal trainer) influence their weight bias. This research is particularly important due to the influential nature of this field. Clients often look to fitness professionals for advice and education on changing their health behaviors. If fitness professionals hold strong weight biases, they may contribute to a harmful cycle whereby their clients become less likely to participate and/or adhere to their health behavior changes. Fitness professionals need to have more knowledge of weight biases. Thus, the study aimed to examine the influence of age, gender, body dissatisfaction, race, role in industry, BMI, income, and education on weight bias in fitness professionals.</p>
+</section>
+<section id="methods" class="level1">
+<h1>Methods</h1>
+<section id="participants" class="level2">
+<h2 data-anchor-id="participants">Participants</h2>
+<p>The original data set included participants (n = 366) who identified as fitness professionals in various settings. Participants reported their role in the industry with the option to choose from certified personal trainer (n = 30), group fitness instructor (n = 107), facility club manager/director/owner (n = 2), physical/occupational therapist (n = 2), health/wellness coach (n = 2), strength and conditioning coach (n = 4), other with the option to enter their role (n = 15), and multiple (those who hold more than one role in the industry; n = 189). Due to low sample sizes within some of the roles (facility club manager, physical/occupational therapy, health/wellness coach, strength and conditioning coach, and others), only data from individuals who marked that they were personal trainers, group fitness instructors, or those who held multiple roles were included in the analysis (n = 326). The participants included a diverse sample, with 40.5% identifying as non-white (11% Black, 6.1% Asian, 8.6% Hispanic, 3.1% other, and 9.5% multi-race) and 59.5% identifying as White. Participants identified as female (n = 262) and male (n = 55), and their age was relatively equally distributed across all age groups ranging from 18-55+ (21.2% 18-24 years old, 26.1% 25-34 years old, 22.4% 35-44 years old, 17.2% 45-54 years old, and 12.9% 55 years old and older). Participants were well educated (66% having a minimum bachelor’s degree), and 43.7% reported an annual household income of $100,000 or more.</p>
+<p>Recruitment occurred via word of mouth, email, and social media. Participants were asked to complete an electronic survey about weight biases in the fitness industry. IRB approval and written participant consent were received before data collection. After four months of data collection, the authors recognized that the majority of respondents up until that point were white (84%) and subsequently amended the IRB application to include an incentive ($20 gift card) for individuals of color to participate in the study. After adjusting the recruitment language to include information about the incentive, an additional 109 fitness professionals who identified as persons of color completed the survey.</p>
+</section>
+<section id="instruments" class="level2">
+<h2 data-anchor-id="instruments">Instruments</h2>
+<p>In addition to demographic data (participants’ age, weight, height, BMI, gender, race, education, income, and role in the industry), the following instruments were used in this study.</p>
+<section id="anti-fat-attitudes-test-afat" class="level3">
+<h3 data-anchor-id="anti-fat-attitudes-test-afat">Anti-fat Attitudes Test (AFAT)</h3>
+<p>The modified 34-item AFAT scale (Lewis et al., 1997) measured explicit bias attitudes towards individuals in larger bodies (i.e., weight bias or anti-fat bias). This psychometrically sound scale (Dimmock et al., 2009; Lewis et al., 1997; Wijayatunga et al., 2019) consisted of a modified 5-point Likert scale with 1 being strongly disagree and 5 being strongly agree. To avoid social response bias, participants were reminded multiple times that their responses were anonymous. Positively worded statements were reverse coded, so higher scores represented greater anti-fat bias. The questionnaire includes three subscales: (1) social/character disparagement (e.g., “I prefer not to associate with fat people”), (2) physical/romantic unattractiveness (e.g., “Fat people are physically unattractive”), and (3) weight control/blame (e.g., “There is no excuse for being fat”), as well as a total composite score (Lewis et al., 1997). Individual questions were averaged for each subscale and the total AFAT composite score. Cronbach’s alpha was .71, .78, and .71 for the social, attraction, and blame subscales, respectively, indicating adequate internal consistency.</p>
+</section>
+<section id="contour-drawing-rating-scale" class="level3">
+<h3 data-anchor-id="contour-drawing-rating-scale">Contour Drawing Rating Scale</h3>
+<p>The psychometrically sound Contour Drawing Rating Scale assessed participants’ body dissatisfaction (Gardner &amp; Brown, 2010). As introduced by Thompson and Gray (1995), the Contour Drawing Rating Scale utilizes the drawings of masculine and feminine human figures in the front view. Nine drawings illustrate each gender, with illustrations representing progressively larger body shapes on a scale of 1 to 9. First, the participants chose which body type they most identified with (e.g., “Which bodies do you mostly identify with?”), with group A being body shapes traditionally assigned to women and group B being body shapes traditionally assigned to men (Figure 1). As noted earlier, this data assessed participants’ gender identity. The participants answered two more questions including: (1) “On a scale from 1-9, rate what your CURRENT body size based on the images above”, and (2) “On a scale from 1-9, rate what you would IDEALLY want to look like based on the images above.” Participants’ body dissatisfaction was calculated by subtracting the number associated with their ideal image from the number associated with their current image.</p>
+<p>Positive scores indicated a desired ideal body smaller than their current perceived body size, and negative scores indicated an ideal body larger than their current perceived body size. Scores ranged from -2 to 4 and were categorized into four groups: (1) moderate dissatisfaction, desire to be larger (scores of -2 and -1), (2) no dissatisfaction (scores of 0, meaning their current body size was their ideal body size), (3) moderate dissatisfaction, desire to be smaller (scores of 1 and 2), and (4) high dissatisfaction, desire to be smaller (scores of 3 and 4). While body dissatisfaction as a construct represents a desire to be a different shape, creating groups distinguishing positive and negative scores allows for a more nuanced understanding of body dissatisfaction. A desire to be smaller should represent a greater internalization of weight bias than a desire to be larger, as a desire to have a smaller body size is consistent with the societal ideal that thinner is more valued.</p>
+</section>
+</section>
+<section id="statistical-analysis" class="level2">
+<h2 data-anchor-id="statistical-analysis">Statistical Analysis</h2>
+<p>Two-way ANOVAs were conducted to examine the effects of every possible 2-way interaction of the eight IVs (age, gender, body dissatisfaction, race, BMI, role, education, and income) on AFAT total (Tables 1-6). When no interaction effects were found, one-way ANOVAs and MANOVAs were conducted to assess the direct effect of the IVs on AFAT total and AFAT subscales, respectively. Partial eta squared (partial η²) was used to measure the effect size of variables, with 0.1, 0.06, and 0.14 indicating a small, medium, and large effect size, respectively (Fritz et al., 2012). Outliers were assessed by inspection of a boxplot, normality was assessed using Shapiro-Wilk’s normality test for each cell of the design, and Levene’s test assessed homogeneity of variances. All data is presented as mean ± standard deviation. SPSS Version 27 was used to analyze the data, and significance was noted by a p-value &lt; 0.05.</p>
+</section>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<p>There was a statistically significant interaction between gender and BMI on total AFAT scores, <span class="math inline">F(2,272) = 3.139, p = .045, \text{partial } \eta^2 = .023</span>. Therefore, an analysis of simple main effects for gender and BMI was performed with statistical significance receiving a Bonferroni adjustment. Women in the healthy <span class="math inline">(2.02 \pm .51)</span> and overweight <span class="math inline">(1.97 \pm .49)</span> BMI categories had significantly greater total AFAT scores <span class="math inline">(p = .003 \text{ and } p = .023, \text{respectively})</span> compared to women in the obese BMI category <span class="math inline">(1.63 \pm .48)</span>. There was also a statically significant interaction between education and BMI on total AFAT scores, <span class="math inline">F(9,266) = 2.201, p = .022, \text{partial } \eta^2 = .069</span>. An analysis of simple main effects for education and BMI was performed with statistical significance receiving a Bonferroni adjustment. For participants who had completed some college, those who were classified in the healthy BMI category had significantly greater total AFAT scores <span class="math inline">(2.05 \pm .50)</span> compared to those in the overweight BMI category <span class="math inline">(1.72 \pm .46), p = .045</span>. For participants who completed a master’s degree, those in the healthy BMI category <span class="math inline">(2.08 \pm .56)</span> and overweight BMI category <span class="math inline">(2.05 \pm .43)</span> had significantly greater total AFAT scores <span class="math inline">(p = .003 \text{ and } .016, \text{respectively})</span> compared to those in the obese BMI category <span class="math inline">(1.48 \pm .46)</span>. No other interaction effects were found. Therefore, one-way ANOVAs and MANOVAs were conducted to assess the direct effect of the IVs on AFAT total and AFAT subscales, respectively. The mean total AFAT scores for each IV are listed in Table 7.</p>
+<section id="age" class="level2">
+<h2 data-anchor-id="age">Age</h2>
+<p>A one-way ANOVA was conducted to determine if total anti-fat bias differed by age group. Homogeneity of variances was violated, as assessed by Levene’s Test of Homogeneity of Variance <span class="math inline">(p = .001)</span>. Therefore, Welch’s F and Games-Howell were used to assess significance. There were no statistically significant differences in total AFAT scores between the different age groups, Welch’s F <span class="math inline">(4, 128.682) = 0.632, p = .640</span>. A one-way MANOVA was run to determine if anti-fat bias subscale scores differed by age group. Across all age groups, AFAT scores were highest for the physical subscale <span class="math inline">(2.69 \pm 0.92)</span> and lowest for the social subscale <span class="math inline">(1.43 \pm 0.45)</span>, with the blame subscale scores between <span class="math inline">(2.17 \pm 0.74)</span>. No statistically significant differences existed between age groups for all three AFAT subscales, <span class="math inline">F(12,852) = 1.415, p =.153; \text{Pillai’s Trace} = .059; \text{partial } \eta^2 = .020</span>.</p>
+<div id="tbl-tb1" class="quarto-float FigureWithNote" data-apa-note="Note below table" data-quarto-disable-processing="true" data-custom-style="FigureWithNote">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tb1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="FigureTitle" data-custom-style="FigureTitle">
+<p>Table&nbsp;1</p>
+</div>
+<div class="Caption" data-custom-style="Caption">
+<p>Summary of Two-way ANOVAs by Age</p>
+</div>
+</figcaption>
+<div aria-describedby="tbl-tb1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Measure</th>
+<th><em>F</em></th>
+<th><em>df</em></th>
+<th><em>p</em></th>
+<th><span class="math inline">\eta_{p}^{2}</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gender X race</td>
+<td>0.26</td>
+<td>4</td>
+<td>0.905</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>Gender X age</td>
+<td>1.27</td>
+<td>4</td>
+<td>0.280</td>
+<td>0.02</td>
+</tr>
+<tr class="odd">
+<td>Gender X education</td>
+<td>0.08</td>
+<td>4</td>
+<td>0.988</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>Gender X income</td>
+<td>0.60</td>
+<td>7</td>
+<td>0.757</td>
+<td>0.02</td>
+</tr>
+<tr class="odd">
+<td>Gender X BMI</td>
+<td>3.14</td>
+<td>2</td>
+<td>0.045*</td>
+<td>0.02</td>
+</tr>
+<tr class="even">
+<td>Gender X body dissatisfaction</td>
+<td>0.18</td>
+<td>3</td>
+<td>0.908</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>Gender X industry role</td>
+<td>0.53</td>
+<td>2</td>
+<td>0.592</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="FigureNote" data-custom-style="FigureNote">
+<p><em>Note</em>. Note below table</p>
+</div>
+</section>
+<section id="gender" class="level2">
+<h2 data-anchor-id="gender">Gender</h2>
+<p>A one-way ANOVA was conducted to determine if total anti-fat bias differed by gender. There was a statistically significant difference in total AFAT scores between genders, <span class="math inline">F(1, 280) = 8.320, p = .004</span>. Participants who identified as men reported significantly greater total AFAT scores <span class="math inline">(2.19 \pm 0.41)</span> than those who identified as women <span class="math inline">(1.96 \pm 0.51)</span>. A one-way MANOVA was run to determine if anti-fat bias subscales differed by gender. For both genders, AFAT scores were highest for the physical subscale <span class="math inline">(2.71 \pm 0.92)</span> and lowest for the social subscale <span class="math inline">(1.43 \pm 0.46)</span>, with the blame subscale scores between <span class="math inline">(2.17 \pm 0.74)</span>. The differences between genders on the AFAT physical subscale <span class="math inline">F(1,280) = 6.940, p &lt; .05; \text{partial } \eta^2 = .024</span> and AFAT blame subscale <span class="math inline">F(1,280) = 6.909, p &lt; .05; \text{partial } \eta^2 = .024</span> were statistically significant. Participants who identified as men reported significantly greater AFAT physical scores <span class="math inline">(3.02 \pm .91; p&lt;.05)</span> and AFAT blame scores <span class="math inline">(2.42 \pm .62; p&lt;.05)</span> than participants who identified as women <span class="math inline">(2.64 \pm .91 \text{ and } 2.12 \pm .75, \text{respectively})</span>.</p>
+</section>
+<section id="body-dissatisfaction" class="level2">
+<h2 data-anchor-id="body-dissatisfaction">Body Dissatisfaction</h2>
+<p>A one-way ANOVA was conducted to determine if total anti-fat bias differed by body dissatisfaction. There were statistically significant differences in total AFAT scores between different levels of body dissatisfaction, <span class="math inline">F(3, 276) = 4.147, p &lt; .05</span>. Those participants in the moderate dissatisfaction, desire to be smaller group <span class="math inline">(1.94 \pm .50)</span> had significantly lower total AFAT scores compared to those in the no dissatisfaction group <span class="math inline">(2.15 \pm .49), p = .017</span>.</p>
+<p>A one-way MANOVA was run to determine if anti-fat bias subscales differed by body dissatisfaction. AFAT scores were highest for the physical subscale <span class="math inline">(2.71 \pm 0.92)</span> and lowest for the social subscale <span class="math inline">(1.42 \pm 0.44)</span>, with the blame subscale scores between <span class="math inline">(2.17 \pm 0.74)</span>. The effect of body dissatisfaction on AFAT subscales was statistically significant, <span class="math inline">F(9,828) = 2.010, p &lt; .05; \text{Pillai’s Trace} = .064; \text{partial } \eta^2 = .021</span>. Tukey post-hoc tests showed that participants in the moderate dissatisfaction, desire to be smaller group <span class="math inline">(1.36 \pm .42)</span> had significantly lower AFAT social scores than participants in the no dissatisfaction group <span class="math inline">(1.57 \pm .49), p = .004</span>.</p>
+</section>
+<section id="race" class="level2">
+<h2 data-anchor-id="race">Race</h2>
+<p>A one-way ANOVA was conducted to determine if total anti-fat bias differed by race. Homogeneity of variances was violated, as assessed by Levene’s Test of Homogeneity of Variance <span class="math inline">(p = .001)</span>. Therefore, Welch’s F and Games-Howell were used to assess significance. Total AFAT scores were statistically significantly different by race, Welch’s F <span class="math inline">(5,47.989) = 7.564, p &lt; .001</span>. White participants reported significantly lower total AFAT scores <span class="math inline">(1.86 \pm .51)</span> than Black <span class="math inline">(2.14 \pm .40, p = .008)</span>, Asian <span class="math inline">(2.25 \pm .34, p = .001)</span>, and Hispanic <span class="math inline">(2.25 \pm .38, p &lt;.001)</span> participants. A one-way MANOVA was run to determine if anti-fat bias subscales differed by race. AFAT scores were highest for the physical subscale <span class="math inline">(2.68 \pm 0.92)</span> and lowest for the social subscale <span class="math inline">(1.42 \pm 0.44)</span>, with the blame subscale scores between <span class="math inline">(2.17 \pm 0.74)</span>. The effect of race on AFAT subscales was statistically significant, <span class="math inline">F(15,834) = 7.813, p &lt; .001; \text{Pillai’s Trace} = .370; \text{partial } \eta^2 = .123</span>. Tukey post-hoc tests demonstrated that participants who identified as White reported significantly lower AFAT physical scores <span class="math inline">(2.26 \pm .72)</span> than participants who identified as Black <span class="math inline">(3.46 \pm .69, p&lt;.001)</span>, Asian <span class="math inline">(3.12 \pm .71, p&lt;.001)</span>, Hispanic <span class="math inline">(3.30 \pm .87, p&lt;.001)</span>, other <span class="math inline">(3.46 \pm .81, p&lt;.001)</span>, and multi-race <span class="math inline">(3.04 \pm 1.02, p&lt;.001)</span>.</p>
+</section>
+<section id="bmi" class="level2">
+<h2 data-anchor-id="bmi">BMI</h2>
+<p>A one-way ANOVA was conducted to determine if total anti-fat bias differed by BMI. There were statistically significant differences in total AFAT scores between different levels of BMI, <span class="math inline">F(2, 282) = 3.278, p &lt; .05</span>. Those participants in the healthy BMI category <span class="math inline">(2.06 \pm .51)</span> had significantly greater total AFAT scores compared to those in the obese BMI category <span class="math inline">(1.79 \pm .53), p = .034</span>. A one-way MANOVA was run to determine if anti-fat bias subscales differed by BMI. AFAT scores were highest for the physical subscale <span class="math inline">(2.71 \pm 0.91)</span> and lowest for the social subscale <span class="math inline">(1.44 \pm 0.45)</span>, with the blame subscale scores between <span class="math inline">(2.19 \pm 0.74)</span>. There were significant differences in the AFAT subscale scores between BMI categories, <span class="math inline">F(6, 560) = 2.126, p = .049; \text{Pillai’s Trace} = .044; \text{partial } \eta^2 = .022</span>. Tukey post-hoc tests demonstrated that participants in the healthy BMI category reported significantly greater AFAT blame scores <span class="math inline">(2.27 \pm .70)</span> than participants in the obese BMI category <span class="math inline">(1.76 \pm .77, p = .003)</span>.</p>
+</section>
+<section id="role-in-industry" class="level2">
+<h2 data-anchor-id="role-in-industry">Role in Industry</h2>
+<p>A one-way ANOVA was conducted to determine if total anti-fat bias differed by role in the industry. There were no statistically significant differences in total AFAT scores between roles, <span class="math inline">F(2, 287) = 0.487, p = .615</span>. A one-way MANOVA was run to determine if anti-fat bias subscales differed by role in the industry. AFAT scores were highest for the physical subscale <span class="math inline">(2.69 \pm 0.92)</span> and lowest for the social subscale <span class="math inline">(1.43 \pm 0.50)</span>, with the blame subscale scores between <span class="math inline">(2.17 \pm 0.74)</span>. There were no significant differences in any of the AFAT subscale scores between the different industry roles, <span class="math inline">F(6, 572) = 1.60, p = .142; \text{Pillai’s Trace} = .033; \text{partial } \eta^2 = .017</span>.</p>
+</section>
+<section id="education" class="level2">
+<h2 data-anchor-id="education">Education</h2>
+<p>A one-way ANOVA was conducted to determine if total anti-fat bias differed by education level. There were no statistically significant differences in total AFAT scores between education levels, <span class="math inline">F(6, 282) = 1.528, p = .169</span>. A one-way MANOVA was run to determine if anti-fat bias subscales differed by education level. AFAT scores were highest for the physical subscale <span class="math inline">(2.69 \pm 0.92)</span> and lowest for the social subscale <span class="math inline">(1.43 \pm 0.45)</span>, with the blame subscale scores between <span class="math inline">(2.17 \pm 0.74)</span>. There were no statistically significant differences in the AFAT subscale scores between different levels of education, <span class="math inline">F(18,846) = 0.083, p = .158; \text{Pillai’s Trace} = .083; \text{partial } \eta^2 = .028</span>.</p>
+</section>
+<section id="income" class="level2">
+<h2 data-anchor-id="income">Income</h2>
+<p>A one-way ANOVA was conducted to determine if total anti-fat bias differed by income level. Homogeneity of variances was violated, as assessed by Levene’s Test of Homogeneity of Variance <span class="math inline">(p = .028)</span>. Therefore, Welch’s F and Games-Howell were used to assess significance. There were no statistically significant differences in total AFAT scores between the different income groups, Welch’s F <span class="math inline">(7, 108.923) = 1.472, p = .185</span>. A one-way MANOVA was run to determine if anti-fat bias subscales differed by income level. AFAT scores were highest for the physical subscale <span class="math inline">(2.70 \pm 0.92)</span> and lowest for the social subscale <span class="math inline">(1.43 \pm 0.45)</span>, with the blame subscale scores between <span class="math inline">(2.17 \pm 0.73)</span>. There were no statistically significant differences in the AFAT subscale scores between different levels of income, <span class="math inline">F(21,819) = 1.39, p = .141; \text{Pillai’s Trace} = .100; \text{partial } \eta^2 = .033</span>.</p>
+</section>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<p>A key finding from this study is that a fitness professional’s BMI interacts with their gender and education level in relation to total weight bias. Women in the healthy and overweight BMI category had significantly greater total weight bias compared to those in the obese BMI category. This supports previous findings that higher BMI is associated with lower anti-fat bias (Elran-Barak &amp; Bar-Anan, 2018; Marini et al., 2013). These findings suggest that being in a smaller body increases women’s likelihood of exhibiting greater anti-fat biases. Results from this study demonstrate that those with more education reported greater weight biases in smaller (i.e., healthy BMI category) and larger bodies (i.e., overweight BMI category) than those with less education who only reported greater weight biases in smaller bodies. Previous research has found that as physical education students advance in their degrees, they will likely demonstrate greater weight bias (O’Brien et al., 2007; Wijayatunga et al., 2019). Therefore, a relationship between education level and severity of weight biases may exist whereby, despite being in a larger body, students with more education may be more likely to hold negative beliefs about individuals in larger bodies due to internalizing the weight biases inherent in health education (Zaroubi et al., 2021).</p>
+<p>Results from this study and others demonstrate that men reported significantly greater anti-fat biases when controlling for BMI than women (Chambliss et al., 2004; Langdon et al., 2016). From a societal perspective, it is more acceptable for men to be in larger bodies than women (Heise et al., 2019). However, when BMI was included in this study’s analysis, women with smaller bodies were the ones who held greater anti-fat biases. The drive for thinness that is perpetuated in the fitness industry may contribute to women internalizing messaging about what it means to be in a larger body, which may contribute to having a greater anti-fat bias.</p>
+<p>Both females and males in the healthy BMI category reported significantly greater total weight bias compared to those in the obese BMI category. These findings result from cultural norms where larger bodies are often viewed as less desirable than smaller bodies. This is seen in the fitness industry’s lack of images of people with larger bodies and the current culture of dismissing people as less able, less self-disciplined, and lacking willpower (Foster et al., 2003; Hebl &amp; Xu, 2001). Interestingly, fitness professionals in this study with moderate body dissatisfaction and a desire to be smaller reported significantly lower total and social weight bias than those without no dissatisfaction. Experiencing body dissatisfaction may increase empathy towards individuals in larger bodies, thereby reducing their weight bias. However, further examination is necessary to better understand this relationship. Similarly, the two levels of education associated with influencing the relationship between BMI and total AFAT scores (some college and having a Master’s Degree) are separated by two additional levels of education (Associate Degree and Bachelor’s Degree), which makes drawing any conclusion about the relationship between education, BMI, and anti-fat bias difficult. Thus, further research examining this relationship is warranted as well.</p>
+<p>Regardless of age, gender, body dissatisfaction, race, role in industry, income, or education, total AFAT scores and all AFAT subscale scores were below the anti-fat bias threshold 3. Dimmock et al.&nbsp;(2009) reported similar results with mean explicit weight bias values of 1.65, 2.66, and 2.92 for social, physical, and blame AFAT subscales. However, conflicting research demonstrates that fitness professionals possess strong implicit anti-fat biases (Dimmock et al., 2009; Fontana et al., 2018; Robertson &amp; Vohora, 2008). The differences in findings could result from measuring implicit versus explicit weight bias, where implicit bias measures biases that emerge subconsciously without awareness, and explicit bias measures conscious biases (Gawronski &amp; Bodenhausen, 2006). A limitation of this study was the use of explicit rather than implicit weight bias measures, which increases the likelihood of response bias. The participants who chose to complete this study have more favorable attitudes towards individuals in larger bodies, which is why they were interested in participating. Future research should examine how social identities and industry roles influence implicit weight biases in the fitness industry.</p>
+<p>Despite AFAT scores not being below the anti-fat bias threshold, participants still reported anti-fat beliefs, particularly for the physical and blame subscales. The blame AFAT score was consistently the greatest of all of the AFAT subscales for each of the IVs, and participants in the healthy BMI category had significantly greater AFAT blame scores compared to individuals in the obese category. While this is the first study to demonstrate such findings in fitness professionals, Chambliss et al.&nbsp;(2004) and Dimmock et al.&nbsp;(2009) reported similar, high blame subscale scores in exercise science students and fitness center employees, respectively. In most fitness certifications and curricula, there is a strong focus on preventing obesity, where there is often an oversimplification of obesity, which blames and stigmatizes individuals in larger bodies (Roehling et al., 2007; Tesh &amp; Tesh, 1988). Interventions designed to reduce weight bias by including information about the complex nature of obesity (e.g., uncontrollable causes of obesity) have been shown to successfully reduce blame (Rukavina et al., 2010; Wijayatunga et al., 2019) and social weight bias (Rukavina et al., 2010) in undergraduate students. While future research examining the effect of similar interventions on weight biases in fitness professionals might be useful, Gibson (2021) argues that even fat activists who try to resolve individuals in larger bodies of responsibility associated with their size inadvertently support the notion of blame. By arguing that individuals in larger bodies who exercise and eat well are naturally larger and “innocent” of their body size (a term Gibson deems “good fatty”), fat activists highlight the notion that those in larger bodies who are not active or eating well (“bad fatty) are”guilty” and therefore to blame for their bodies. Thus, the cognitive response of blame in relation to one’s body size is further exasperated.</p>
+<p>An additional novel finding in this study was the difference in anti-fat bias based on one’s race. In opposition to Perez-Lopez et al.&nbsp;(2001), who reported greater anti-fat attitudes in White individuals, White participants in this study reported significantly lower total anti-fat bias compared to Black, Asian, and Hispanic participants. Similarly, White participants reported significantly lower AFAT physical scores compared to every other race. This finding contradicts Puhl et al.&nbsp;(2015), who found that in a U.S. sample, Black participants scored lower on fat phobia and fat bias measures compared to White participants. In the current study, breaking down weight bias specifically into the physical subscale provides an important context for the contradictory finding. The physical subscale represents how attractive or unattractive one finds fat people. This is particularly relevant for the sample population, where social norms within the fitness industry uniquely prime individuals to have stronger weight biases by framing weight loss goals to improve attractiveness.</p>
+<p>Societally, we are primed to view thin, white bodies as more attractive, which is rooted in a racist history (Strings, 2020). Research demonstrates that greater exposure to anti-fat culture leads to stronger anti-fat attitudes (Durso &amp; Latner, 2008; O’Brien et al., 2007), which leads to internalizing such messages (Mensinger et al., 2016; Pearl et al., 2019) However, more recent messaging around body positivity, which aims to counter the views that only thin bodies are attractive and worthy, has been criticized as a white feminist perspective (Johansson, 2021). If bodies other than the white, thin ideal are considered to be unattractive, it is too much to challenge dominant stereotypes to accept all other deviant aspects of non-white fat bodies (e.g., race, hair, etc.); therefore, white women are the only group allowed the privilege of viewing their own larger bodies as attractive or adopt self-love (Johansson, 2021; Strings et al., 2019). This can then reinforce internalized views of unattractiveness for non-white fitness professionals, as they have not been able to receive the benefits of body positivity under white supremacy.</p>
+<p>In addition, other aspects of the fitness industry function under white privilege. White fitness professionals are more likely to have control and ownership over fitness spaces, which can make it challenging to create spaces that counter racist attitudes (Strings, 2020; Strings et al., 2019). People of color and those in larger bodies continue to be underrepresented in the fitness industry and have likely experienced many other biases themselves, which leads to a greater potential for internalizing other biases prevalent in the industry.</p>
+<p>Another area that needs continued exploration is the influence of one’s role in the industry on weight biases. While this paper sought to understand this relationship, the small sample size within each role made it difficult to make comparisons, which limited the analysis to only comparing three roles. Additionally, most fitness professionals have many roles in the industry (e.g., personal trainer and group fitness instructor), which makes interpreting data difficult. It is also possible that the type of certification (rather than a role in the industry) influenced weight bias more.</p>
+<section id="conclusion" class="level2">
+<h2 data-anchor-id="conclusion">Conclusion</h2>
+<p>This study reveals complex relationships in anti-fat biases among fitness professionals. The interaction between BMI, gender, and education level reveals intriguing patterns, challenging conventional assumptions about weight biases within the fitness industry. Both genders in the healthy BMI category express greater weight biases, indicating societal favoritism towards smaller bodies. Despite participants scoring below the defined anti-fat bias threshold, the persistence of anti-fat beliefs, especially in the blame subscale, calls attention to underlying biases not fully captured by explicit measures. The blame directed towards individuals in larger bodies may be perpetuated by oversimplified narratives surrounding obesity prevalent in fitness certifications and curricula. The study also breaks new ground by exploring racial disparities in anti-fat biases within the fitness industry. The unexpected finding that White participants report lower anti-fat biases challenges previous research, pointing to the unique influence of the fitness industry’s culture on shaping perceptions. This underscores the importance of considering industry-specific contexts in understanding weight biases.</p>
+<p>In conclusion, this study unravels intricate dynamics of weight biases in fitness professionals, challenging assumptions and emphasizing industry-specific influences. It calls for ongoing research to comprehensively understand the multifaceted factors shaping biases in this unique professional domain. This study uses a diverse sample to advance the current literature on weight bias concerns in the fitness industry. This novel research is a necessary first step to future research (e.g., intervention studies) that explores how biases in the fitness industry influence the health behaviors of those seeking fitness guidance.</p>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<!-- References will auto-populate in the refs div below -->
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-chambliss2004a" class="csl-entry" role="listitem">
+Chambliss, H. O., Finley, C. E., &amp; Blair, S. N. (2004). Attitudes toward obese individuals among exercise science students. <em>Medicine &amp; Science in Sports &amp; Exercise</em>, <em>36</em>(3), 468–474. <a href="https://doi.org/10.1249/01.mss.0000117115.94062.e4">https://doi.org/10.1249/01.mss.0000117115.94062.e4</a>
+</div>
+<div id="ref-debarr2016a" class="csl-entry" role="listitem">
+DeBarr, K., &amp; Pettit, M. (2016). Weight matters: Health educators’ knowledge of obesity and attitudes toward people who are obese. <em>American Journal of Health Education</em>, <em>47</em>(6), 365–372. <a href="https://doi.org/10.1080/19325037.2016.1219282">https://doi.org/10.1080/19325037.2016.1219282</a>
+</div>
+<div id="ref-dimmock2009a" class="csl-entry" role="listitem">
+Dimmock, J. A., Hallett, B. E., &amp; Grove, R. J. (2009). Attitudes toward overweight individuals among fitness center employees: An examination of contextual effects. <em>Research Quarterly for Exercise and Sport</em>, <em>80</em>(3), 641–647. <a href="https://doi.org/10.1080/02701367.2009.10599603">https://doi.org/10.1080/02701367.2009.10599603</a>
+</div>
+<div id="ref-durso2008a" class="csl-entry" role="listitem">
+Durso, L. E., &amp; Latner, J. D. (2008). Understanding self‐directed stigma: Development of the weight bias internalization scale. <em>Obesity</em>, <em>16</em>(S2), 80–86. <a href="https://doi.org/10.1038/oby.2008.448">https://doi.org/10.1038/oby.2008.448</a>
+</div>
+<div id="ref-elran-barak2018a" class="csl-entry" role="listitem">
+Elran-Barak, R., &amp; Bar-Anan, Y. (2018). Implicit and explicit anti-fat bias: The role of weight-related attitudes and beliefs. <em>Social Science &amp; Medicine</em>, <em>204</em>, 117–124. <a href="https://doi.org/10.1016/j.socscimed.2018.03.018">https://doi.org/10.1016/j.socscimed.2018.03.018</a>
+</div>
+<div id="ref-fontana2018a" class="csl-entry" role="listitem">
+Fontana, F., Bopes, J., Bendixen, S., Speed, T., George, M., &amp; MACK, M. (2018). Discrimination against obese exercise clients: An experimental study of personal trainers. <em>International Journal of Exercise Science</em>, <em>11</em>(5), 116.
+</div>
+<div id="ref-fontana2013a" class="csl-entry" role="listitem">
+Fontana, F., Furtado Jr, O., Marston, R., Mazzardo Jr, O., &amp; Gallagher, D. (2013). Anti-fat bias among physical education teachers and majors. <em>Physical Educator</em>, <em>70</em>(1), 15.
+</div>
+<div id="ref-fontana2017a" class="csl-entry" role="listitem">
+Fontana, F., Furtado Jr, O., Mazzardo Jr, O., Hong, D., &amp; Campos, W. de. (2017). Anti-fat bias by professors teaching physical education majors. <em>European Physical Education Review</em>, <em>23</em>(1), 127–138. <a href="https://doi.org/10.1177/1356336X16643304">https://doi.org/10.1177/1356336X16643304</a>
+</div>
+<div id="ref-foster2003a" class="csl-entry" role="listitem">
+Foster, G. D., Wadden, T. A., Makris, A. P., Davidson, D., Sanderson, R. S., Allison, D. B., &amp; Kessler, A. (2003). Primary care physicians’ attitudes about obesity and its treatment. <em>Obesity Research</em>, <em>11</em>(10), 1168–1177. <a href="https://doi.org/10.1038/oby.2003.161">https://doi.org/10.1038/oby.2003.161</a>
+</div>
+<div id="ref-fritz2012a" class="csl-entry" role="listitem">
+Fritz, C. O., Morris, P. E., &amp; Richler, J. J. (2012). Effect size estimates: Current use, calculations, and interpretation. <em>Journal of Experimental Psychology: General</em>, <em>141</em>(1), 2. <a href="https://doi.org/10.1037/a0024338">https://doi.org/10.1037/a0024338</a>
+</div>
+<div id="ref-gardner2010a" class="csl-entry" role="listitem">
+Gardner, R. M., &amp; Brown, D. L. (2010). Body image assessment: A review of figural drawing scales. <em>Personality and Individual Differences</em>, <em>48</em>(2), 107–111. <a href="https://doi.org/10.1016/j.paid.2009.08.017">https://doi.org/10.1016/j.paid.2009.08.017</a>
+</div>
+<div id="ref-gawronski2006a" class="csl-entry" role="listitem">
+Gawronski, B., &amp; Bodenhausen, G. V. (2006). Associative and propositional processes in evaluation: An integrative review of implicit and explicit attitude change. <em>Psychological Bulletin</em>, <em>132</em>(5), 692. <a href="https://doi.org/10.1037/0033-2909.132.5.692">https://doi.org/10.1037/0033-2909.132.5.692</a>
+</div>
+<div id="ref-gibson2022a" class="csl-entry" role="listitem">
+Gibson, G. (2022). Health (ism) at every size: The duties of the <span>“good fatty.”</span> <em>Fat Studies</em>, <em>11</em>(1), 22–35. <a href="https://doi.org/10.1080/21604851.2021.1906526">https://doi.org/10.1080/21604851.2021.1906526</a>
+</div>
+<div id="ref-gordon2020a" class="csl-entry" role="listitem">
+Gordon, A. (2020). <em>What we don’t talk about when we talk about fat</em>. Beacon Press.
+</div>
+<div id="ref-guidi2021a" class="csl-entry" role="listitem">
+Guidi, J., Lucente, M., Sonino, N., &amp; Fava, G. A. (2021). Allostatic load and its impact on health: A systematic review. <em>Psychotherapy and Psychosomatics</em>, <em>90</em>(1), 11–27. <a href="https://doi.org/10.1159/000510696">https://doi.org/10.1159/000510696</a>
+</div>
+<div id="ref-hebl2001a" class="csl-entry" role="listitem">
+Hebl, M. R., &amp; Xu, J. (2001). Weighing the care: Physicians’ reactions to the size of a patient. <em>International Journal of Obesity</em>, <em>25</em>(8), 1246–1252. <a href="https://doi.org/10.1038/sj.ijo.0801681">https://doi.org/10.1038/sj.ijo.0801681</a>
+</div>
+<div id="ref-heise2019a" class="csl-entry" role="listitem">
+Heise, L., Greene, M. E., Opper, N., Stavropoulou, M., Harper, C., Nascimento, M., Zewdie, D., Darmstadt, G. L., Greene, M. E., &amp; Hawkes, S. (2019). Gender inequality and restrictive gender norms: Framing the challenges to health. <em>The Lancet</em>, <em>393</em>(10189), 2440–2454. <a href="https://doi.org/10.1016/S0140-6736(19)30652-X">https://doi.org/10.1016/S0140-6736(19)30652-X</a>
+</div>
+<div id="ref-johansson2021a" class="csl-entry" role="listitem">
+Johansson, A. (2021). Fat, black and unapologetic: Body positive activism beyond white, neoliberal rights discourses. In <em>Pluralistic struggles in gender, sexuality and coloniality: Challenging swedish exceptionalism</em> (pp. 113–146).
+</div>
+<div id="ref-langdon2016a" class="csl-entry" role="listitem">
+Langdon, J., Rukavina, P., &amp; Greenleaf, C. (2016). Predictors of obesity bias among exercise science students. <em>Advances in Physiology Education</em>, <em>40</em>(2), 157–164. <a href="https://doi.org/10.1152/advan.00185.2015">https://doi.org/10.1152/advan.00185.2015</a>
+</div>
+<div id="ref-lewis1997a" class="csl-entry" role="listitem">
+Lewis, R. J., Cash, T. F., &amp; Bubb‐Lewis, C. (1997). Prejudice toward fat people: The development and validation of the antifat attitudes test. <em>Obesity Research</em>, <em>5</em>(4), 297–307. <a href="https://doi.org/10.1002/j.1550-8528.1997.tb00555.x">https://doi.org/10.1002/j.1550-8528.1997.tb00555.x</a>
+</div>
+<div id="ref-marini2013a" class="csl-entry" role="listitem">
+Marini, M., Sriram, N., Schnabel, K., Maliszewski, N., Devos, T., Ekehammar, B., Wiers, R., HuaJian, C., Somogyi, M., &amp; Shiomura, K. (2013). Overweight people have low levels of implicit weight bias, but overweight nations have high levels of implicit weight bias. <em>PloS One</em>, <em>8</em>(12), 83543. <a href="https://doi.org/10.1371/journal.pone.0083543">https://doi.org/10.1371/journal.pone.0083543</a>
+</div>
+<div id="ref-maskedreference" class="csl-entry" role="listitem">
+Masked Citation. (n.d.). <em>Masked Title</em>.
+</div>
+<div id="ref-mensinger2016a" class="csl-entry" role="listitem">
+Mensinger, J. L., Calogero, R. M., &amp; Tylka, T. L. (2016). Internalized weight stigma moderates eating behavior outcomes in women with high BMI participating in a healthy living program. <em>Appetite</em>, <em>102</em>, 32–43. <a href="https://doi.org/10.1016/j.appet.2016.01.033">https://doi.org/10.1016/j.appet.2016.01.033</a>
+</div>
+<div id="ref-milburn2019a" class="csl-entry" role="listitem">
+Milburn, N. G., Beatty, L., &amp; Lopez, S. A. (2019). Understanding, unpacking, and eliminating health disparities: A prescription for health equity promotion through behavioral and psychological research—an introduction. <em>Cultural Diversity and Ethnic Minority Psychology</em>, <em>25</em>(1), 1. <a href="https://doi.org/10.1037/cdp0000266">https://doi.org/10.1037/cdp0000266</a>
+</div>
+<div id="ref-obrien2007a" class="csl-entry" role="listitem">
+O’Brien, K. S., Hunter, J. A., &amp; Banks, M. (2007). Implicit anti-fat bias in physical educators: Physical attributes, ideology and socialization. <em>International Journal of Obesity</em>, <em>31</em>(2), 308–314. <a href="https://doi.org/10.1038/sj.ijo.0803398">https://doi.org/10.1038/sj.ijo.0803398</a>
+</div>
+<div id="ref-pearl2019a" class="csl-entry" role="listitem">
+Pearl, R., Himmelstein, M., Puhl, R., Wadden, T., Wojtanowski, A., &amp; Foster, G. (2019). Weight bias internalization in a commercial weight management sample: Prevalence and correlates. <em>Obesity Science &amp; Practice</em>, <em>5</em>(4), 342–353. <a href="https://doi.org/10.1002/osp4.354">https://doi.org/10.1002/osp4.354</a>
+</div>
+<div id="ref-perez2001a" class="csl-entry" role="listitem">
+Perez‐Lopez, M. S., Lewis, R. J., &amp; Cash, T. F. (2001). The relationship of antifat attitudes to other prejudicial and gender‐related attitudes. <em>Journal of Applied Social Psychology</em>, <em>31</em>(4), 683–697. <a href="https://doi.org/10.1111/j.1559-1816.2001.tb01408.x">https://doi.org/10.1111/j.1559-1816.2001.tb01408.x</a>
+</div>
+<div id="ref-puhl2015a" class="csl-entry" role="listitem">
+Puhl, R. M., Latner, J., O’Brien, K., Luedicke, J., Daníelsdóttir, S., &amp; Forhan, M. (2015). A multinational examination of weight bias: Predictors of anti-fat attitudes across four countries. <em>International Journal of Obesity</em>, <em>39</em>(7), 1166–1173. <a href="https://doi.org/10.1038/ijo.2015.32">https://doi.org/10.1038/ijo.2015.32</a>
+</div>
+<div id="ref-robertson2008a" class="csl-entry" role="listitem">
+Robertson, N., &amp; Vohora, R. (2008). Fitness vs. Fatness: Implicit bias towards obesity among fitness professionals and regular exercisers. <em>Psychology of Sport and Exercise</em>, <em>9</em>(4), 547–557. <a href="https://doi.org/10.1016/j.psychsport.2007.06.002">https://doi.org/10.1016/j.psychsport.2007.06.002</a>
+</div>
+<div id="ref-roehling2007a" class="csl-entry" role="listitem">
+Roehling, M. V., Roehling, P. V., &amp; Pichler, S. (2007). The relationship between body weight and perceived weight-related employment discrimination: The role of sex and race. <em>Journal of Vocational Behavior</em>, <em>71</em>(2), 300–318. <a href="https://doi.org/10.1016/j.jvb.2007.04.008">https://doi.org/10.1016/j.jvb.2007.04.008</a>
+</div>
+<div id="ref-rukavina2010a" class="csl-entry" role="listitem">
+Rukavina, P. B., Li, W., Shen, B., &amp; Sun, H. (2010). A service learning based project to change implicit and explicit bias toward obese individuals in kinesiology pre-professionals. <em>Obesity Facts</em>, <em>3</em>(2), 117–126. <a href="https://doi.org/10.1159/000302794">https://doi.org/10.1159/000302794</a>
+</div>
+<div id="ref-sartore2007a" class="csl-entry" role="listitem">
+Sartore, M. L., &amp; Cunningham, G. B. (2007). Weight discrimination, hiring recommendations, person–job fit, and attributions: Fitness-industry implications. <em>Journal of Sport Management</em>, <em>21</em>(2), 172–193. <a href="https://doi.org/10.1123/jsm.21.2.172">https://doi.org/10.1123/jsm.21.2.172</a>
+</div>
+<div id="ref-schwartz2003a" class="csl-entry" role="listitem">
+Schwartz, M. B., Chambliss, H. O., Brownell, K. D., Blair, S. N., &amp; Billington, C. (2003). Weight bias among health professionals specializing in obesity. <em>Obesity Research</em>, <em>11</em>(9), 1033–1039. <a href="https://doi.org/10.1038/oby.2003.142">https://doi.org/10.1038/oby.2003.142</a>
+</div>
+<div id="ref-strings2020a" class="csl-entry" role="listitem">
+Strings, S. (2020). <em>Fearing the black body: The racial origins of fat phobia</em>. Oxford University Press. <a href="https://doi.org/10.1177/0094306120915912nn">https://doi.org/10.1177/0094306120915912nn</a>
+</div>
+<div id="ref-strings2019a" class="csl-entry" role="listitem">
+Strings, S., Headen, I., &amp; Spencer, B. (2019). Yoga as a technology of femininity: Disciplining white women, disappearing people of color in yoga journal. <em>Fat Studies</em>, <em>8</em>(3), 334–348. <a href="https://doi.org/10.1080/21604851.2019.1583527">https://doi.org/10.1080/21604851.2019.1583527</a>
+</div>
+<div id="ref-sutin2013a" class="csl-entry" role="listitem">
+Sutin, A. R., &amp; Terracciano, A. (2013). Perceived weight discrimination and obesity. <em>PloS One</em>, <em>8</em>(7), 70048. <a href="https://doi.org/10.1371/journal.pone.0070048">https://doi.org/10.1371/journal.pone.0070048</a>
+</div>
+<div id="ref-tesh1988a" class="csl-entry" role="listitem">
+Tesh, S. N., &amp; Tesh, S. (1988). <em>Hidden arguments: Political ideology and disease prevention policy</em>. Rutgers University Press.
+</div>
+<div id="ref-vartanian2011a" class="csl-entry" role="listitem">
+Vartanian, L. R., &amp; Novak, S. A. (2011). Internalized societal attitudes moderate the impact of weight stigma on avoidance of exercise. <em>Obesity</em>, <em>19</em>(4), 757–762. <a href="https://doi.org/10.1038/oby.2010.234">https://doi.org/10.1038/oby.2010.234</a>
+</div>
+<div id="ref-washington2011a" class="csl-entry" role="listitem">
+Washington, R. L. (2011). Childhood obesity: Issues of weight bias. <em>Preventing Chronic Disease</em>, <em>8</em>(5).
+</div>
+<div id="ref-wijayatunga2019a" class="csl-entry" role="listitem">
+Wijayatunga, N. N., Kim, Y., Butsch, W. S., &amp; Dhurandhar, E. J. (2019). The effects of a teaching intervention on weight bias among kinesiology undergraduate students. <em>International Journal of Obesity</em>, <em>43</em>(11), 2273–2281. <a href="https://doi.org/10.1038/s41366-019-0325-0">https://doi.org/10.1038/s41366-019-0325-0</a>
+</div>
+<div id="ref-zaroubi2021a" class="csl-entry" role="listitem">
+Zaroubi, L., Samaan, T., &amp; Alberga, A. S. (2021). Predictors of weight bias in exercise science students and fitness professionals: A scoping review. <em>Journal of Obesity</em>. <a href="https://doi.org/10.1155/2021/5597452">https://doi.org/10.1155/2021/5597452</a>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
